@@ -1,4 +1,4 @@
-# mnstr-world
+# pkmn-world
 
 Offline "single player" geolocation game built in Unity.
 
