@@ -82,6 +82,9 @@ public class Tile : MonoBehaviour {
         obj.AddComponent<MeshFilter>();
         behaviour.Data = Data;
         obj.transform.parent = transform;
+
+        // Move up ever so slightly, this seems stupid as fuck
+        obj.transform.position += new Vector3(0, 0.01f, 0);
     }
 
     /*
