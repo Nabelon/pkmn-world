@@ -73,15 +73,15 @@ public class Tile : MonoBehaviour {
      * Create the water layer
      *
      * Needs to be refactored into a method which can
-     * create any layer based on the GenericTileLayer
+     * create any layer based on the GenericTileLayer.
      */
-    void CreateWaterLayer (JSONNode data) {
-        GameObject waterObj = new GameObject("Water");
-        Water waterBehaviour = waterObj.AddComponent<Water>();
-        waterObj.AddComponent<MeshRenderer>();
-        waterObj.AddComponent<MeshFilter>();
-        waterBehaviour.Data = data;
-        waterObj.transform.parent = transform;
+    void CreateWaterLayer(JSONNode Data) {
+        GameObject obj = new GameObject("Water");
+        Water behaviour = obj.AddComponent<Water>();
+        obj.AddComponent<MeshRenderer>();
+        obj.AddComponent<MeshFilter>();
+        behaviour.Data = Data;
+        obj.transform.parent = transform;
     }
 
     /*
