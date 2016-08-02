@@ -2,7 +2,7 @@
 
 Offline "single player" geolocation game built in Unity.
 
-- Join [our Discord server](https://discord.gg/CbndZ).
+- Join [our Discord server](https://discord.gg/ztxpvkM).
 - Let us [know what you can do](https://goo.gl/forms/uIIVtHmDl7roj2YB3).
 
 When you start working on something, please create an issue (or comment on one if there is one already).
