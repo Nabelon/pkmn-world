@@ -13,8 +13,13 @@ public class Water : GenericTileLayer {
     public override void Start() {
         base.Start();
 
-        MeshFilter filter = GetComponent<MeshFilter>();
-        Mesh mesh = filter.mesh;
+        // Meshes where generated in the base, now do water specific stuff
+        MeshRenderer renderer = GetComponent<MeshRenderer>();
+
+        // Load and assign the water material
+        Material mat = Resources.Load("Materials/Water", typeof(Material)) as Material;
+        Debug.Log(mat);
+        renderer.material = mat;
     }
 
 }

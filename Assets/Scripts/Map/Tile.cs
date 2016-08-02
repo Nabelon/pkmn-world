@@ -5,12 +5,18 @@ using SimpleJSON;
 
 public class Tile : MonoBehaviour {
 
+    // X/Y position of the tile
     public Vector2 Pos { get; set; }
 
+    // Bounding box (lat/long coords)
     public float[,] Box { get; set; }
 
+    // Tile size in meters
     public int TileSize = 100;
 
+    /*
+     * Initialises the tile
+     */
     void Start () {
 
         Box = CreateBoundingBox();
@@ -21,6 +27,9 @@ public class Tile : MonoBehaviour {
         StartCoroutine(Create(Pos));
     }
 
+    /*
+     * Create the bounding box coords
+     */
     private float[,] CreateBoundingBox () {
         float[] topleft = Map.TileCoordsToWorldCoords((int)Pos.x, (int)Pos.y);
         float[] topright = Map.TileCoordsToWorldCoords((int)Pos.x + 1, (int)Pos.y);
@@ -35,7 +44,15 @@ public class Tile : MonoBehaviour {
         };
     }
 
+    /*
+     * Load the tile data and start creating all of the
+     * tile layers.
+     *
+     * This needs to be managed in a separate manager component
+     */
     IEnumerator Create (Vector2 pos) {
+
+        // Placeholder URL stuff
         string url = "http://vector.mapzen.com/osm/water,earth,roads/15/";
         string tileUrl = pos.x + "/" + pos.y;
 
@@ -46,17 +63,54 @@ public class Tile : MonoBehaviour {
         // Parse response into the SimpleJSON format
         JSONNode response = JSON.Parse(request.text);
 
+        CreateGrassLayer();
+
         // Add water to the tile
         CreateWaterLayer(response["water"]);
     }
 
-    void CreateWaterLayer(JSONNode waterData) {
+    /*
+     * Create the water layer
+     *
+     * Needs to be refactored into a method which can
+     * create any layer based on the GenericTileLayer
+     */
+    void CreateWaterLayer (JSONNode data) {
         GameObject waterObj = new GameObject("Water");
         Water waterBehaviour = waterObj.AddComponent<Water>();
         waterObj.AddComponent<MeshRenderer>();
         waterObj.AddComponent<MeshFilter>();
-        waterBehaviour.Data = waterData;
+        waterBehaviour.Data = data;
         waterObj.transform.parent = transform;
+    }
+
+    /*
+     * Create the base grass layer
+     */
+    void CreateGrassLayer () {
+        GameObject grassObj = new GameObject("Grass");
+
+        // Create a new plane mesh
+        Mesh m = new Mesh();
+        m.vertices = new Vector3[] {
+            new Vector3(0, 0, 0),
+            new Vector3(100, 0, 0),
+            new Vector3(100, 0, 100),
+            new Vector3(0, 0, 100)
+        };
+        m.triangles = new int[] { 3, 2, 0, 2, 1, 0 };
+        m.RecalculateNormals();
+
+        // Add mesh components
+        grassObj.AddComponent<MeshRenderer>();
+        grassObj.AddComponent<MeshFilter>();
+
+        // Set mesh properties
+        grassObj.GetComponent<MeshFilter>().mesh = m;
+        grassObj.GetComponent<MeshRenderer>().material = Resources.Load("Materials/Grass", typeof(Material)) as Material;
+
+        // Attach to parent tile
+        grassObj.transform.parent = transform;
     }
 
 }
