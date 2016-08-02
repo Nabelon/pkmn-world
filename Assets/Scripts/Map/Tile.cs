@@ -63,57 +63,27 @@ public class Tile : MonoBehaviour {
         // Parse response into the SimpleJSON format
         JSONNode response = JSON.Parse(request.text);
 
-        CreateGrassLayer();
-
         // Add water to the tile
-        CreateWaterLayer(response["water"]);
+        CreateLayer<Ground>("Ground", response["earth"], 0);
+        CreateLayer<Water>("Water", response["water"], 1);
     }
 
     /*
-     * Create the water layer
+     * Create a tile layer.
      *
-     * Needs to be refactored into a method which can
-     * create any layer based on the GenericTileLayer.
+     * Inject the tile behaviour with a name and data to add
+     * the tile layer to the tile object
      */
-    void CreateWaterLayer(JSONNode Data) {
-        GameObject obj = new GameObject("Water");
-        Water behaviour = obj.AddComponent<Water>();
+    void CreateLayer<T> (string name, JSONNode Data, int level) where T: GenericTileLayer {
+        GameObject obj = new GameObject(name);
+        T behaviour = obj.AddComponent<T>();
         obj.AddComponent<MeshRenderer>();
         obj.AddComponent<MeshFilter>();
         behaviour.Data = Data;
         obj.transform.parent = transform;
 
         // Move up ever so slightly, this seems stupid as fuck
-        obj.transform.position += new Vector3(0, 0.01f, 0);
-    }
-
-    /*
-     * Create the base grass layer
-     */
-    void CreateGrassLayer () {
-        GameObject grassObj = new GameObject("Grass");
-
-        // Create a new plane mesh
-        Mesh m = new Mesh();
-        m.vertices = new Vector3[] {
-            new Vector3(0, 0, 0),
-            new Vector3(100, 0, 0),
-            new Vector3(100, 0, 100),
-            new Vector3(0, 0, 100)
-        };
-        m.triangles = new int[] { 3, 2, 0, 2, 1, 0 };
-        m.RecalculateNormals();
-
-        // Add mesh components
-        grassObj.AddComponent<MeshRenderer>();
-        grassObj.AddComponent<MeshFilter>();
-
-        // Set mesh properties
-        grassObj.GetComponent<MeshFilter>().mesh = m;
-        grassObj.GetComponent<MeshRenderer>().material = Resources.Load("Materials/Grass", typeof(Material)) as Material;
-
-        // Attach to parent tile
-        grassObj.transform.parent = transform;
+        obj.transform.position += new Vector3(0, 0.01f * level, 0);
     }
 
 }
