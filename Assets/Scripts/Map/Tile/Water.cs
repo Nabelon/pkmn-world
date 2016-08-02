@@ -18,7 +18,6 @@ public class Water : GenericTileLayer {
 
         // Load and assign the water material
         Material mat = Resources.Load("Materials/Water", typeof(Material)) as Material;
-        Debug.Log(mat);
         renderer.material = mat;
     }
 
