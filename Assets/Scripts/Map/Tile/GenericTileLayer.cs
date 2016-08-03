@@ -50,6 +50,31 @@ public class GenericTileLayer : MonoBehaviour {
                 combine.Add(c);
             }
 
+            // Lot's of debug mess!
+            // TODO: remove this
+            if (feature["geometry"]["type"].Value == "LineString") {
+
+                // Grab a mesh from the factory
+                Mesh m = MeshFactory.CreateLineMesh(
+                    feature["geometry"]["coordinates"],
+                    tile.Box
+                );
+
+                /*
+                 * Create a combine instance, this will be used after
+                 * creating all individual through the Triangulator.
+                 *
+                 * This is done because of a limitation of the triangulator.
+                 * It can only render one entire polygon and not multiple,
+                 * I used it because I was lazy, should probably be rewritten
+                 * into an own triangulator to allow for better optimisation.
+                 */
+                CombineInstance c = new CombineInstance();
+                c.mesh = m;
+                c.transform = transform.localToWorldMatrix;
+                combine.Add(c);
+            }
+
         }
 
         /*

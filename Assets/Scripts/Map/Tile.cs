@@ -66,6 +66,7 @@ public class Tile : MonoBehaviour {
         // Add water to the tile
         AddLayer<Ground>("Ground", response["earth"], 0);
         AddLayer<Water>("Water", response["water"], 1);
+        AddLayer<Road>("Roads", response["roads"], 2);
     }
 
     /*
