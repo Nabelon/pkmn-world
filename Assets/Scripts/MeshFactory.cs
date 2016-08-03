@@ -50,6 +50,32 @@ public class MeshFactory {
     }
 
     /*
+     * Create a combined line mesh from a multi line one.
+     * This needs the parent transform to work for now...
+     */
+    public static Mesh CreateMultiLineMesh (JSONNode coords, float[,] bb, Transform t) {
+        List<CombineInstance> combine = new List<CombineInstance>();
+
+        for (int i = 0; i < coords.Count; i++) {
+
+            // Create a single line mesh
+            Mesh line = CreateLineMesh(coords[i], bb);
+
+            // Add the single line to the combine
+            CombineInstance c = new CombineInstance();
+            c.mesh = line;
+            c.transform = t.localToWorldMatrix;
+            combine.Add(c);
+        }
+
+        // Join all created single line meshes into a new mesh
+        Mesh m = new Mesh();
+        m.CombineMeshes(combine.ToArray(), true);
+
+        return m;
+    }
+
+    /*
      * Create a line mesh.
      *
      * It makes my eyes hurt...
