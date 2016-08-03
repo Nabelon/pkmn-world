@@ -8,6 +8,8 @@ public class Tile : MonoBehaviour {
     // X/Y position of the tile
     public Vector2 Pos { get; set; }
 
+    public Vector3 WorldPosition { get; set; }
+
     // Bounding box (lat/long coords)
     public float[,] Box { get; set; }
 
@@ -66,6 +68,9 @@ public class Tile : MonoBehaviour {
         // Add water to the tile
         CreateLayer<Ground>("Ground", response["earth"], 0);
         CreateLayer<Water>("Water", response["water"], 1);
+
+        // Only update position after loading/rendering, seems dumb
+        transform.position = new Vector3(WorldPosition.x, 0, WorldPosition.z);
     }
 
     /*
