@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 public class Map : MonoBehaviour {
 
-    private Dictionary<string, GameObject> TileSet = new Dictionary<string, GameObject>();
+    private Dictionary<Vector2, GameObject> TileSet = new Dictionary<Vector2, GameObject>();
 
     private Vector2? FirstPosition = null;
 
@@ -36,10 +36,10 @@ public class Map : MonoBehaviour {
 
         // Make a list of all the required tile positions
         // TODO: Make this int[,] based
-        List<string> tiles = new List<string>();
+        List<Vector2> tiles = new List<Vector2>();
         for (int i = -1; i < 2; i++) {
             for (int j = -1; j < 2; j++) {
-                tiles.Add((x + i).ToString() + "_" + (y + j).ToString());
+                tiles.Add(new Vector2(x + i, y + j));
             }
         }
 
@@ -56,7 +56,7 @@ public class Map : MonoBehaviour {
         }
 
         // Add new tiles
-        foreach (string tile in tiles) {
+        foreach (Vector2 tile in tiles) {
             if (!TileSet.ContainsKey(tile)) {
 
                 // Create the tile object
@@ -64,25 +64,15 @@ public class Map : MonoBehaviour {
                 obj.transform.parent = transform;
 
                 /*
-                 * Split the position key so we can set it on the
-                 * Tile behaviour.
-                 *
-                 * This is inefficient and should be refactored
-                 */
-                string[] split = tile.Split('_');
-                int tileX = Int32.Parse(split[0]);
-                int tileY = Int32.Parse(split[1]);
-
-                /*
                  * Add the tile behaviour and set both the position (x & y)
                  * and the world position.
                  */
                 Tile t = obj.AddComponent<Tile>();
-                t.Position = new Vector2(tileX, tileY);
+                t.Position = new Vector2(tile.x, tile.y);
                 t.WorldPosition = new Vector3(
-                    ((tileX - FirstPosition.Value.x) * 100),
+                    ((tile.x - FirstPosition.Value.x) * 100),
                     0,
-                    ((tileY - FirstPosition.Value.y) * 100)
+                    ((tile.y - FirstPosition.Value.y) * 100)
                 );
 
                 // Add the tile to the tileset dictionary
