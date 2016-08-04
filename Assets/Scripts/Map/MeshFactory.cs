@@ -64,7 +64,7 @@ public class MeshFactory {
             // Add the single line to the combine
             CombineInstance c = new CombineInstance();
             c.mesh = line;
-            c.transform = t.localToWorldMatrix;
+            c.transform = Matrix4x4.identity;
             combine.Add(c);
         }
 
