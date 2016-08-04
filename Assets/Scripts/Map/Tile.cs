@@ -64,8 +64,9 @@ public class Tile : MonoBehaviour {
         JSONNode response = JSON.Parse(request.text);
 
         // Add water to the tile
-        CreateLayer<Ground>("Ground", response["earth"], 0);
-        CreateLayer<Water>("Water", response["water"], 1);
+        AddLayer<Ground>("Ground", response["earth"], 0);
+        AddLayer<Water>("Water", response["water"], 1);
+        AddLayer<Road>("Roads", response["roads"], 2);
     }
 
     /*
@@ -74,7 +75,7 @@ public class Tile : MonoBehaviour {
      * Inject the tile behaviour with a name and data to add
      * the tile layer to the tile object
      */
-    void CreateLayer<T> (string name, JSONNode Data, int level) where T: GenericTileLayer {
+    void AddLayer<T> (string name, JSONNode Data, int level) where T: GenericTileLayer {
         GameObject obj = new GameObject(name);
         T behaviour = obj.AddComponent<T>();
         obj.AddComponent<MeshRenderer>();

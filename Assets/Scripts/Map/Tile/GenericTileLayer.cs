@@ -25,15 +25,40 @@ public class GenericTileLayer : MonoBehaviour {
         JSONNode features = Data["features"];
         for (int i = 0; i < features.Count; i++) {
 
-            // Only render polygonal values for now
             JSONNode feature = features[i];
-            if (feature["geometry"]["type"].Value == "Polygon") {
+
+            /*
+             * This if structure lives here to determine what kind of
+             * geometry types we are able to render. This is not
+             * maintainable and needs to change.
+             */
+            if (
+                feature["geometry"]["type"].Value == "Polygon" ||
+                feature["geometry"]["type"].Value == "LineString" ||
+                feature["geometry"]["type"].Value == "MultiLineString"
+            ) {
+                Mesh m;
 
                 // Grab a mesh from the factory
-                Mesh m = MeshFactory.CreatePolygonMesh(
-                    feature["geometry"]["coordinates"][0],
-                    tile.Box
-                );
+                if (feature["geometry"]["type"].Value == "Polygon") {
+                    m = MeshFactory.CreatePolygonMesh(
+                        feature["geometry"]["coordinates"][0],
+                        tile.Box
+                    );
+                } else if (feature["geometry"]["type"].Value == "LineString") {
+                    m = MeshFactory.CreateLineMesh(
+                        feature["geometry"]["coordinates"],
+                        tile.Box
+                    );
+                } else {
+
+                    // The multiline mesh needs the transform to work
+                    m = MeshFactory.CreateMultiLineMesh(
+                        feature["geometry"]["coordinates"],
+                        tile.Box,
+                        transform
+                    );
+                }
 
                 /*
                  * Create a combine instance, this will be used after
@@ -58,6 +83,7 @@ public class GenericTileLayer : MonoBehaviour {
          */
         filter.mesh = new Mesh();
         filter.mesh.CombineMeshes(combine.ToArray(), true);
+        filter.mesh.Optimize();
     }
 
 }
