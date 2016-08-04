@@ -30,7 +30,11 @@ public class Map : MonoBehaviour {
         // Remove old tiles
         foreach (var item in TileSet) {
             if (tiles.IndexOf(item.Key) == -1) {
-                // TODO: remove item from scene
+
+                // Destroy the tile
+                Destroy(item.Value);
+
+                // Remove it from the active TileSet
                 TileSet.Remove(item.Key);
             }
         }
@@ -39,22 +43,33 @@ public class Map : MonoBehaviour {
         foreach (string tile in tiles) {
             if (!TileSet.ContainsKey(tile)) {
 
+                // Create the tile object
                 GameObject obj = new GameObject("Tile");
-                Tile t = obj.AddComponent<Tile>();
+                obj.transform.parent = transform;
 
+                /*
+                 * Split the position key so we can set it on the
+                 * Tile behaviour.
+                 *
+                 * This is inefficient and should be refactored
+                 */
                 string[] split = tile.Split('_');
                 int tileX = Int32.Parse(split[0]);
                 int tileY = Int32.Parse(split[1]);
-                t.Pos = new Vector2(tileX, tileY);
 
-                obj.transform.parent = transform;
-
+                /*
+                 * Add the tile behaviour and set both the position (x & y)
+                 * and the world position.
+                 */
+                Tile t = obj.AddComponent<Tile>();
+                t.Position = new Vector2(tileX, tileY);
                 t.WorldPosition = new Vector3(
                     ((tileX - FirstPosition[0]) * 100),
                     0,
                     ((tileY - FirstPosition[1]) * 100)
                 );
 
+                // Add the tile to the tileset dictionary
                 TileSet.Add(tile, obj);
             }
         }
