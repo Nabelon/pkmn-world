@@ -35,7 +35,6 @@ public class Map : MonoBehaviour {
         }
 
         // Make a list of all the required tile positions
-        // TODO: Make this int[,] based
         List<Vector2> tiles = new List<Vector2>();
         for (int i = -1; i < 2; i++) {
             for (int j = -1; j < 2; j++) {
