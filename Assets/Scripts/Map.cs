@@ -6,7 +6,8 @@ using System.Collections.Generic;
 public class Map : MonoBehaviour {
 
     private Dictionary<string, GameObject> TileSet = new Dictionary<string, GameObject>();
-    private int[] FirstPosition;
+
+    private Vector2? FirstPosition = null;
 
     /*
      * Initialises the Map behaviour. Now it just loads
@@ -30,7 +31,7 @@ public class Map : MonoBehaviour {
     void SetCurrentTile (int x, int y) {
 
         if (FirstPosition == null) {
-            FirstPosition = new int[] { x, y };
+            FirstPosition = new Vector2(x, y );
         }
 
         // Make a list of all the required tile positions
@@ -79,9 +80,9 @@ public class Map : MonoBehaviour {
                 Tile t = obj.AddComponent<Tile>();
                 t.Position = new Vector2(tileX, tileY);
                 t.WorldPosition = new Vector3(
-                    ((tileX - FirstPosition[0]) * 100),
+                    ((tileX - FirstPosition.Value.x) * 100),
                     0,
-                    ((tileY - FirstPosition[1]) * 100)
+                    ((tileY - FirstPosition.Value.y) * 100)
                 );
 
                 // Add the tile to the tileset dictionary
