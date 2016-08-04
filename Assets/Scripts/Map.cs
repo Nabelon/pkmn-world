@@ -23,12 +23,18 @@ public class Map : MonoBehaviour {
         SetCurrentTile(16816, 10729);
 	}
 
+    /*
+     * Set the current tile and calculate which tiles need
+     * to be removed/added.
+     */
     void SetCurrentTile (int x, int y) {
 
         if (FirstPosition == null) {
             FirstPosition = new int[] { x, y };
         }
 
+        // Make a list of all the required tile positions
+        // TODO: Make this int[,] based
         List<string> tiles = new List<string>();
         for (int i = -1; i < 2; i++) {
             for (int j = -1; j < 2; j++) {
