@@ -84,6 +84,9 @@ public class GenericTileLayer : MonoBehaviour {
         filter.mesh = new Mesh();
         filter.mesh.CombineMeshes(combine.ToArray(), true);
         filter.mesh.Optimize();
+
+		// Update our mesh collider with the new mesh
+		GetComponent<MeshCollider>().sharedMesh = filter.mesh;
     }
 
 }
