@@ -17,7 +17,7 @@ RenderSettings:
   m_Fog: 1
   m_FogColor: {r: 0.875, g: 0.875, b: 0.875, a: 1}
   m_FogMode: 3
-  m_FogDensity: 0.01
+  m_FogDensity: 0.008
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
   m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
@@ -189,7 +189,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9b1b5f5e2f38e94f8497bc6e4d7128a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: 50
 --- !u!1 &492575716
 GameObject:
   m_ObjectHideFlags: 0
@@ -344,6 +343,9 @@ MonoBehaviour:
   maxInitWait: 15
   desiredAccuracyInMeters: 5
   updateDistanceInMeters: 5
+  mockStatus: 2
+  mockLatitude: 47.565796
+  mockLongitude: -122.27699
 --- !u!4 &880907154
 Transform:
   m_ObjectHideFlags: 0
@@ -613,9 +615,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b475d6ed481b9c4a86545658e2bfafe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lerpMultiply: 2
-  lastLat: 0
-  lastLon: 0
+  lerpMultiply: 10
 --- !u!1 &1814494411
 GameObject:
   m_ObjectHideFlags: 0
