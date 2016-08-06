@@ -23,12 +23,12 @@ public class Map : MonoBehaviour {
     void UpdateTiles()
     {
         // make sure location is initialized
-        if (Input.location.status != LocationServiceStatus.Running) return;
+        if (LocationController.GetStatus() != LocationServiceStatus.Running) return;
 
-        LocationInfo lastLoc = Input.location.lastData;
-        float[] tilePos = WorldToTileCoords(lastLoc.latitude, lastLoc.longitude);
+        var lastLoc = LocationController.GetLastData();
+        int[] tilePos = WorldToTileCoords(lastLoc.latitude, lastLoc.longitude);
 
-        SetCurrentTile((int)tilePos[0], (int)tilePos[1]);
+        SetCurrentTile(tilePos[0], tilePos[1]);
     }
 
     /*
@@ -97,10 +97,10 @@ public class Map : MonoBehaviour {
      * to the tile (x/y) coordinates.
      * This is the opposite of TileToWorldCoords.
      */
-    public static float[] WorldToTileCoords(double lat, double lon, int zoom = 15) {
-        return new float[] {
-            (float)((lon + 180.0) / 360.0 * (1 << zoom)),
-            (float)((1.0 - Math.Log(Math.Tan(lat * Math.PI / 180.0) +
+    public static int[] WorldToTileCoords(double lat, double lon, int zoom = 15) {
+        return new int[] {
+            (int)((lon + 180.0) / 360.0 * (1 << zoom)),
+            (int)((1.0 - Math.Log(Math.Tan(lat * Math.PI / 180.0) +
                 1.0 / Math.Cos(lat * Math.PI / 180.0)) / Math.PI) / 2.0 * (1 << zoom))
         };
     }
