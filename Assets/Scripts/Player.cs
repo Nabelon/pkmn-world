@@ -35,17 +35,14 @@ public class Player : MonoBehaviour
 		}).First();
 
 		// calculate our position on the map
-		var bb = tile.Box;
-		Vector3 newPos = new Vector3(
-			((lastLoc.longitude - bb[0, 0]) / (bb[1, 0] - bb[0, 0])) * 100,
-			transform.position.y,
-			((lastLoc.latitude - bb[0, 1]) / (bb[3, 1] - bb[0, 1])) * 100
-		);
+		CoordBoundingBox bounds = tile.BoundingBox;
+		Vector2 interpolatedPosition = bounds.Interpolate (lastLoc.longitude, lastLoc.latitude);
+		Vector3 newPosition = new Vector3 (interpolatedPosition.x, transform.position.y, interpolatedPosition.y);
 
 		// smoothly interpolate between our last position and our current position
 		transform.position = Vector3.Lerp(
 			prevPos,
-			newPos,
+			newPosition,
 			Time.fixedDeltaTime * lerpMultiply
 		);
 

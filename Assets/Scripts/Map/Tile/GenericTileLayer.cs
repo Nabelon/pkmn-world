@@ -3,29 +3,31 @@ using System.Collections;
 using System.Collections.Generic;
 using SimpleJSON;
 
-public class GenericTileLayer : MonoBehaviour {
+public class GenericTileLayer : MonoBehaviour
+{
 
-	public JSONNode Data  { get; set; }
+    public JSONNode Data  { get; set; }
 
     /*
      * Initialises a generic tile, creates meshes
      * from previously set data.
      */
-    public virtual void Start () {
+    public virtual void Start ()
+    {
 
         // Get renderer from our gameobject
         // MeshRenderer renderer = GetComponent<MeshRenderer>();
-        MeshFilter filter = GetComponent<MeshFilter>();
+        MeshFilter filter = GetComponent<MeshFilter> ();
 
         // Setup combiner and get tile object
-        Tile tile = transform.parent.gameObject.GetComponent<Tile>();
-        List<CombineInstance> combine = new List<CombineInstance>();
+        Tile tile = transform.parent.gameObject.GetComponent<Tile> ();
+        List<CombineInstance> combine = new List<CombineInstance> ();
 
         // Loop through All features
-        JSONNode features = Data["features"];
+        JSONNode features = Data ["features"];
         for (int i = 0; i < features.Count; i++) {
 
-            JSONNode feature = features[i];
+            JSONNode feature = features [i];
 
             /*
              * This if structure lives here to determine what kind of
@@ -33,29 +35,28 @@ public class GenericTileLayer : MonoBehaviour {
              * maintainable and needs to change.
              */
             if (
-                feature["geometry"]["type"].Value == "Polygon" ||
-                feature["geometry"]["type"].Value == "LineString" ||
-                feature["geometry"]["type"].Value == "MultiLineString"
-            ) {
+                feature ["geometry"] ["type"].Value == "Polygon" ||
+                feature ["geometry"] ["type"].Value == "LineString" ||
+                feature ["geometry"] ["type"].Value == "MultiLineString") {
                 Mesh m;
 
                 // Grab a mesh from the factory
-                if (feature["geometry"]["type"].Value == "Polygon") {
-                    m = MeshFactory.CreatePolygonMesh(
-                        feature["geometry"]["coordinates"][0],
-                        tile.Box
+                if (feature ["geometry"] ["type"].Value == "Polygon") {
+                    m = MeshFactory.CreatePolygonMesh (
+                        feature ["geometry"] ["coordinates"] [0],
+                        tile.BoundingBox
                     );
-                } else if (feature["geometry"]["type"].Value == "LineString") {
-                    m = MeshFactory.CreateLineMesh(
-                        feature["geometry"]["coordinates"],
-                        tile.Box
+                } else if (feature ["geometry"] ["type"].Value == "LineString") {
+                    m = MeshFactory.CreateLineMesh (
+                        feature ["geometry"] ["coordinates"],
+                        tile.BoundingBox
                     );
                 } else {
 
                     // The multiline mesh needs the transform to work
-                    m = MeshFactory.CreateMultiLineMesh(
-                        feature["geometry"]["coordinates"],
-                        tile.Box,
+                    m = MeshFactory.CreateMultiLineMesh (
+                        feature ["geometry"] ["coordinates"],
+                        tile.BoundingBox,
                         transform
                     );
                 }
@@ -69,10 +70,10 @@ public class GenericTileLayer : MonoBehaviour {
                  * I used it because I was lazy, should probably be rewritten
                  * into an own triangulator to allow for better optimisation.
                  */
-                CombineInstance c = new CombineInstance();
+                CombineInstance c = new CombineInstance ();
                 c.mesh = m;
                 c.transform = transform.localToWorldMatrix;
-                combine.Add(c);
+                combine.Add (c);
             }
 
         }
@@ -81,12 +82,12 @@ public class GenericTileLayer : MonoBehaviour {
          * Create a new parent mesh which will be used to combine all
          * previously generated polygonal meshes.
          */
-        filter.mesh = new Mesh();
-        filter.mesh.CombineMeshes(combine.ToArray(), true);
-        filter.mesh.Optimize();
+        filter.mesh = new Mesh ();
+        filter.mesh.CombineMeshes (combine.ToArray (), true);
+        filter.mesh.Optimize ();
 
-		// Update our mesh collider with the new mesh
-		GetComponent<MeshCollider>().sharedMesh = filter.mesh;
+        // Update our mesh collider with the new mesh
+        GetComponent<MeshCollider> ().sharedMesh = filter.mesh;
     }
 
 }

@@ -3,7 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using SimpleJSON;
 
-public class Tile : MonoBehaviour {
+public class Tile : MonoBehaviour
+{
 
     // X/Y position of the tile
     public Vector2 Position { get; set; }
@@ -11,7 +12,7 @@ public class Tile : MonoBehaviour {
     public Vector3 WorldPosition { get; set; }
 
     // Bounding box (lat/long coords)
-    public float[,] Box { get; set; }
+    public CoordBoundingBox BoundingBox { get; set; }
 
     // Tile size in meters
     public int TileSize = 100;
@@ -19,31 +20,15 @@ public class Tile : MonoBehaviour {
     /*
      * Initialises the tile
      */
-    void Start () {
+    void Start ()
+    {
 
-        Box = CreateBoundingBox();
+        BoundingBox = new CoordBoundingBox ((int)Position.x, (int)Position.y);
 
         // TODO: loading indicator
 
         // Start loading data
-        StartCoroutine(Create(Position));
-    }
-
-    /*
-     * Create the bounding box coords
-     */
-    private float[,] CreateBoundingBox () {
-        float[] topleft = Map.TileToWorldCoords((int)Position.x, (int)Position.y);
-        float[] topright = Map.TileToWorldCoords((int)Position.x + 1, (int)Position.y);
-        float[] bottomright = Map.TileToWorldCoords((int)Position.x + 1, (int)Position.y + 1);
-        float[] bottomleft = Map.TileToWorldCoords((int)Position.x, (int)Position.y + 1);
-
-        return new float[,] {
-            { topleft[0], topleft[1] },
-            { topright[0], topright[1] },
-            { bottomright[0], bottomright[1] },
-            { bottomleft[0], bottomleft[1] }
-        };
+        StartCoroutine (Create (Position));
     }
 
     /*
@@ -52,28 +37,30 @@ public class Tile : MonoBehaviour {
      *
      * This needs to be managed in a separate manager component
      */
-    IEnumerator Create (Vector2 position) {
+    IEnumerator Create (Vector2 position)
+    {
 
         // Placeholder URL stuff
         string url = "http://vector.mapzen.com/osm/water,earth,roads/15/";
         string tileUrl = position.x + "/" + position.y;
 
         // Create the request and wait for a response
-        WWW request = new WWW(url + tileUrl + ".json");
+        WWW request = new WWW (url + tileUrl + ".json");
         yield return request;
 
         // Parse response into the SimpleJSON format
-        JSONNode response = JSON.Parse(request.text);
+        JSONNode response = JSON.Parse (request.text);
 
         // Add water to the tile
-        AddLayer<Ground>("Ground", response["earth"], 0);
-        AddLayer<Water>("Water", response["water"], 1);
-        AddLayer<Road>("Roads", response["roads"], 2);
+        AddLayer<Ground> ("Ground", response ["earth"], 0);
+        AddLayer<Water> ("Water", response ["water"], 1);
+        AddLayer<Road> ("Roads", response ["roads"], 2);
 
         transform.position = WorldPosition;
     }
 
-    void Update () {
+    void Update ()
+    {
         transform.position = Vector3.zero;
     }
 
@@ -83,19 +70,20 @@ public class Tile : MonoBehaviour {
      * Inject the tile behaviour with a name and data to add
      * the tile layer to the tile object
      */
-    void AddLayer<T> (string name, JSONNode Data, int level) where T: GenericTileLayer {
-        GameObject obj = new GameObject(name);
+    void AddLayer<T> (string name, JSONNode Data, int level) where T: GenericTileLayer
+    {
+        GameObject obj = new GameObject (name);
         obj.transform.parent = transform;
         obj.transform.localPosition = Vector3.zero;
 
-        T behaviour = obj.AddComponent<T>();
-        obj.AddComponent<MeshRenderer>();
-        obj.AddComponent<MeshFilter>();
-        obj.AddComponent<MeshCollider>();
+        T behaviour = obj.AddComponent<T> ();
+        obj.AddComponent<MeshRenderer> ();
+        obj.AddComponent<MeshFilter> ();
+        obj.AddComponent<MeshCollider> ();
         behaviour.Data = Data;
 
         // Move up ever so slightly, this seems stupid as fuck
-        obj.transform.position += new Vector3(0, 0.01f * level, 0);
+        obj.transform.position += new Vector3 (0, 0.01f * level, 0);
     }
 
 }
