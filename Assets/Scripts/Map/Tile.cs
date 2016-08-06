@@ -33,10 +33,10 @@ public class Tile : MonoBehaviour {
      * Create the bounding box coords
      */
     private float[,] CreateBoundingBox () {
-        float[] topleft = Map.TileCoordsToWorldCoords((int)Position.x, (int)Position.y);
-        float[] topright = Map.TileCoordsToWorldCoords((int)Position.x + 1, (int)Position.y);
-        float[] bottomright = Map.TileCoordsToWorldCoords((int)Position.x + 1, (int)Position.y + 1);
-        float[] bottomleft = Map.TileCoordsToWorldCoords((int)Position.x, (int)Position.y + 1);
+        float[] topleft = Map.TileToWorldCoords((int)Position.x, (int)Position.y);
+        float[] topright = Map.TileToWorldCoords((int)Position.x + 1, (int)Position.y);
+        float[] bottomright = Map.TileToWorldCoords((int)Position.x + 1, (int)Position.y + 1);
+        float[] bottomleft = Map.TileToWorldCoords((int)Position.x, (int)Position.y + 1);
 
         return new float[,] {
             { topleft[0], topleft[1] },
@@ -91,6 +91,7 @@ public class Tile : MonoBehaviour {
         T behaviour = obj.AddComponent<T>();
         obj.AddComponent<MeshRenderer>();
         obj.AddComponent<MeshFilter>();
+        obj.AddComponent<MeshCollider>();
         behaviour.Data = Data;
 
         // Move up ever so slightly, this seems stupid as fuck

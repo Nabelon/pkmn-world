@@ -6,33 +6,41 @@ using System.Collections.Generic;
 public class Map : MonoBehaviour {
 
     private Dictionary<Vector2, GameObject> TileSet = new Dictionary<Vector2, GameObject>();
-
-    private Vector2? FirstPosition = null;
+    private Vector2? FirstPosition;
+    private int lastTileX = 0;
+    private int lastTileY = 0;
 
     /*
-     * Initialises the Map behaviour. Now it just loads
-     * a static tile (for testing), this needs te be a
-     * dynamic tile loading system based on geo position
-     * of the player.
-     *
-     * This should probably be taken care of in a separate
-     * manager.
+     * This will load the tiles dynamically
+     * according to the player's geolocation
+     * in the real world.
      */
-	void Start () {
-        transform.position = Vector3.zero;
+    void FixedUpdate()
+    {
+        UpdateTiles();
+    }
 
-        SetCurrentTile(16816, 10729);
-	}
+    void UpdateTiles()
+    {
+        // make sure location is initialized
+        if (Input.location.status != LocationServiceStatus.Running) return;
+
+        LocationInfo lastLoc = Input.location.lastData;
+        float[] tilePos = WorldToTileCoords(lastLoc.latitude, lastLoc.longitude);
+
+        SetCurrentTile((int)tilePos[0], (int)tilePos[1]);
+    }
 
     /*
      * Set the current tile and calculate which tiles need
      * to be removed/added.
      */
-    void SetCurrentTile (int x, int y) {
+    void SetCurrentTile(int x, int y) {
+        // Don't regenerate tiles if it's the same tile position as before
+        if (lastTileX == x && lastTileY == y) return;
 
-        if (FirstPosition == null) {
-            FirstPosition = new Vector2(x, y );
-        }
+        if (FirstPosition == null)
+            FirstPosition = new Vector2(x, y);
 
         // Make a list of all the required tile positions
         List<Vector2> tiles = new List<Vector2>();
@@ -78,6 +86,23 @@ public class Map : MonoBehaviour {
                 TileSet.Add(tile, obj);
             }
         }
+
+        // Refresh last tile position
+        lastTileX = x;
+        lastTileY = y;
+    }
+
+    /*
+     * Transform real world coordinates (lat/long)
+     * to the tile (x/y) coordinates.
+     * This is the opposite of TileToWorldCoords.
+     */
+    public static float[] WorldToTileCoords(double lat, double lon, int zoom = 15) {
+        return new float[] {
+            (float)((lon + 180.0) / 360.0 * (1 << zoom)),
+            (float)((1.0 - Math.Log(Math.Tan(lat * Math.PI / 180.0) +
+                1.0 / Math.Cos(lat * Math.PI / 180.0)) / Math.PI) / 2.0 * (1 << zoom))
+        };
     }
 
     /*
@@ -85,9 +110,7 @@ public class Map : MonoBehaviour {
      * coordinates (lat/long). This will always return the
      * top-left coordinates of a tile.
      */
-    public static float[] TileCoordsToWorldCoords (int x, int y) {
-        int zoom = 15;
-
+    public static float[] TileToWorldCoords(int x, int y, int zoom = 15) {
         double n = Math.PI - ((2.0 * Math.PI * y) / Math.Pow(2.0, zoom));
 
         return new float[] {
