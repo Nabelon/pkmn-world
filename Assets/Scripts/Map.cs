@@ -26,9 +26,9 @@ public class Map : MonoBehaviour {
         if (LocationController.GetStatus() != LocationServiceStatus.Running) return;
 
         var lastLoc = LocationController.GetLastData();
-        int[] tilePos = WorldToTileCoords(lastLoc.latitude, lastLoc.longitude);
+        Vector2 tilePos = WorldToTileCoords(lastLoc.latitude, lastLoc.longitude);
 
-        SetCurrentTile(tilePos[0], tilePos[1]);
+        SetCurrentTile((int)tilePos.x, (int)tilePos.y);
     }
 
     /*
@@ -93,16 +93,42 @@ public class Map : MonoBehaviour {
     }
 
     /*
+     * Spawns a monster on the map. It will add the monster as a child
+     * to the Tile it tries to spawn on.
+     */
+    public void Spawn (GameObject monster, double latitude, double longitude) {
+        Vector2 tileCoords = Map.WorldToTileCoords (latitude, longitude);
+
+        // Don't spawn if the tile is not in our active set
+        if (!TileSet.ContainsKey (tileCoords))
+            return;
+
+        // Our monster needs to have the correct behaviour
+        if (!monster.GetComponent<Monster> ()) {
+            monster.AddComponent<Monster> ();
+        }
+
+        // Get the tile from our tileset
+        Tile tile = TileSet [tileCoords].GetComponent<Tile>();
+
+        // Attach our monster to the tile
+        monster.transform.parent = transform;
+
+        Vector2 position = tile.BoundingBox.Interpolate ((float)latitude, (float)longitude);
+        monster.transform.position = new Vector3 (position.x, 2.0f, position.y);
+    }
+
+    /*
      * Transform real world coordinates (lat/long)
      * to the tile (x/y) coordinates.
      * This is the opposite of TileToWorldCoords.
      */
-    public static int[] WorldToTileCoords(double lat, double lon, int zoom = 15) {
-        return new int[] {
+    public static Vector2 WorldToTileCoords(double lat, double lon, int zoom = 15) {
+        return new Vector2(
             (int)((lon + 180.0) / 360.0 * (1 << zoom)),
             (int)((1.0 - Math.Log(Math.Tan(lat * Math.PI / 180.0) +
                 1.0 / Math.Cos(lat * Math.PI / 180.0)) / Math.PI) / 2.0 * (1 << zoom))
-        };
+        );
     }
 
     /*
@@ -110,13 +136,13 @@ public class Map : MonoBehaviour {
      * coordinates (lat/long). This will always return the
      * top-left coordinates of a tile.
      */
-    public static float[] TileToWorldCoords(int x, int y, int zoom = 15) {
+    public static Vector2 TileToWorldCoords(int x, int y, int zoom = 15) {
         double n = Math.PI - ((2.0 * Math.PI * y) / Math.Pow(2.0, zoom));
 
-        return new float[] {
+        return new Vector2(
             (float)((x / Math.Pow(2.0, zoom) * 360.0) - 180.0),
             (float)(180.0 / Math.PI * Math.Atan(Math.Sinh(n)))
-        };
+        );
     }
 
 }
