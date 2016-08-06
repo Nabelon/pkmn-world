@@ -26,7 +26,7 @@ public class Player : MonoBehaviour
 		// make sure location is initialized
 		if (LocationController.GetStatus() != LocationServiceStatus.Running) return;
 
-		var lastLoc = Input.location.lastData;
+		var lastLoc = LocationController.GetLastData();
 		// get the tile we're on
 		int[] tileCoords = Map.WorldToTileCoords(lastLoc.latitude, lastLoc.longitude);
 		Tile tile = GameObject.FindObjectsOfType<Tile>().Where((_tile) =>

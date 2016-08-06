@@ -25,7 +25,7 @@ public class Map : MonoBehaviour {
         // make sure location is initialized
         if (LocationController.GetStatus() != LocationServiceStatus.Running) return;
 
-        var lastLoc = Input.location.lastData;
+        var lastLoc = LocationController.GetLastData();
         int[] tilePos = WorldToTileCoords(lastLoc.latitude, lastLoc.longitude);
 
         SetCurrentTile(tilePos[0], tilePos[1]);
