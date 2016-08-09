@@ -8,10 +8,13 @@ Offline "single player" geolocation game built in Unity.
 When you start working on something, please create an issue (or comment on one if there is one already).
 
 ## To Do
-### Immediate term
+### Map
+- [x] Geolocation
+- [x] Render map around player from OSM data
+- [ ] Generate centers and shops from Map POIs
 
-- [ ] Geolocation
-- [ ] Render map around player from OSM data
+### Encounters
+- [ ] Track player distance moved/speed
 - [ ] Query 3rd party data sources (weather etc)
 - [ ] Generate encounters based on available data
   - [ ] Altitude
@@ -20,19 +23,59 @@ When you start working on something, please create an issue (or comment on one i
   - [ ] Weather
   - [ ] Landuse/Landcover
   - [ ] Waterway
-- [ ] Save player stats
-- [ ] Set/save player home location
-- [ ] Monster inventory
-- [ ] Item inventory
-- [ ] Monster encyclopedia
+- [ ] Keep encounters on map for set time/until interacted
+- [ ] Destroy old/far away encounters
+- [ ] Tracking of certain pokemon from nearby UI
 
-### Longer term
-- [ ] Single player monster battles
+### In-game data
+- [ ] Save player stats
+- [ ] Set name
+- [ ] Set home location
+- [ ] Save captured mons
+- [ ] Save party
+- [ ] Save pokedex
+- [ ] Save inventory
+
+### UI
+- [ ] Map nearby screen
+  - [ ] Display landuse, weather, temperature etc
+  - [ ] Display likely monsters to spawn
+
+- [ ] Party screen
+  - [ ] Display party mons
+  - [ ] Party reordering
+  - [ ] Party management when at home/pokecenter
+
+- [ ] Inventory
+  - [ ] Display items
+  - [ ] Item Management
+  - [ ] Item details
+
+### Graphics
+- [ ] Modular attack move animation system
+- [ ] Mons sprites/models
+- [ ] Map materials
+
+### Data
+- [ ] Pokedex
+  - [ ] Encounter locations/conditions
+  - [ ] Rarity
+- [ ] Move list/effects
+- [ ] Item list/effects
+
+### Battles
+- [ ] Battle scene
+- [ ] Battle engine
+  - [ ] Timing system
+  - [ ] Logic
+
+### Networking
 - [ ] Investigate peer to peer local networking
-- [ ] Multiplayer local monster battles
-- [ ] Multiplayer local monster trading
-- [ ] Items
-- [ ] Economy
+- [ ] Socket server
+
+### Development
+- [ ] Build process documentation
+- [ ] Proper issue/work tracking
 
 ## Useful links
 
