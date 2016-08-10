@@ -22,8 +22,8 @@ public class CoordBoundingBox
     public Vector2 Interpolate (float latitude, float longitude)
     {
         return new Vector2 (
-            ((latitude - topLeft.x) / (topRight.x - topLeft.x)) * 100,
-            ((longitude - topLeft.y) / (bottomLeft.y - topLeft.y)) * 100
+            ((longitude - topLeft.x) / (topRight.x - topLeft.x)) * 100,
+            ((latitude - topLeft.y) / (bottomLeft.y - topLeft.y)) * 100
         );
     }
 }

@@ -10,7 +10,6 @@ public class Monster : MonoBehaviour {
             Vector2 position;
 
 			if (Input.touchSupported) {
-
 				// Use touch position when supported by the device
 				position = Input.GetTouch (0).position;
 			} else {

@@ -22,7 +22,7 @@ public class MeshFactory
         for (int i = 0; i < coords.Count - 1; i++) {
 
             // Store the vertex for the triangulator
-            Vector2 vertex = bounds.Interpolate (float.Parse (coords [i] [0].Value), float.Parse (coords [i] [1].Value));
+            Vector2 vertex = bounds.Interpolate (float.Parse (coords [i] [1].Value), float.Parse (coords [i] [0].Value));
             triangulation.Add (vertex);
 
             // Add the vertex plus a y position to allow for 3d space
@@ -91,10 +91,10 @@ public class MeshFactory
 
         for (int i = 0; i < coords.Count; i++) {
 			
-            Vector2 currentInterpolated = bounds.Interpolate (float.Parse (coords [i] [0].Value), float.Parse (coords [i] [1].Value));
+            Vector2 currentInterpolated = bounds.Interpolate (float.Parse (coords [i] [1].Value), float.Parse (coords [i] [0].Value));
             Vector3 current = new Vector3 (currentInterpolated.x, 0, currentInterpolated.y);
 
-            Vector2 referenceInterpolated = bounds.Interpolate (float.Parse (coords [i + (i != coords.Count - 1 ? 1 : -1)] [0].Value), float.Parse (coords [i + (i != coords.Count - 1 ? 1 : -1)] [1].Value));
+            Vector2 referenceInterpolated = bounds.Interpolate (float.Parse (coords [i + (i != coords.Count - 1 ? 1 : -1)] [1].Value), float.Parse (coords [i + (i != coords.Count - 1 ? 1 : -1)] [0].Value));
             Vector3 reference = new Vector3 (referenceInterpolated.x, 0, referenceInterpolated.y);
             
             if (i != coords.Count - 1) {

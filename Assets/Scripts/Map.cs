@@ -96,34 +96,31 @@ public class Map : MonoBehaviour {
      * Spawns a monster on the map. It will add the monster as a child
      * to the Tile it tries to spawn on.
      */
-    public void Spawn (GameObject monster, double latitude, double longitude) {
-        Vector2 tileCoords = Map.WorldToTileCoords (latitude, longitude);
+    public void Spawn (Monster monster, float latitude, float longitude) {
+        Vector2 tileCoords = Map.WorldToTileCoords(latitude, longitude);
 
         // Don't spawn if the tile is not in our active set
-        if (!TileSet.ContainsKey (tileCoords))
+        if (!TileSet.ContainsKey(tileCoords))
             return;
 
-        // Our monster needs to have the correct behaviour
-        if (!monster.GetComponent<Monster> ()) {
-            monster.AddComponent<Monster> ();
-        }
-
         // Get the tile from our tileset
-        Tile tile = TileSet [tileCoords].GetComponent<Tile>();
+        Tile tile = TileSet[tileCoords].GetComponent<Tile>();
 
         // Attach our monster to the tile
         monster.transform.parent = transform;
 
-        Vector2 position = tile.BoundingBox.Interpolate ((float)latitude, (float)longitude);
-        monster.transform.position = new Vector3 (position.x, 2.0f, position.y);
-    }
+        Vector2 position = tile.BoundingBox.Interpolate (latitude, longitude);
+		// TODO: hack, issue #17
+		position.x = -position.x;
+		monster.transform.position = new Vector3 (position.x, 2.0f, position.y);
+	}
 
-    /*
+	/*
      * Transform real world coordinates (lat/long)
      * to the tile (x/y) coordinates.
      * This is the opposite of TileToWorldCoords.
      */
-    public static Vector2 WorldToTileCoords(double lat, double lon, int zoom = 15) {
+	public static Vector2 WorldToTileCoords(float lat, float lon, int zoom = 15) {
         return new Vector2(
             (int)((lon + 180.0) / 360.0 * (1 << zoom)),
             (int)((1.0 - Math.Log(Math.Tan(lat * Math.PI / 180.0) +

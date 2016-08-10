@@ -31,18 +31,21 @@ public class Player : MonoBehaviour
 		Vector2 tileCoords = Map.WorldToTileCoords(lastLoc.latitude, lastLoc.longitude);
 		Tile tile = GameObject.FindObjectsOfType<Tile>().Where((_tile) =>
 		{
+			// check if x and y are the same as the tile player is on
 			return _tile.Position.x == tileCoords.x && _tile.Position.y == tileCoords.y;
 		}).First();
 
 		// calculate our position on the map
 		CoordBoundingBox bounds = tile.BoundingBox;
-		Vector2 interpolatedPosition = bounds.Interpolate (lastLoc.longitude, lastLoc.latitude);
-		Vector3 newPosition = new Vector3 (interpolatedPosition.x, transform.position.y, interpolatedPosition.y);
+		Vector2 interpolatedPos = bounds.Interpolate(lastLoc.latitude, lastLoc.longitude);
+		Vector3 newPos = new Vector3(interpolatedPos.x, transform.position.y, interpolatedPos.y);
+		// TODO: hack, issue #17
+		newPos.x = -newPos.x;
 
 		// smoothly interpolate between our last position and our current position
 		transform.position = Vector3.Lerp(
 			prevPos,
-			newPosition,
+			newPos,
 			Time.fixedDeltaTime * lerpMultiply
 		);
 
