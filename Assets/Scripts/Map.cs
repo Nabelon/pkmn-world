@@ -96,7 +96,7 @@ public class Map : MonoBehaviour {
      * Spawns a monster on the map. It will add the monster as a child
      * to the Tile it tries to spawn on.
      */
-    public void Spawn (GameObject monster, double latitude, double longitude) {
+    public void Spawn (GameObject monster, float latitude, float longitude) {
         Vector2 tileCoords = Map.WorldToTileCoords (latitude, longitude);
 
         // Don't spawn if the tile is not in our active set
@@ -114,7 +114,7 @@ public class Map : MonoBehaviour {
         // Attach our monster to the tile
         monster.transform.parent = transform;
 
-        Vector2 position = tile.BoundingBox.Interpolate ((float)latitude, (float)longitude);
+        Vector2 position = tile.BoundingBox.Interpolate (latitude, longitude);
         monster.transform.position = new Vector3 (position.x, 2.0f, position.y);
     }
 
@@ -123,7 +123,7 @@ public class Map : MonoBehaviour {
      * to the tile (x/y) coordinates.
      * This is the opposite of TileToWorldCoords.
      */
-    public static Vector2 WorldToTileCoords(double lat, double lon, int zoom = 15) {
+    public static Vector2 WorldToTileCoords(float lat, float lon, int zoom = 15) {
         return new Vector2(
             (int)((lon + 180.0) / 360.0 * (1 << zoom)),
             (int)((1.0 - Math.Log(Math.Tan(lat * Math.PI / 180.0) +
