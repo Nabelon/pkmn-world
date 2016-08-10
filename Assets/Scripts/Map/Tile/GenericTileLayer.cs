@@ -88,6 +88,8 @@ public class GenericTileLayer : MonoBehaviour
 
         // Update our mesh collider with the new mesh
         GetComponent<MeshCollider> ().sharedMesh = filter.mesh;
-    }
+		// TODO: hack, issue #17
+		transform.localScale = new Vector3(-1, 1, 1);
+	}
 
 }
