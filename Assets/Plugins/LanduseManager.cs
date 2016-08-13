@@ -1,9 +1,50 @@
 ﻿using System;
 using System.Collections.Generic;
 using SimpleJSON;
-using System.Drawing;
 namespace LanduseManager
 {
+
+    public class Point
+    {
+        public int X;
+        public int Y;
+        public Point() { X = 0; Y = 0; }
+        public Point(int x, int y)
+        {
+            X = x;
+            Y = y;
+        }
+    }
+    public class PointF
+    {
+        public float X;
+        public float Y;
+        public PointF() { X = 0; Y = 0; }
+        public PointF(float x, float y)
+        {
+            X = x;
+            Y = y;
+        }
+    }
+    public class Tuple<T, U>
+    {
+        public T Item1 { get; private set; }
+        public U Item2 { get; private set; }
+
+        public Tuple(T item1, U item2)
+        {
+            Item1 = item1;
+            Item2 = item2;
+        }
+    }
+
+    public static class Tuple
+    {
+        public static Tuple<T, U> Create<T, U>(T item1, U item2)
+        {
+            return new Tuple<T, U>(item1, item2);
+        }
+    }
     //Stores boundaries of a rectangle and its landuse
     class Item
     {
@@ -235,7 +276,7 @@ namespace LanduseManager
         }
         public List<string> getLanduse(float lat, float lng)
         {
-            PointF tile = WorldToTilePos(lng, lat, zoomSmall);
+            Point tile = WorldToTilePos(lng, lat, zoomSmall);
             string coordStr = tile.X + "," + tile.Y;
             QuadtreeRoot tree;
             if (trees.ContainsKey(coordStr))    //search for tree
@@ -365,7 +406,7 @@ namespace LanduseManager
         }
         private PointF TileToWorldPos(int tile_x, int tile_y, int zoom)
         {
-            PointF p = new Point();
+            PointF p = new PointF();
             double n = Math.PI - ((2.0 * Math.PI * tile_y) / Math.Pow(2.0, zoom));
 
             p.X = (float)((tile_x / Math.Pow(2.0, zoom) * 360.0) - 180.0);
