@@ -1,0 +1,3081 @@
+[
+  {
+    "pitch": {
+      "evening": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "morning": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "day": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "night": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }
+    }, 
+    "recreation_ground": {
+      "evening": {
+        "sun": [
+          "19"
+        ], 
+        "cloud": [
+          "19"
+        ], 
+        "rain": [
+          "19"
+        ]
+      }, 
+      "morning": {
+        "sun": [
+          "19"
+        ], 
+        "cloud": [
+          "19"
+        ], 
+        "rain": [
+          "19"
+        ]
+      }, 
+      "day": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "night": {
+        "sun": [
+          "19"
+        ], 
+        "cloud": [
+          "19"
+        ], 
+        "rain": [
+          "19"
+        ]
+      }
+    }, 
+    "nature_reserve": {
+      "evening": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "morning": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "day": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "night": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }
+    }, 
+    "generator": {
+      "evening": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "morning": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "day": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "night": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }
+    }, 
+    "residential": {
+      "evening": {
+        "sun": [
+          "4", 
+          "5", 
+          "6", 
+          "16", 
+          "17", 
+          "18", 
+          "19", 
+          "21", 
+          "22", 
+          "26"
+        ], 
+        "cloud": [
+          "16", 
+          "17", 
+          "18", 
+          "19", 
+          "20", 
+          "21", 
+          "22", 
+          "26"
+        ], 
+        "rain": [
+          "16", 
+          "19", 
+          "20"
+        ]
+      }, 
+      "morning": {
+        "sun": [
+          "16", 
+          "17", 
+          "18", 
+          "19", 
+          "21", 
+          "22", 
+          "26"
+        ], 
+        "cloud": [
+          "16", 
+          "17", 
+          "18", 
+          "19", 
+          "20", 
+          "21", 
+          "22", 
+          "26"
+        ], 
+        "rain": [
+          "16", 
+          "19", 
+          "20"
+        ]
+      }, 
+      "day": {
+        "sun": [
+          "4", 
+          "5", 
+          "6", 
+          "16", 
+          "17", 
+          "18", 
+          "21", 
+          "22", 
+          "26"
+        ], 
+        "cloud": [
+          "16", 
+          "17", 
+          "18", 
+          "21", 
+          "22", 
+          "26"
+        ], 
+        "rain": [
+          "16"
+        ]
+      }, 
+      "night": {
+        "sun": [
+          "4", 
+          "5", 
+          "6", 
+          "16", 
+          "17", 
+          "18", 
+          "19", 
+          "26"
+        ], 
+        "cloud": [
+          "16", 
+          "17", 
+          "18", 
+          "19", 
+          "20", 
+          "26"
+        ], 
+        "rain": [
+          "16", 
+          "19", 
+          "20"
+        ]
+      }
+    }, 
+    "cemetery": {
+      "evening": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "morning": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "day": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "night": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }
+    }, 
+    "lake": {
+      "evening": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "morning": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "day": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "night": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }
+    }, 
+    "riverbank": {
+      "evening": {
+        "sun": [
+          "7"
+        ], 
+        "cloud": [
+          "7", 
+          "8", 
+          "9"
+        ], 
+        "rain": [
+          "7", 
+          "8", 
+          "9"
+        ]
+      }, 
+      "morning": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "day": {
+        "sun": [
+          "7"
+        ], 
+        "cloud": [
+          "7", 
+          "8"
+        ], 
+        "rain": [
+          "7", 
+          "8"
+        ]
+      }, 
+      "night": {
+        "sun": [
+          "7"
+        ], 
+        "cloud": [
+          "7", 
+          "8", 
+          "9"
+        ], 
+        "rain": [
+          "7", 
+          "8", 
+          "9"
+        ]
+      }
+    }, 
+    "attraction": {
+      "evening": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "morning": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "day": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "night": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }
+    }, 
+    "wood": {
+      "evening": {
+        "sun": [
+          "13", 
+          "23", 
+          "24"
+        ], 
+        "cloud": [
+          "13", 
+          "23", 
+          "24"
+        ], 
+        "rain": []
+      }, 
+      "morning": {
+        "sun": [
+          "1", 
+          "2", 
+          "10", 
+          "23", 
+          "24"
+        ], 
+        "cloud": [
+          "1", 
+          "10", 
+          "23", 
+          "24"
+        ], 
+        "rain": []
+      }, 
+      "day": {
+        "sun": [
+          "1", 
+          "2", 
+          "3", 
+          "10", 
+          "13", 
+          "23", 
+          "24"
+        ], 
+        "cloud": [
+          "1", 
+          "10", 
+          "13", 
+          "23", 
+          "24"
+        ], 
+        "rain": []
+      }, 
+      "night": {
+        "sun": [
+          "13"
+        ], 
+        "cloud": [
+          "13"
+        ], 
+        "rain": []
+      }
+    }, 
+    "prison": {
+      "evening": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "morning": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "day": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "night": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }
+    }, 
+    "sports_centre": {
+      "evening": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "morning": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "day": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "night": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }
+    }, 
+    "apron": {
+      "evening": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "morning": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "day": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "night": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }
+    }, 
+    "garden": {
+      "evening": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "morning": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "day": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "night": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }
+    }, 
+    "dam": {
+      "evening": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "morning": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "day": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "night": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }
+    }, 
+    "golf_course": {
+      "evening": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "morning": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "day": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "night": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }
+    }, 
+    "dike": {
+      "evening": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "morning": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "day": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "night": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }
+    }, 
+    "dock": {
+      "evening": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "morning": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "day": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "night": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }
+    }, 
+    "artwork": {
+      "evening": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "morning": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "day": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "night": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }
+    }, 
+    "pier": {
+      "evening": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "morning": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "day": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "night": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }
+    }, 
+    "place_of_worship": {
+      "evening": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "morning": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "day": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "night": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }
+    }, 
+    "school": {
+      "evening": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "morning": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "day": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "night": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }
+    }, 
+    "university": {
+      "evening": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "morning": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "day": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "night": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }
+    }, 
+    "protected_area": {
+      "evening": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "morning": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "day": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "night": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }
+    }, 
+    "common": {
+      "evening": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "morning": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "day": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "night": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }
+    }, 
+    "rock": {
+      "evening": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "morning": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "day": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "night": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }
+    }, 
+    "cutline": {
+      "evening": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "morning": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "day": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "night": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }
+    }, 
+    "tower": {
+      "evening": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "morning": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "day": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "night": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }
+    }, 
+    "works": {
+      "evening": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "morning": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "day": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "night": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }
+    }, 
+    "battlefield": {
+      "evening": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "morning": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "day": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "night": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }
+    }, 
+    "meadow": {
+      "evening": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "morning": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "day": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "night": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }
+    }, 
+    "library": {
+      "evening": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "morning": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "day": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "night": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }
+    }, 
+    "college": {
+      "evening": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "morning": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "day": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "night": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }
+    }, 
+    "parking": {
+      "evening": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "morning": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "day": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "night": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }
+    }, 
+    "enclosure": {
+      "evening": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "morning": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "day": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "night": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }
+    }, 
+    "aviary": {
+      "evening": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "morning": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "day": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "night": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }
+    }, 
+    "farm": {
+      "evening": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "morning": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "day": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "night": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }
+    }, 
+    "playground": {
+      "evening": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "morning": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "day": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "night": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }
+    }, 
+    "playa": {
+      "evening": {
+        "sun": [
+          "7"
+        ], 
+        "cloud": [
+          "7", 
+          "8", 
+          "9"
+        ], 
+        "rain": [
+          "7", 
+          "8", 
+          "9"
+        ]
+      }, 
+      "morning": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "day": {
+        "sun": [
+          "7"
+        ], 
+        "cloud": [
+          "7", 
+          "8"
+        ], 
+        "rain": [
+          "7", 
+          "8"
+        ]
+      }, 
+      "night": {
+        "sun": [
+          "7"
+        ], 
+        "cloud": [
+          "7", 
+          "8", 
+          "9"
+        ], 
+        "rain": [
+          "7", 
+          "8", 
+          "9"
+        ]
+      }
+    }, 
+    "commercial": {
+      "evening": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "morning": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "day": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "night": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }
+    }, 
+    "groyne": {
+      "evening": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "morning": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "day": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "night": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }
+    }, 
+    "water": {
+      "evening": {
+        "sun": [
+          "7"
+        ], 
+        "cloud": [
+          "7", 
+          "8", 
+          "9"
+        ], 
+        "rain": [
+          "7", 
+          "8", 
+          "9"
+        ]
+      }, 
+      "morning": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "day": {
+        "sun": [
+          "7"
+        ], 
+        "cloud": [
+          "7", 
+          "8"
+        ], 
+        "rain": [
+          "7", 
+          "8"
+        ]
+      }, 
+      "night": {
+        "sun": [
+          "7"
+        ], 
+        "cloud": [
+          "7", 
+          "8", 
+          "9"
+        ], 
+        "rain": [
+          "7", 
+          "8", 
+          "9"
+        ]
+      }
+    }, 
+    "aquarium": {
+      "evening": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "morning": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "day": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "night": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }
+    }, 
+    "park or protected land": {
+      "evening": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "morning": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "day": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "night": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }
+    }, 
+    "substation": {
+      "evening": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "morning": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "day": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "night": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }
+    }, 
+    "stone": {
+      "evening": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "morning": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "day": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "night": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }
+    }, 
+    "farmland": {
+      "evening": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "morning": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "day": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "night": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }
+    }, 
+    "footway": {
+      "evening": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "morning": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "day": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "night": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }
+    }, 
+    "roller_coaster": {
+      "evening": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "morning": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "day": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "night": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }
+    }, 
+    "amusement_ride": {
+      "evening": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "morning": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "day": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "night": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }
+    }, 
+    "military": {
+      "evening": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "morning": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "day": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "night": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }
+    }, 
+    "railway": {
+      "evening": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "morning": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "day": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "night": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }
+    }, 
+    "retail": {
+      "evening": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "morning": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "day": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "night": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }
+    }, 
+    "industrial": {
+      "evening": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "morning": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "day": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "night": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }
+    }, 
+    "breakwater": {
+      "evening": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "morning": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "day": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "night": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }
+    }, 
+    "national_park": {
+      "evening": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "morning": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "day": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "night": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }
+    }, 
+    "water_park": {
+      "evening": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "morning": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "day": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "night": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }
+    }, 
+    "resort": {
+      "evening": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "morning": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "day": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "night": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }
+    }, 
+    "trail_riding_station": {
+      "evening": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "morning": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "day": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "night": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }
+    }, 
+    "hospital": {
+      "evening": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "morning": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "day": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "night": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }
+    }, 
+    "stadium": {
+      "evening": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "morning": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "day": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "night": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }
+    }, 
+    "maze": {
+      "evening": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "morning": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "day": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "night": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }
+    }, 
+    "basin": {
+      "evening": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "morning": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "day": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "night": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }
+    }, 
+    "wilderness_hut": {
+      "evening": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "morning": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "day": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "night": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }
+    }, 
+    "urban": {
+      "evening": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "morning": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "day": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "night": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }
+    }, 
+    "carousel": {
+      "evening": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "morning": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "day": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "night": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }
+    }, 
+    "quarry": {
+      "evening": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "morning": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "day": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "night": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }
+    }, 
+    "park": {
+      "evening": {
+        "sun": [
+          "4", 
+          "7", 
+          "13", 
+          "16", 
+          "17", 
+          "18", 
+          "19", 
+          "21", 
+          "23", 
+          "24", 
+          "26"
+        ], 
+        "cloud": [
+          "7", 
+          "13", 
+          "16", 
+          "17", 
+          "18", 
+          "19", 
+          "20", 
+          "21", 
+          "23", 
+          "24", 
+          "26"
+        ], 
+        "rain": [
+          "7", 
+          "16", 
+          "19", 
+          "20"
+        ]
+      }, 
+      "morning": {
+        "sun": [
+          "1", 
+          "2", 
+          "10", 
+          "12", 
+          "16", 
+          "17", 
+          "18", 
+          "19", 
+          "21", 
+          "23", 
+          "24", 
+          "26"
+        ], 
+        "cloud": [
+          "1", 
+          "10", 
+          "16", 
+          "17", 
+          "18", 
+          "19", 
+          "20", 
+          "21", 
+          "23", 
+          "24", 
+          "26"
+        ], 
+        "rain": [
+          "16", 
+          "19", 
+          "20"
+        ]
+      }, 
+      "day": {
+        "sun": [
+          "1", 
+          "2", 
+          "4", 
+          "7", 
+          "10", 
+          "12", 
+          "13", 
+          "16", 
+          "17", 
+          "18", 
+          "21", 
+          "23", 
+          "24", 
+          "26"
+        ], 
+        "cloud": [
+          "1", 
+          "7", 
+          "10", 
+          "13", 
+          "16", 
+          "17", 
+          "18", 
+          "21", 
+          "23", 
+          "24", 
+          "26"
+        ], 
+        "rain": [
+          "7", 
+          "16"
+        ]
+      }, 
+      "night": {
+        "sun": [
+          "4", 
+          "7", 
+          "13", 
+          "16", 
+          "17", 
+          "18", 
+          "19", 
+          "26"
+        ], 
+        "cloud": [
+          "7", 
+          "13", 
+          "16", 
+          "17", 
+          "18", 
+          "19", 
+          "20", 
+          "26"
+        ], 
+        "rain": [
+          "7", 
+          "16", 
+          "19", 
+          "20"
+        ]
+      }
+    }, 
+    "fuel": {
+      "evening": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "morning": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "day": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "night": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }
+    }, 
+    "water_works": {
+      "evening": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "morning": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "day": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "night": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }
+    }, 
+    "farmyard": {
+      "evening": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "morning": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "day": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "night": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }
+    }, 
+    "hanami": {
+      "evening": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "morning": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "day": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "night": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }
+    }, 
+    "fort": {
+      "evening": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "morning": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "day": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "night": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }
+    }, 
+    "dog_park": {
+      "evening": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "morning": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "day": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "night": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }
+    }, 
+    "village_green": {
+      "evening": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "morning": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "day": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "night": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }
+    }, 
+    "theme_park": {
+      "evening": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "morning": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "day": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "night": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }
+    }, 
+    "runway": {
+      "evening": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "morning": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "day": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "night": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }
+    }, 
+    "summer_toboggan": {
+      "evening": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "morning": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "day": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "night": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }
+    }, 
+    "winery": {
+      "evening": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "morning": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "day": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "night": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }
+    }, 
+    "wetland": {
+      "evening": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "morning": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "day": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "night": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }
+    }, 
+    "grass": {
+      "evening": {
+        "sun": [
+          "13", 
+          "16", 
+          "17", 
+          "18", 
+          "19", 
+          "21", 
+          "22", 
+          "23", 
+          "26"
+        ], 
+        "cloud": [
+          "13", 
+          "16", 
+          "17", 
+          "18", 
+          "19", 
+          "20", 
+          "21", 
+          "22", 
+          "23", 
+          "26"
+        ], 
+        "rain": [
+          "16", 
+          "19", 
+          "20"
+        ]
+      }, 
+      "morning": {
+        "sun": [
+          "1", 
+          "2", 
+          "10", 
+          "12", 
+          "16", 
+          "17", 
+          "18", 
+          "19", 
+          "21", 
+          "22", 
+          "23", 
+          "26"
+        ], 
+        "cloud": [
+          "1", 
+          "10", 
+          "16", 
+          "17", 
+          "18", 
+          "19", 
+          "20", 
+          "21", 
+          "22", 
+          "23", 
+          "26"
+        ], 
+        "rain": [
+          "16", 
+          "19", 
+          "20"
+        ]
+      }, 
+      "day": {
+        "sun": [
+          "1", 
+          "2", 
+          "3", 
+          "10", 
+          "12", 
+          "13", 
+          "16", 
+          "17", 
+          "18", 
+          "21", 
+          "22", 
+          "23", 
+          "26"
+        ], 
+        "cloud": [
+          "1", 
+          "10", 
+          "13", 
+          "16", 
+          "17", 
+          "18", 
+          "21", 
+          "22", 
+          "23", 
+          "26"
+        ], 
+        "rain": [
+          "16"
+        ]
+      }, 
+      "night": {
+        "sun": [
+          "13", 
+          "16", 
+          "17", 
+          "18", 
+          "19", 
+          "26"
+        ], 
+        "cloud": [
+          "13", 
+          "16", 
+          "17", 
+          "18", 
+          "19", 
+          "20", 
+          "26"
+        ], 
+        "rain": [
+          "16", 
+          "19", 
+          "20"
+        ]
+      }
+    }, 
+    "urban area": {
+      "evening": {
+        "sun": [
+          "4", 
+          "5", 
+          "16", 
+          "17", 
+          "19", 
+          "21", 
+          "26"
+        ], 
+        "cloud": [
+          "16", 
+          "17", 
+          "19", 
+          "21", 
+          "26"
+        ], 
+        "rain": [
+          "16", 
+          "19"
+        ]
+      }, 
+      "morning": {
+        "sun": [
+          "16", 
+          "17", 
+          "19", 
+          "21", 
+          "26"
+        ], 
+        "cloud": [
+          "16", 
+          "17", 
+          "19", 
+          "21", 
+          "26"
+        ], 
+        "rain": [
+          "16", 
+          "19"
+        ]
+      }, 
+      "day": {
+        "sun": [
+          "4", 
+          "5", 
+          "16", 
+          "17", 
+          "21", 
+          "26"
+        ], 
+        "cloud": [
+          "16", 
+          "17", 
+          "21", 
+          "26"
+        ], 
+        "rain": [
+          "16"
+        ]
+      }, 
+      "night": {
+        "sun": [
+          "4", 
+          "5", 
+          "16", 
+          "17", 
+          "19", 
+          "26"
+        ], 
+        "cloud": [
+          "16", 
+          "17", 
+          "19", 
+          "26"
+        ], 
+        "rain": [
+          "16", 
+          "19"
+        ]
+      }
+    }, 
+    "bridge": {
+      "evening": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "morning": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "day": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "night": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }
+    }, 
+    "cinema": {
+      "evening": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "morning": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "day": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "night": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }
+    }, 
+    "allotments": {
+      "evening": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "morning": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "day": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "night": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }
+    }, 
+    "taxiway": {
+      "evening": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "morning": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "day": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "night": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }
+    }, 
+    "wastewater_plant": {
+      "evening": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "morning": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "day": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "night": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }
+    }, 
+    "pedestrian": {
+      "evening": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "morning": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "day": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "night": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }
+    }, 
+    "winter_sports": {
+      "evening": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "morning": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "day": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "night": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }
+    }, 
+    "petting_zoo": {
+      "evening": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "morning": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "day": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "night": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }
+    }, 
+    "glacier": {
+      "evening": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "morning": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "day": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "night": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }
+    }, 
+    "zoo": {
+      "evening": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "morning": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "day": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "night": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }
+    }, 
+    "caravan_site": {
+      "evening": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "morning": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "day": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "night": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }
+    }, 
+    "scree": {
+      "evening": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "morning": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "day": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "night": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }
+    }, 
+    "forest": {
+      "evening": {
+        "sun": [
+          "13", 
+          "21", 
+          "22", 
+          "23", 
+          "24"
+        ], 
+        "cloud": [
+          "13", 
+          "21", 
+          "22", 
+          "23", 
+          "24"
+        ], 
+        "rain": []
+      }, 
+      "morning": {
+        "sun": [
+          "1", 
+          "2", 
+          "10", 
+          "21", 
+          "22", 
+          "23", 
+          "24"
+        ], 
+        "cloud": [
+          "1", 
+          "10", 
+          "21", 
+          "22", 
+          "23", 
+          "24"
+        ], 
+        "rain": []
+      }, 
+      "day": {
+        "sun": [
+          "1", 
+          "2", 
+          "3", 
+          "10", 
+          "13", 
+          "21", 
+          "22", 
+          "23", 
+          "24"
+        ], 
+        "cloud": [
+          "1", 
+          "10", 
+          "13", 
+          "21", 
+          "22", 
+          "23", 
+          "24"
+        ], 
+        "rain": []
+      }, 
+      "night": {
+        "sun": [
+          "13"
+        ], 
+        "cloud": [
+          "13"
+        ], 
+        "rain": []
+      }
+    }, 
+    "animal": {
+      "evening": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "morning": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "day": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "night": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }
+    }, 
+    "beach": {
+      "evening": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "morning": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "day": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "night": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }
+    }, 
+    "water_slide": {
+      "evening": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "morning": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "day": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "night": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }
+    }, 
+    "plant": {
+      "evening": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "morning": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "day": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "night": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }
+    }, 
+    "scrub": {
+      "evening": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "morning": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "day": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "night": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }
+    }, 
+    "theatre": {
+      "evening": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "morning": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "day": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "night": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }
+    }, 
+    "wildlife_park": {
+      "evening": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "morning": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "day": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "night": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }
+    }, 
+    "picnic_site": {
+      "evening": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "morning": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "day": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "night": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }
+    }, 
+    "aerodrome": {
+      "evening": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "morning": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "day": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "night": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }
+    }, 
+    "land": {
+      "evening": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "morning": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "day": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "night": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }
+    }, 
+    "recreation_track": {
+      "evening": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "morning": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "day": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "night": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }
+    }, 
+    "ocean": {
+      "evening": {
+        "sun": [
+          "7"
+        ], 
+        "cloud": [
+          "7", 
+          "8", 
+          "9"
+        ], 
+        "rain": [
+          "7", 
+          "8", 
+          "9"
+        ]
+      }, 
+      "morning": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "day": {
+        "sun": [
+          "7"
+        ], 
+        "cloud": [
+          "7", 
+          "8"
+        ], 
+        "rain": [
+          "7", 
+          "8"
+        ]
+      }, 
+      "night": {
+        "sun": [
+          "7"
+        ], 
+        "cloud": [
+          "7", 
+          "8", 
+          "9"
+        ], 
+        "rain": [
+          "7", 
+          "8", 
+          "9"
+        ]
+      }
+    }, 
+    "swimming_pool": {
+      "evening": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "morning": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "day": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "night": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }
+    }, 
+    "rural": {
+      "evening": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "morning": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "day": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }, 
+      "night": {
+        "sun": [], 
+        "cloud": [], 
+        "rain": []
+      }
+    }
+  }, 
+  {
+    "evening": {
+      "sun": [
+        "4", 
+        "7", 
+        "13", 
+        "16", 
+        "19", 
+        "21", 
+        "23", 
+        "26"
+      ], 
+      "cloud": [
+        "7", 
+        "13", 
+        "16", 
+        "19", 
+        "20", 
+        "21", 
+        "23", 
+        "26"
+      ], 
+      "rain": [
+        "7", 
+        "16", 
+        "19", 
+        "20"
+      ]
+    }, 
+    "morning": {
+      "sun": [
+        "1", 
+        "10", 
+        "16", 
+        "19", 
+        "21", 
+        "23", 
+        "26"
+      ], 
+      "cloud": [
+        "1", 
+        "10", 
+        "16", 
+        "19", 
+        "20", 
+        "21", 
+        "23", 
+        "26"
+      ], 
+      "rain": [
+        "16", 
+        "19", 
+        "20"
+      ]
+    }, 
+    "day": {
+      "sun": [
+        "1", 
+        "4", 
+        "7", 
+        "10", 
+        "13", 
+        "16", 
+        "21", 
+        "23", 
+        "26"
+      ], 
+      "cloud": [
+        "1", 
+        "7", 
+        "10", 
+        "13", 
+        "16", 
+        "21", 
+        "23", 
+        "26"
+      ], 
+      "rain": [
+        "7", 
+        "16"
+      ]
+    }, 
+    "night": {
+      "sun": [
+        "4", 
+        "7", 
+        "13", 
+        "16", 
+        "19", 
+        "26"
+      ], 
+      "cloud": [
+        "7", 
+        "13", 
+        "16", 
+        "19", 
+        "20", 
+        "26"
+      ], 
+      "rain": [
+        "7", 
+        "16", 
+        "19", 
+        "20"
+      ]
+    }
+  }
+]

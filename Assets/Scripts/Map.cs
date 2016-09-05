@@ -9,7 +9,7 @@ public class Map : MonoBehaviour {
     private Vector2? FirstPosition;
     private int lastTileX = 0;
     private int lastTileY = 0;
-
+    private Spawner spawner;
     /*
      * This will load the tiles dynamically
      * according to the player's geolocation
@@ -18,8 +18,15 @@ public class Map : MonoBehaviour {
     void FixedUpdate()
     {
         UpdateTiles();
-    }
 
+    }
+    void Start()
+    {
+        UpdateTiles();
+        GameObject obj = new GameObject("Spawner");
+        spawner = obj.AddComponent<Spawner>();
+        spawner.startRunning();
+    }
     void UpdateTiles()
     {
         // make sure location is initialized
@@ -51,15 +58,21 @@ public class Map : MonoBehaviour {
         }
 
         // Remove old tiles
-        foreach (var item in TileSet) {
-            if (tiles.IndexOf(item.Key) == -1) {
-
-                // Destroy the tile
-                Destroy(item.Value);
-
-                // Remove it from the active TileSet
-                TileSet.Remove(item.Key);
+        LinkedList<KeyValuePair<Vector2, GameObject>> toDestroy = new LinkedList<KeyValuePair<Vector2, GameObject>>();
+        foreach (var item in TileSet)
+        {
+            if (tiles.IndexOf(item.Key) == -1)
+            {
+                toDestroy.AddLast(item);
             }
+        }
+        foreach (var item in toDestroy)
+        {
+            // Destroy the tile
+            Destroy(item.Value);
+
+            // Remove it from the active TileSet
+            TileSet.Remove(item.Key);
         }
 
         // Add new tiles
@@ -81,7 +94,7 @@ public class Map : MonoBehaviour {
                     0,
                     ((tile.y - FirstPosition.Value.y) * 100)
                 );
-
+                Vector2 pos = TileToWorldCoords((int)tile.x, (int)tile.y);
                 // Add the tile to the tileset dictionary
                 TileSet.Add(tile, obj);
             }

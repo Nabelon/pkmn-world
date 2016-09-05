@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using SimpleJSON;
+using UnityEngine;
 namespace LanduseManager
 {
 
@@ -154,7 +155,7 @@ namespace LanduseManager
                 //check if node is in item
                 if (item.left < leftB && item.top > topB && item.right > rightB && item.bottom < bottomB)
                 {
-                    landuses.Add(item.landuseId); 
+                    landuses.Add(item.landuseId);
                     continue;
                 }
                 //Which of the sub-quadrants does the item overlap?
@@ -162,7 +163,7 @@ namespace LanduseManager
                 bool in_sw = (item.left <= cx && item.bottom <= cy);
                 bool in_ne = (item.right >= cx && item.top >= cy);
                 bool in_se = (item.right >= cx && item.bottom <= cy);
-                
+
                 if (in_nw) { nw_items.Add(item); }
                 if (in_ne) { ne_items.Add(item); }
                 if (in_se) { se_items.Add(item); }
@@ -171,23 +172,23 @@ namespace LanduseManager
             //Create the sub-quadrants, recursively.
             if (nw_items.Count > 0)
             {
-                if (nw == null){nw = new Quadtree(nw_items, depth, leftB, topB, cx, cy);}
-                else {nw.insertItems(nw_items, depth, leftB, topB, cx, cy);}
+                if (nw == null) { nw = new Quadtree(nw_items, depth, leftB, topB, cx, cy); }
+                else { nw.insertItems(nw_items, depth, leftB, topB, cx, cy); }
             }
             if (ne_items.Count > 0)
             {
-                if (ne == null) { ne = new Quadtree(ne_items, depth, cx, topB, rightB, cy);}
-                else {ne.insertItems(ne_items, depth, cx, topB, rightB, cy);}
+                if (ne == null) { ne = new Quadtree(ne_items, depth, cx, topB, rightB, cy); }
+                else { ne.insertItems(ne_items, depth, cx, topB, rightB, cy); }
             }
             if (se_items.Count > 0)
             {
-                if (se == null) {se = new Quadtree(se_items, depth, cx, cy, rightB, bottomB);}
-                else  {  se.insertItems(se_items, depth, cx, cy, rightB, bottomB);}
+                if (se == null) { se = new Quadtree(se_items, depth, cx, cy, rightB, bottomB); }
+                else { se.insertItems(se_items, depth, cx, cy, rightB, bottomB); }
             }
             if (sw_items.Count > 0)
             {
-                if (sw == null)  { sw = new Quadtree(sw_items, depth, leftB, cy, cx, bottomB);}
-                else  {  sw.insertItems(sw_items, depth, leftB, cy, cx, bottomB);  }
+                if (sw == null) { sw = new Quadtree(sw_items, depth, leftB, cy, cx, bottomB); }
+                else { sw.insertItems(sw_items, depth, leftB, cy, cx, bottomB); }
             }
         }
         //get landuse on position x,y
@@ -204,7 +205,7 @@ namespace LanduseManager
             if (ne != null && x >= cx && y >= cy) { lowerHits.AddRange(ne.hit(x, y)); }
             if (se != null && x >= cx && y <= cy) { lowerHits.AddRange(se.hit(x, y)); }
 
-            
+
             foreach (int i in lowerHits)
             {
                 if (!hits.Contains(i)) hits.Add(i);
@@ -226,7 +227,7 @@ namespace LanduseManager
             List<Item> tmpList = new List<Item>();
             foreach (Item item in items)
             {
-                if(leftB > item.right || rightB < item.left || topB < item.bottom && bottomB > item.top)
+                if (leftB > item.right || rightB < item.left || topB < item.bottom && bottomB > item.top)
                 {
                     //item outside
                     continue;
@@ -264,7 +265,7 @@ namespace LanduseManager
 
     //stores multiple trees, replaces old ones with new ones
     //redirects landuse call to a tree
-    class LanduseManager
+    public class LanduseManager
     {
         int zoomSmall, zoomBig, maxTreesStored, treeDepth;
         Dictionary<string, Tuple<System.DateTime, QuadtreeRoot>> trees; //find the currently needed tree and find the oldest to for deleting
@@ -308,12 +309,14 @@ namespace LanduseManager
             }
             return tree.hit(lng, lat);
         }
-        private List<float[][]> polyToRecs(JSONNode poly) {
+        private List<float[][]> polyToRecs(JSONNode poly)
+        {
             List<float[][]> recs = new List<float[][]>();
             //create a rectangle for every triangle in polygon,  inefficent, should be changed
-            for (int i = 1; i < poly.Count - 1; i++) {
-                var format = System.Globalization.CultureInfo.InvariantCulture.NumberFormat;    
-                float lowLat = Math.Min(float.Parse(poly[i - 1][0].ToString().Replace("\"", ""),format), Math.Min(float.Parse(poly[i][0].ToString().Replace("\"", ""), format), float.Parse(poly[i + 1][0].ToString().Replace("\"", ""), format)));
+            for (int i = 1; i < poly.Count - 1; i++)
+            {
+                var format = System.Globalization.CultureInfo.InvariantCulture.NumberFormat;
+                float lowLat = Math.Min(float.Parse(poly[i - 1][0].ToString().Replace("\"", ""), format), Math.Min(float.Parse(poly[i][0].ToString().Replace("\"", ""), format), float.Parse(poly[i + 1][0].ToString().Replace("\"", ""), format)));
                 float upLat = Math.Max(float.Parse(poly[i - 1][0].ToString().Replace("\"", ""), format), Math.Max(float.Parse(poly[i][0].ToString().Replace("\"", ""), format), float.Parse(poly[i + 1][0].ToString().Replace("\"", ""), format)));
                 float lowLon = Math.Min(float.Parse(poly[i - 1][1].ToString().Replace("\"", ""), format), Math.Min(float.Parse(poly[i][1].ToString().Replace("\"", ""), format), float.Parse(poly[i + 1][1].ToString().Replace("\"", ""), format)));
                 float upLon = Math.Max(float.Parse(poly[i - 1][1].ToString().Replace("\"", ""), format), Math.Max(float.Parse(poly[i][1].ToString().Replace("\"", ""), format), float.Parse(poly[i + 1][1].ToString().Replace("\"", ""), format)));
@@ -378,21 +381,22 @@ namespace LanduseManager
             }
             return items;
         }
-        
+
         //later this should have a better api call and save data local
         private JSONNode getTileData(string layer, int xTile, int yTile, int zoom)
         {
-            Console.WriteLine("Trying to download from:");
-            Console.WriteLine("http://vector.mapzen.com/osm/" + layer + "/" +
-                            Convert.ToString(zoom) + "/" + Convert.ToString(xTile) + "/" + Convert.ToString(yTile) + ".json?api_key=vector-tiles-vx5RUiN");
-            System.Net.WebClient client = new System.Net.WebClient();
-            string downloadString = client.DownloadString("http://vector.mapzen.com/osm/" + layer + "/" +
-                            Convert.ToString(zoom) + "/" + Convert.ToString(xTile) + "/" + Convert.ToString(yTile) + ".json?api_key=vector-tiles-vx5RUiN");
+            string url = "http://vector.mapzen.com/osm/" + layer + "/" +
+                            Convert.ToString(zoom) + "/" + Convert.ToString(xTile) + "/" + Convert.ToString(yTile) + ".json?api_key=vector-tiles-vx5RUiN";
+            // Create the request and wait for a response
+            // Create the request and wait for a response
+            WWW request = new WWW(url);
+            while (!request.isDone)
+            {
+                System.Threading.Thread.Sleep(100);
+            }
 
             // Parse response into the SimpleJSON format
-            JSONNode response = JSON.Parse(downloadString);
-            Console.WriteLine("download done");
-
+            JSONNode response = JSON.Parse(request.text);
             return response;
         }
         private Point WorldToTilePos(double lon, double lat, int zoom)

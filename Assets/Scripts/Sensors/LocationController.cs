@@ -13,6 +13,7 @@ public class LocationController : MonoBehaviour
 	public LocationServiceStatus mockStatus = LocationServiceStatus.Running;
 	public float mockLatitude = 47.5657951f;
 	public float mockLongitude = -122.2769933f;
+    public float speed = 0.0002f;
 
 	private static LocationServiceStatus _mockStatus;
 	private static float _mockLatitude;
@@ -52,7 +53,10 @@ public class LocationController : MonoBehaviour
 
 	void Update()
 	{
-		_mockStatus = mockStatus;
+        mockLongitude += Input.GetAxis("Horizontal") * speed;
+        mockLatitude += Input.GetAxis("Vertical") * speed;
+
+        _mockStatus = mockStatus;
 		_mockLatitude = mockLatitude;
 		_mockLongitude = mockLongitude;
 	}

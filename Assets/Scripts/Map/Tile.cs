@@ -22,7 +22,6 @@ public class Tile : MonoBehaviour
      */
     void Start ()
     {
-
         BoundingBox = new CoordBoundingBox ((int)Position.x, (int)Position.y);
 
         // TODO: loading indicator

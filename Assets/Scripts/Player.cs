@@ -38,7 +38,7 @@ public class Player : MonoBehaviour
 		// calculate our position on the map
 		CoordBoundingBox bounds = tile.BoundingBox;
 		Vector2 interpolatedPos = bounds.Interpolate(lastLoc.latitude, lastLoc.longitude);
-		Vector3 newPos = new Vector3(interpolatedPos.x, transform.position.y, interpolatedPos.y);
+		Vector3 newPos = new Vector3(interpolatedPos.x + tile.WorldPosition.x, transform.position.y, interpolatedPos.y + tile.WorldPosition.z);
 		// TODO: hack, issue #17
 		newPos.x = -newPos.x;
 
@@ -51,4 +51,11 @@ public class Player : MonoBehaviour
 
 		prevPos = transform.position;
 	}
+    void OnColliderEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("MapMonster"))
+        {
+            other.gameObject.SetActive(false);
+        }
+    }
 }
