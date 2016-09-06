@@ -41,12 +41,11 @@ public class Spawner : MonoBehaviour {
         Vector3 pos = new Vector3(interpolatedPos.x + tile.WorldPosition.x, 0.002f, interpolatedPos.y + tile.WorldPosition.z);
         // TODO: hack, issue #17
         pos.x = -pos.x;
-        GameObject monster = getMonster(lat, lng);
-        monster.transform.parent = GameObject.Find("Spawner").transform;
-        monster.transform.position = pos;
+        map.Monster monster = getMonster(lat, lng);
+        GameObject.FindObjectOfType<Map>().Spawn(monster, lat, lng);
         return true;
     }
-    private GameObject getMonster(float lat, float lng)
+    private map.Monster getMonster(float lat, float lng)
     {
         MonsterInfo info = MonsterInfo.getMonsterInfo();
         List<string> landuses = landuseManager.getLanduse(lat, lng);
@@ -55,13 +54,16 @@ public class Spawner : MonoBehaviour {
         string time = weatherCon.getTime();
         string weather = weatherCon.getWeather(lat,lng);
         Debug.Log(time + "  " + weather);
+        string landusesS = "";
         foreach (string landuse in landuses)
         {
+            landusesS += landuse + " ";
             for (int i = 0; i < info.spawns[0][landuse][time][weather].Count; i++)
             {
                 monsterIds.Add(info.spawns[0][landuse][time][weather][i]);
             }
-        } 
+        }
+        Debug.Log(landusesS);
         if (monsterIds.Count < 3)
         {
             for (int i = 0; i < info.spawns[1][time][weather].Count; i++)
@@ -70,11 +72,11 @@ public class Spawner : MonoBehaviour {
             }
         }
         GameObject obj = GameObject.CreatePrimitive(PrimitiveType.Sphere);
-        MapMonster monster = obj.AddComponent<MapMonster>();
+        map.Monster monster = obj.AddComponent<map.Monster>();
         monster.initiate(monsterIds[(int)Random.Range(0, monsterIds.Count)]);
         obj.GetComponent<Renderer>().material.color = monster.color;
-        obj.tag = "MapMonster";
+        //obj.tag = "MapMonster";
         
-        return obj;
+        return monster;
     }
 }

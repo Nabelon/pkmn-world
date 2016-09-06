@@ -109,7 +109,7 @@ public class Map : MonoBehaviour {
      * Spawns a monster on the map. It will add the monster as a child
      * to the Tile it tries to spawn on.
      */
-    public void Spawn (Monster monster, float latitude, float longitude) {
+    public void Spawn (map.Monster monster, float latitude, float longitude) {
         Vector2 tileCoords = Map.WorldToTileCoords(latitude, longitude);
 
         // Don't spawn if the tile is not in our active set

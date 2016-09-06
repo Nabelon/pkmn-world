@@ -36,12 +36,12 @@ public class WeatherControler{
             }
             // Parse response into the SimpleJSON format
             JSONNode response = JSON.Parse(request.text);
-            string tmpW = response["weather"]["main"];
-            if (tmpW == "clear sky" || tmpW == "few clouds")
+            string tmpW = response["weather"][0]["main"].ToString();
+            if (tmpW == "\"Clear\"" )
             {
                 weather = "sun";
             }
-            else if (tmpW == "cattered clouds" || tmpW == "broken clouds" || tmpW == "mist")
+            else if (tmpW.Equals("\"Clouds\""))
             {
                 weather = "cloud";
             }
