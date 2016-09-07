@@ -14,8 +14,8 @@ namespace bag
             monsterList.Add(m);
             GameObject b = (GameObject)Object.Instantiate (Resources.Load("Prefabs/MonsterButton"));
             b.transform.FindChild("Text").GetComponent<UnityEngine.UI.Text>().text = m.name;
-            Sprite mTex = (Sprite)Resources.Load<Sprite>("Assets/Resources/MonsterData/icons/" + m.id + ".png");
-            b.transform.FindChild("Image").GetComponent<UnityEngine.UI.Image>().sprite = mTex;
+            Sprite sprite = (Sprite)Resources.Load<Sprite>("MonsterData/icons/" + m.id);
+            b.transform.FindChild("Image").GetComponent<UnityEngine.UI.Image>().overrideSprite = sprite;
             b.transform.SetParent(monsterPanel.transform);
 
         }
