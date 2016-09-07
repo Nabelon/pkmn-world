@@ -31,31 +31,22 @@ public class Spawner : MonoBehaviour {
     }
     public bool spawn(float lat, float lng)
     {
-        // get the tile we will spawn
-        Vector2 tileCoords = Map.WorldToTileCoords(lat, lng);
-        Tile tile = GameObject.FindObjectsOfType<Tile>().Where((_tile) =>
-        {
-            // check if x and y are the same as the tile player is on
-            return _tile.Position.x == tileCoords.x && _tile.Position.y == tileCoords.y;
-        }).First();
-        // calculate position on the map
-        CoordBoundingBox bounds = new CoordBoundingBox((int) tileCoords.x, (int)tileCoords.y);
-        Vector2 interpolatedPos = bounds.Interpolate(lat, lng);
-        Vector3 pos = new Vector3(interpolatedPos.x + tile.WorldPosition.x, 0.002f, interpolatedPos.y + tile.WorldPosition.z);
-        // TODO: hack, issue #17
-        pos.x = -pos.x;
         map.Monster monster = getMonster(lat, lng);
+        if (monster == null) return false;
         GameObject.FindObjectOfType<Map>().Spawn(monster, lat, lng);
         return true;
     }
     private map.Monster getMonster(float lat, float lng)
     {
+
         MonsterInfo info = MonsterInfo.getMonsterInfo();
         List<string> landuses = landuseManager.getLanduse(lat, lng);
         List<string> monsterIds = new List<string>();
         WeatherControler weatherCon = WeatherControler.getWeatherControler();
         string time = weatherCon.getTime();
         string weather = weatherCon.getWeather(lat,lng);
+        if (weather == null || landuses == null) return null;
+
         foreach (string landuse in landuses)
         {
             for (int i = 0; i < info.spawns[0][landuse][time][weather].Count; i++)
@@ -70,11 +61,14 @@ public class Spawner : MonoBehaviour {
                 monsterIds.Add(info.spawns[1][time][weather][i]);
             }
         }
+        GameObject.Find("MonsterDex").transform.FindChild("Text").GetComponent<UnityEngine.UI.Text>().text = "wow";
         GameObject obj = GameObject.CreatePrimitive(PrimitiveType.Sphere);
+        GameObject.Find("MonsterDex").transform.FindChild("Text").GetComponent<UnityEngine.UI.Text>().text = "SPHERE SUCKSSSSSSS";
+        obj.AddComponent<Animation>();
+        obj.AddComponent<MeshCollider>();
         map.Monster monster = obj.AddComponent<map.Monster>();
         monster.initiate(monsterIds[(int)Random.Range(0, monsterIds.Count)]);
         obj.GetComponent<Renderer>().material.color = monster.color;
-        //obj.tag = "MapMonster";
         
         return monster;
     }

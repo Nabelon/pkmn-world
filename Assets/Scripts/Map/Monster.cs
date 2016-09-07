@@ -15,45 +15,49 @@ namespace map
             switch (type)
             {
                 case "fire":
-                    color = new Color(255, 82, 0); break;
+                    color = toColor(255, 82, 0); break;
                 case "water":
-                    color = new Color(0, 115, 255); break;
+                    color = toColor(0, 115, 255); break;
                 case "grass":
-                    color = new Color(91, 255, 0); break;
+                    color = toColor(91, 255, 0); break;
                 case "normal":
-                    color = new Color(255, 255, 255); break;
+                    color = toColor(255, 255, 255); break;
                 case "fighting":
-                    color = new Color(132, 20, 20); break;
+                    color = toColor(132, 20, 20); break;
                 case "flying":
-                    color = new Color(187, 161, 204); break;
+                    color = toColor(187, 161, 204); break;
                 case "poison":
-                    color = new Color(125, 38, 182); break;
+                    color = toColor(125, 38, 182); break;
                 case "electric":
-                    color = new Color(182, 171, 38); break;
+                    color = toColor(182, 171, 38); break;
                 case "ground":
-                    color = new Color(118, 113, 52); break;
+                    color = toColor(118, 113, 52); break;
                 case "psychic":
-                    color = new Color(238, 40, 245); break;
+                    color = toColor(238, 40, 245); break;
                 case "rock":
-                    color = new Color(86, 80, 4); break;
+                    color = toColor(86, 80, 4); break;
                 case "ice":
-                    color = new Color(125, 229, 229); break;
+                    color = toColor(125, 229, 229); break;
                 case "bug":
-                    color = new Color(111, 159, 68); break;
+                    color = toColor(111, 159, 68); break;
                 case "dragon":
-                    color = new Color(55, 36, 111); break;
+                    color = toColor(55, 36, 111); break;
                 case "ghost":
-                    color = new Color(91, 71, 156); break;
+                    color = toColor(91, 71, 156); break;
                 case "dark":
-                    color = new Color(71, 13, 13); break;
+                    color = toColor(71, 13, 13); break;
                 case "steel":
-                    color = new Color(94, 94, 94); break;
+                    color = toColor(94, 94, 94); break;
                 case "fairy":
-                    color = new Color(202, 122, 223); break;
+                    color = toColor(202, 122, 223); break;
                 default:
-                    color = new Color(0, 0, 0);
+                    color = toColor(0, 0, 0);
                     break;
             }
+        }
+        private Color toColor(int r, int g, int b)
+        {
+            return new Color(r / 255.0f, g / 255.0f, b / 255.0f);
         }
         void Update()
         {

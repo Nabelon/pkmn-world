@@ -2,8 +2,6 @@
 using System.Collections;
 using SimpleJSON;
 public class MonsterInfo {
-    private string MONSTERFILE = "\\Resources\\MonsterData\\monster.json";
-    private string MONSTERSPAWNFILE = "\\Resources\\MonsterData\\encounters.json";
     private static MonsterInfo monsterInfo;
     public JSONNode info;
     public JSONNode spawns;
@@ -14,7 +12,7 @@ public class MonsterInfo {
     }
     private MonsterInfo()
     {
-        info = JSON.Parse(System.IO.File.ReadAllText(Application.dataPath + MONSTERFILE));
-        spawns = JSON.Parse(System.IO.File.ReadAllText(Application.dataPath + MONSTERSPAWNFILE));
+        info = JSON.Parse(Resources.Load<TextAsset>("MonsterData/monster").ToString());
+        spawns = JSON.Parse(Resources.Load<TextAsset>("MonsterData/encounters").ToString());
     }
 }

@@ -222,7 +222,6 @@ namespace LanduseManager
         int depth;
         public QuadtreeRoot(List<Item> items, int depth, float leftB, float topB, float rightB, float bottomB)
         {
-            Console.WriteLine("RootBounds :\nl:," + leftB.ToString() + "t:," + topB.ToString() + "r:," + rightB.ToString() + "b:," + bottomB.ToString());
             //remove Squares outside our boundaries
             List<Item> tmpList = new List<Item>();
             foreach (Item item in items)
@@ -251,9 +250,6 @@ namespace LanduseManager
             }
             else
             {
-                Console.WriteLine("Out of bounds:");
-                Console.WriteLine("l:," + leftB.ToString() + "t:," + topB.ToString() + "r:," + rightB.ToString() + "b:," + bottomB.ToString());
-                Console.WriteLine("Point: x: " + x.ToString() + ", y: " + y.ToString());
                 return new List<string>();
             }
         }
@@ -267,8 +263,10 @@ namespace LanduseManager
     //redirects landuse call to a tree
     public class LanduseManager
     {
-        private UnityEngine.Object thisLock = new UnityEngine.Object();
+        private WWW landuseRequest, waterRequest;
         int zoomSmall, zoomBig, maxTreesStored, treeDepth;
+        bool treeInBuild = false;
+        float buildingTreeLat, buildingTreeLng;
         Dictionary<string, Tuple<System.DateTime, QuadtreeRoot>> trees; //find the currently needed tree and find the oldest to for deleting
 
         public LanduseManager(int zoomSmall = 11, int zoomBig = 9, int maxTreesStored = 3, int treeDepth = 7)
@@ -281,36 +279,48 @@ namespace LanduseManager
             Point tile = WorldToTilePos(lng, lat, zoomSmall);
             string coordStr = tile.X + "," + tile.Y;
             QuadtreeRoot tree;
-            lock (thisLock)
+            if (trees.ContainsKey(coordStr))    //search for tree
             {
-                if (trees.ContainsKey(coordStr))    //search for tree
-                {
-                    tree = trees[coordStr].Item2;
-                }
-                else                                //create new tree
-                {
-                    Console.WriteLine("Creating new Tree...");
-                    tree = createTree(lat, lng, treeDepth, zoomSmall, zoomBig);
-                    trees[coordStr] = new Tuple<System.DateTime, QuadtreeRoot>(System.DateTime.Now, tree);
-                    if (trees.Count > maxTreesStored)        //remove oldest tree if we have too many
-                    {
-                        string oldestKey = "";
-                        System.DateTime oldestTime = System.DateTime.Now;
-                        foreach (KeyValuePair<string, Tuple<System.DateTime, QuadtreeRoot>> kvp in trees)
-                        {
-                            if (kvp.Value.Item1 < oldestTime)
-                            {
-
-                                oldestTime = kvp.Value.Item1;
-                                oldestKey = kvp.Key;
-                            }
-                        }
-                        if (oldestKey == "") { throw new System.ArgumentException("no key found"); }
-                        Console.WriteLine("Deleting oldest tree");
-                        trees.Remove(oldestKey);
-                    }
-                }
+                tree = trees[coordStr].Item2;
             }
+            else                                //create new tree
+            {
+                if (treeInBuild)                //finish last tree first
+                {
+                    lat = buildingTreeLat;
+                    lng = buildingTreeLng;
+                }
+                tree = createTree(lat, lng, treeDepth, zoomSmall, zoomBig);
+                if (tree == null)
+                {
+                    buildingTreeLat = lat; 
+                    buildingTreeLng = lng; 
+                    treeInBuild = true; 
+                    return null;
+                }
+                tile = WorldToTilePos(lng, lat, zoomSmall);
+                coordStr = tile.X + "," + tile.Y;
+                trees[coordStr] = new Tuple<System.DateTime, QuadtreeRoot>(System.DateTime.Now, tree);
+                if (trees.Count > maxTreesStored)        //remove oldest tree if we have too many
+                {
+                    string oldestKey = "";
+                    System.DateTime oldestTime = System.DateTime.Now;
+                    foreach (KeyValuePair<string, Tuple<System.DateTime, QuadtreeRoot>> kvp in trees)
+                    {
+                        if (kvp.Value.Item1 < oldestTime)
+                        {
+
+                            oldestTime = kvp.Value.Item1;
+                            oldestKey = kvp.Key;
+                        }
+                    }
+                    if (oldestKey == "") { throw new System.ArgumentException("no key found"); }
+                    trees.Remove(oldestKey);
+                }
+                treeInBuild = false;
+                return null;
+            }
+
             return tree.hit(lng, lat);
         }
         private List<float[][]> polyToRecs(JSONNode poly)
@@ -332,13 +342,19 @@ namespace LanduseManager
         private QuadtreeRoot createTree(float lat, float lng, int depth, int zoomSmall, int zoomBig)
         {
             Point tile = WorldToTilePos(lng, lat, zoomSmall);
-            JSONNode data = getTileData("landuse", tile.X, tile.Y, zoomSmall);  //get landuse data
+            if (landuseRequest == null || waterRequest == null)
+            {
+                landuseRequest = getTileData("landuse", tile.X, tile.Y, zoomSmall);  //get landuse data
+                waterRequest = getTileData("water", tile.X, tile.Y, zoomSmall);//get water data
+            }
+            if (!landuseRequest.isDone || !waterRequest.isDone) return null;
+            JSONNode data = JSONNode.Parse(landuseRequest.text);
+            JSONNode waterData = JSONNode.Parse(waterRequest.text);
             List<Item> items = getItemsFromJson(data);                          //get landuse items for tree
             PointF nwCorner = TileToWorldPos(tile.X, tile.Y, zoomSmall);        //find bounds for tree
             PointF seCorner = TileToWorldPos(tile.X + 1, tile.Y + 1, zoomSmall);
-            Console.WriteLine("Creating new Tree");
             QuadtreeRoot tree = new QuadtreeRoot(items, depth, nwCorner.X, nwCorner.Y, seCorner.X, seCorner.Y);     //create tree
-            tree.insertItems(getItemsFromJson(getTileData("water", tile.X, tile.Y, zoomSmall)));                    //insert water layer
+            tree.insertItems(getItemsFromJson(waterData));                    //insert water layer
             //tree.insertItems(getItemsFromJson(getTileData("landuse", tile.X, tile.Y, zoomBig)));                    //insert landuse layer with higher zoom
             return tree;
         }
@@ -387,21 +403,15 @@ namespace LanduseManager
         }
 
         //later this should have a better api call and save data local
-        private JSONNode getTileData(string layer, int xTile, int yTile, int zoom)
+        private WWW getTileData(string layer, int xTile, int yTile, int zoom)
         {
             string url = "http://vector.mapzen.com/osm/" + layer + "/" +
                             Convert.ToString(zoom) + "/" + Convert.ToString(xTile) + "/" + Convert.ToString(yTile) + ".json?api_key=vector-tiles-vx5RUiN";
             // Create the request and wait for a response
             // Create the request and wait for a response
-            WWW request = new WWW(url);
-            while (!request.isDone)
-            {
-                System.Threading.Thread.Sleep(100);
-            }
+            WWW r = new WWW(url);
 
-            // Parse response into the SimpleJSON format
-            JSONNode response = JSON.Parse(request.text);
-            return response;
+            return r;
         }
         private Point WorldToTilePos(double lon, double lat, int zoom)
         {
