@@ -5,20 +5,23 @@ using System.Linq;
 public class Spawner : MonoBehaviour {
     private bool running = false;
     LanduseManager.LanduseManager landuseManager;
-    private int numberOfSpawns = 0;
-    public int minNumberOfSpawns = 10;
+    public int numberOfSpawns = 0;
+    public int minNumberOfSpawns = 20;
 	// Use this for initialization
 	void Start () {
         landuseManager = new LanduseManager.LanduseManager();
 	}
-	
+    public void monsterDespawned()
+    {
+        numberOfSpawns--;
+    }
 	// Update is called once per frame
 	void Update () {
         if (!running) return;
         if(numberOfSpawns <=  minNumberOfSpawns)
         {
             var lastLoc = LocationController.GetLastData();
-            if (spawn(lastLoc.latitude + Random.Range(-0.003f, 0.003f), lastLoc.longitude + Random.Range(-0.003f, 0.003f))) numberOfSpawns++;
+            if (spawn(lastLoc.latitude + Random.Range(-0.006f, 0.006f), lastLoc.longitude + Random.Range(-0.006f, 0.006f))) numberOfSpawns++;
         }
 	}
     public void startRunning()
@@ -53,17 +56,13 @@ public class Spawner : MonoBehaviour {
         WeatherControler weatherCon = WeatherControler.getWeatherControler();
         string time = weatherCon.getTime();
         string weather = weatherCon.getWeather(lat,lng);
-        Debug.Log(time + "  " + weather);
-        string landusesS = "";
         foreach (string landuse in landuses)
         {
-            landusesS += landuse + " ";
             for (int i = 0; i < info.spawns[0][landuse][time][weather].Count; i++)
             {
                 monsterIds.Add(info.spawns[0][landuse][time][weather][i]);
             }
         }
-        Debug.Log(landusesS);
         if (monsterIds.Count < 3)
         {
             for (int i = 0; i < info.spawns[1][time][weather].Count; i++)

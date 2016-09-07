@@ -18,7 +18,6 @@ public class LocationController : MonoBehaviour
 	private static LocationServiceStatus _mockStatus;
 	private static float _mockLatitude;
 	private static float _mockLongitude;
-
 	IEnumerator Start()
 	{
 		// check if user has allowed location

@@ -94,7 +94,6 @@ public class Map : MonoBehaviour {
                     0,
                     ((tile.y - FirstPosition.Value.y) * 100)
                 );
-                Vector2 pos = TileToWorldCoords((int)tile.x, (int)tile.y);
                 // Add the tile to the tileset dictionary
                 TileSet.Add(tile, obj);
             }
@@ -115,17 +114,13 @@ public class Map : MonoBehaviour {
         // Don't spawn if the tile is not in our active set
         if (!TileSet.ContainsKey(tileCoords))
             return;
-
         // Get the tile from our tileset
         Tile tile = TileSet[tileCoords].GetComponent<Tile>();
 
         // Attach our monster to the tile
-        monster.transform.parent = transform;
-
+        monster.transform.parent = tile.transform;
         Vector2 position = tile.BoundingBox.Interpolate (latitude, longitude);
-		// TODO: hack, issue #17
-		position.x = -position.x;
-		monster.transform.position = new Vector3 (position.x, 2.0f, position.y);
+        monster.transform.position = new Vector3(position.x - tile.WorldPosition.x, 2.0f, position.y + tile.WorldPosition.z);
 	}
 
 	/*

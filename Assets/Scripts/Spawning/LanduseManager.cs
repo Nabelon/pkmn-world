@@ -267,6 +267,7 @@ namespace LanduseManager
     //redirects landuse call to a tree
     public class LanduseManager
     {
+        private UnityEngine.Object thisLock = new UnityEngine.Object();
         int zoomSmall, zoomBig, maxTreesStored, treeDepth;
         Dictionary<string, Tuple<System.DateTime, QuadtreeRoot>> trees; //find the currently needed tree and find the oldest to for deleting
 
@@ -280,31 +281,34 @@ namespace LanduseManager
             Point tile = WorldToTilePos(lng, lat, zoomSmall);
             string coordStr = tile.X + "," + tile.Y;
             QuadtreeRoot tree;
-            if (trees.ContainsKey(coordStr))    //search for tree
+            lock (thisLock)
             {
-                tree = trees[coordStr].Item2;
-            }
-            else                                //create new tree
-            {
-                Console.WriteLine("Creating new Tree...");
-                tree = createTree(lat, lng, treeDepth, zoomSmall, zoomBig);
-                trees[coordStr] = new Tuple<System.DateTime, QuadtreeRoot>(System.DateTime.Now, tree);
-                if (trees.Count > maxTreesStored)        //remove oldest tree if we have too many
+                if (trees.ContainsKey(coordStr))    //search for tree
                 {
-                    string oldestKey = "";
-                    System.DateTime oldestTime = System.DateTime.Now;
-                    foreach (KeyValuePair<string, Tuple<System.DateTime, QuadtreeRoot>> kvp in trees)
+                    tree = trees[coordStr].Item2;
+                }
+                else                                //create new tree
+                {
+                    Console.WriteLine("Creating new Tree...");
+                    tree = createTree(lat, lng, treeDepth, zoomSmall, zoomBig);
+                    trees[coordStr] = new Tuple<System.DateTime, QuadtreeRoot>(System.DateTime.Now, tree);
+                    if (trees.Count > maxTreesStored)        //remove oldest tree if we have too many
                     {
-                        if (kvp.Value.Item1 < oldestTime)
+                        string oldestKey = "";
+                        System.DateTime oldestTime = System.DateTime.Now;
+                        foreach (KeyValuePair<string, Tuple<System.DateTime, QuadtreeRoot>> kvp in trees)
                         {
+                            if (kvp.Value.Item1 < oldestTime)
+                            {
 
-                            oldestTime = kvp.Value.Item1;
-                            oldestKey = kvp.Key;
+                                oldestTime = kvp.Value.Item1;
+                                oldestKey = kvp.Key;
+                            }
                         }
+                        if (oldestKey == "") { throw new System.ArgumentException("no key found"); }
+                        Console.WriteLine("Deleting oldest tree");
+                        trees.Remove(oldestKey);
                     }
-                    if (oldestKey == "") { throw new System.ArgumentException("no key found"); }
-                    Console.WriteLine("Deleting oldest tree");
-                    trees.Remove(oldestKey);
                 }
             }
             return tree.hit(lng, lat);

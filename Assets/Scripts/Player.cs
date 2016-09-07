@@ -51,11 +51,4 @@ public class Player : MonoBehaviour
 
 		prevPos = transform.position;
 	}
-    void OnColliderEnter(Collider other)
-    {
-        if (other.gameObject.CompareTag("MapMonster"))
-        {
-            other.gameObject.SetActive(false);
-        }
-    }
 }
