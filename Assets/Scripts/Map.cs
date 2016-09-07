@@ -120,6 +120,7 @@ public class Map : MonoBehaviour {
         // Attach our monster to the tile
         monster.transform.parent = tile.transform;
         Vector2 position = tile.BoundingBox.Interpolate (latitude, longitude);
+        position.x = -position.x;
         monster.transform.position = new Vector3(position.x - tile.WorldPosition.x, 2.0f, position.y + tile.WorldPosition.z);
 	}
 
