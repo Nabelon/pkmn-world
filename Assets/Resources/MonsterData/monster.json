@@ -142,6 +142,20 @@
 		"levels": [2, 7],
 		"probability": 15
 	},
+	"11": {
+		"name": "Metapod",
+		"attack": 30,
+		"defense": 35,
+		"evolveLevel": 7,
+		"evolveTo": "11",
+		"type": "bug",
+		"moves": [
+			"tackle"
+		],
+		"curve": 1.6,
+		"levels": [2, 7],
+		"probability": 15
+	},
 	"12": {
 		"name": "Butterfree",
 		"attack": 45,
@@ -157,6 +171,34 @@
 	},
 	"13": {
 		"name": "Weedle",
+		"attack": 35,
+		"defense": 30,
+		"evolveLevel": 7,
+		"evolveTo": "14",
+		"type": "bug",
+		"moves": [
+			"poison sting"
+		],
+		"curve": 1.6,
+		"levels": [2, 7],
+		"probability": 15
+	},
+	"14": {
+		"name": "Kakuna",
+		"attack": 35,
+		"defense": 30,
+		"evolveLevel": 7,
+		"evolveTo": "14",
+		"type": "bug",
+		"moves": [
+			"poison sting"
+		],
+		"curve": 1.6,
+		"levels": [2, 7],
+		"probability": 15
+	},
+	"15": {
+		"name": "Beedrill",
 		"attack": 35,
 		"defense": 30,
 		"evolveLevel": 7,
@@ -285,6 +327,17 @@
 			"poison sting",
 			"bite",
 			"acid"
+		],
+		"curve": 1.6
+	},
+	"25": {
+		"name": "Pikachu",
+		"attack": 90,
+		"defense": 55,
+		"type": "electric",
+		"moves": [
+			"thundershock",
+			"thunderbolt"
 		],
 		"curve": 1.6
 	},

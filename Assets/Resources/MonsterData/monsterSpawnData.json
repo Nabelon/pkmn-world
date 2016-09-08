@@ -1,26 +1,23 @@
 {
 	"1": {
 		"name": "Bulbasaur",
-		"landuse": ["park","grass","forest","wood"],
+		"landuse": ["park","grass","forest","wood","nature_reserve","recreation_ground"],
         "weather": ["sun","cloud"],
         "time": ["day","morning"],
-        "neededConditions": 3,
         "rarity": 3
 	},
 	"2": {
 		"name": "Ivysaur",
-		"landuse": ["park","grass","forest","wood"],
+		"landuse": ["park","grass","nature_reserve","forest","wood"],
         "weather": ["sun"],
         "time": ["day","morning"],
-        "neededConditions": 3,
         "rarity": 2
 	},
 	"3": {
 		"name": "Venusaur",
-		"landuse": ["grass","forest","wood"],
+		"landuse": ["nature_reserve","grass","forest","wood"],
         "weather": ["sun"],
         "time": ["day"],
-        "neededConditions": 3,
         "rarity": 1
 	},
 	"4": {
@@ -28,7 +25,6 @@
 		"landuse": ["urban area","residential","park"],
         "weather": ["sun"],
         "time": ["day","evening","night"],
-        "neededConditions": 3,
         "rarity": 3
 	},
 	"5": {
@@ -36,7 +32,6 @@
 		"landuse": ["urban area","residential"],
         "weather": ["sun"],
         "time": ["day","evening","night"],
-        "neededConditions": 3,
         "rarity": 2
 	},
 	"6": {
@@ -44,7 +39,6 @@
 		"landuse": ["residential"],
         "weather": ["sun"],
         "time": ["day","evening","night"],
-        "neededConditions": 4,
         "rarity": 1
 	},
 	"7": {
@@ -52,7 +46,6 @@
 		"landuse": ["water","riverbank","playa","park","ocean"],
         "weather": ["cloud","rain","sun"],
         "time": ["day","evening","night"],
-        "neededConditions": 3,
         "rarity": 3
 	},
 	"8": {
@@ -60,7 +53,6 @@
 		"landuse": ["water","riverbank","playa","ocean"],
         "weather": ["cloud","rain"],
         "time": ["day","evening","night"],
-        "neededConditions": 3,
         "rarity": 2
 	},
 	"9": {
@@ -68,7 +60,6 @@
 		"landuse": ["water","riverbank","playa","ocean"],
         "weather": ["cloud","rain"],
         "time": ["evening","night"],
-        "neededConditions": 3,
         "rarity": 1
 	},
 	"10": {
@@ -76,15 +67,20 @@
 		"landuse": ["park","grass","forest","wood"],
         "weather": ["sun","cloud"],
         "time": ["day","morning"],
-        "neededConditions": 3,
         "rarity": 5
+    },
+	"11": {
+		"name": "Metapod",
+		"landuse": ["park","grass","forest","wood"],
+        "weather": ["sun","cloud"],
+        "time": ["day","morning"],
+        "rarity": 4
     },
 	"12": {
 		"name": "Butterfree",
 		"landuse": ["park","grass"],
         "weather": ["sun"],
         "time": ["morning","day"],
-        "neededConditions": 3,
         "rarity": 2
 	},
 	"13": {
@@ -92,15 +88,27 @@
 		"landuse": ["park","grass","forest","wood"],
         "weather": ["sun","cloud"],
         "time": ["day","evening","night"],
-        "neededConditions": 3,
         "rarity": 5
+	},
+	"14": {
+		"name": "Kakuna",
+		"landuse": ["park","grass","forest","wood"],
+        "weather": ["sun","cloud"],
+        "time": ["day","evening","night"],
+        "rarity": 4
+	},
+	"15": {
+		"name": "Beedrill",
+		"landuse": ["park","grass","forest","wood"],
+        "weather": ["sun","cloud"],
+        "time": ["day","evening","night"],
+        "rarity": 2
 	},
 	"16": {
 		"name": "Pidgey",
 		"landuse": ["park","grass","urban area","residential"],
         "weather": ["sun","cloud","rain"],
         "time": ["day","evening","morning","night"],
-        "neededConditions": 3,
         "rarity": 5
 	},
 	"17": {
@@ -108,7 +116,6 @@
 		"landuse": ["park","grass","urban area","residential"],
         "weather": ["sun","cloud"],
         "time": ["day","evening","morning","night"],
-        "neededConditions": 4,
         "rarity": 2
 	},
 	"18": {
@@ -116,7 +123,6 @@
 		"landuse": ["park","grass","residential"],
         "weather": ["sun","cloud"],
         "time": ["day","evening","morning","night"],
-        "neededConditions": 4,
         "rarity": 1
 	},
 	"19": {
@@ -124,7 +130,6 @@
 		"landuse": ["park","grass","urban area","residential","recreation_ground"],
         "weather": ["sun","cloud","rain"],
         "time": ["evening","morning","night"],
-        "neededConditions": 3,
         "rarity": 5
 	},
 	"20": {
@@ -132,7 +137,6 @@
 		"landuse": ["park","grass","residential"],
         "weather": ["cloud","rain"],
         "time": ["evening","morning","night"],
-        "neededConditions": 3,
         "rarity": 3
 	},
 	"21": {
@@ -140,7 +144,6 @@
 		"landuse": ["forest","park","grass","urban area","residential"],
         "weather": ["sun","cloud"],
         "time": ["day","evening","morning"],
-        "neededConditions": 3,
         "rarity": 4
 	},
 	"22": {
@@ -148,7 +151,6 @@
 		"landuse": ["forest","grass","residential"],
         "weather": ["sun","cloud"],
         "time": ["day","evening","morning"],
-        "neededConditions": 3,
         "rarity": 2
 	},
 	"23": {
@@ -156,7 +158,6 @@
 		"landuse": ["forest","grass","wood","park"],
         "weather": ["sun","cloud"],
         "time": ["day","evening","morning"],
-        "neededConditions": 3,
         "rarity": 4
 	},
 	"24": {
@@ -164,97 +165,91 @@
 		"landuse": ["forest","wood","park"],
         "weather": ["sun","cloud"],
         "time": ["day","evening","morning"],
-        "neededConditions": 3,
         "rarity": 2
+	},
+	"25": {
+		"name": "Pikachu",
+		"landuse": ["residential","urban area","park","generator"],
+        "weather": ["sun","cloud"],
+        "time": ["day","evening","morning","night"],
+        "rarity": 3
 	},
 	"26": {
 		"name": "Raichu",
-		"landuse": ["residential","grass","urban area","park"],
+		"landuse": ["generator"],
         "weather": ["sun","cloud"],
         "time": ["day","evening","morning","night"],
-        "neededConditions": 3,
-        "rarity": 3
+        "rarity": 1
 	},
 	"27": {
 		"name": "Sandshrew",
-		"attack": 75,
-		"defense": 85,
-		"evolveLevel": 22,
-		"evolveTo": "28",
-		"type": "ground",
-		"moves": [
-			"scratch",
-			"poison sting"
-		],
-		"curve": 1.6,
-		"levels": [5, 15],
-		"probability": 10
+		"landuse": ["farmland","grass","pitch"],
+        "weather": ["sun","cloud"],
+        "time": ["day","evening","morning","night"],
+        "rarity": 4
 	},
 	"28": {
 		"name": "Sandslash",
-		"attack": 100,
-		"defense": 110,
-		"type": "ground",
-		"moves": [
-			"scratch",
-			"poison sting",
-			"slash",
-			"swift"
-		],
-		"curve": 1.6
+		"landuse": ["farmland","pitch"],
+        "weather": ["sun","cloud"],
+        "time": ["day","evening","morning","night"],
+        "rarity": 1
 	},
 	"29": {
-		"name": "Nidoran",
-		"attack": 47,
-		"defense": 52,
-		"evolveLevel": 16,
-		"evolveTo": "30",
-		"type": "poison",
-		"moves": [
-			"scratch"
-		],
-		"curve": 1.3,
-		"levels": [5, 8],
-		"probability": 15
+		"name": "NidoranF",
+		"landuse": ["farmland","grass","theme_park","petting_zoo"],
+        "weather": ["sun","cloud"],
+        "time": ["day","evening","morning"],
+        "rarity": 4
+	},
+	"30": {
+		"name": "Nidorina",
+		"landuse": ["farmland","grass","theme_park","petting_zoo"],
+        "weather": ["sun","cloud"],
+        "time": ["day","evening","morning"],
+        "rarity": 2
 	},
 	"31": {
 		"name": "Nidoqueen",
-		"attack": 82,
-		"defense": 87,
-		"type": "poison",
-		"moves": [
-			"scratch",
-			"poison sting",
-			"body slam",
-			"superpower"
-		],
-		"curve": 1.3
+		"landuse": ["farmland","grass","theme_park"],
+        "weather": ["sun","cloud"],
+        "time": ["day","evening","morning","night"],
+        "rarity": 1
 	},
 	"32": {
-		"name": "Nidoran",
-		"attack": 57,
-		"defense": 40,
-		"evolveLevel": 16,
-		"evolveTo": "33",
-		"type": "poison",
-		"moves": [
-			"peck"
-		],
-		"curve": 1.3,
-		"levels": [5, 8],
-		"probability": 15
+		"name": "NidoranM",
+		"landuse": ["farmland","grass","theme_park","petting_zoo"],
+        "weather": ["sun","cloud"],
+        "time": ["day","evening","morning"],
+        "rarity": 4
+	},
+	"33": {
+		"name": "Nidorino",
+		"landuse": ["farmland","grass","theme_park","petting_zoo"],
+        "weather": ["sun","cloud"],
+        "time": ["day","evening","morning"],
+        "rarity": 2
 	},
 	"34": {
 		"name": "Nidoking",
-		"attack": 92,
-		"defense": 77,
-		"type": "poison",
-		"moves": [
-			"peck",
-			"poison sting",
-			"megahorn"
-		],
-		"curve": 1.3
+		"landuse": ["farmland","grass","theme_park"],
+        "weather": ["sun","cloud"],
+        "time": ["day","evening","morning","night"],
+        "rarity": 1
+	},
+	"35": {
+		"name": "Clefairy",
+		"landuse": ["picnic_site","playground","petting_zoo"],
+        "weather": ["sun","cloud"],
+        "time": ["day","evening","morning","night"],
+        "rarity": 3
+	},
+	"36": {
+		"name": "Clefable",
+		"landuse": ["picnic_site","playground"],
+        "weather": ["sun","cloud"],
+        "time": ["day","evening","morning","night"],
+        "rarity": 1
 	},
 	"38": {
 		"name": "Ninetales",

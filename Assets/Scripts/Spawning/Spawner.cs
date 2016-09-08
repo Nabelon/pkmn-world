@@ -46,21 +46,26 @@ public class Spawner : MonoBehaviour {
         string time = weatherCon.getTime();
         string weather = weatherCon.getWeather(lat,lng);
         if (weather == null || landuses == null) return null;
-
-        foreach (string landuse in landuses)
+        foreach (string landuse in landuses) //add monster that spawn cause of landuse
         {
             for (int i = 0; i < info.spawns[0][landuse][time][weather].Count; i++)
             {
                 monsterIds.Add(info.spawns[0][landuse][time][weather][i]);
             }
         }
-        if (monsterIds.Count < 3)
+        int count = monsterIds.Count;
+        for (int i = 0; i < info.spawns[1][time][weather].Count && monsterIds.Count < 3; i++) //if not enough variety, add some more
         {
-            for (int i = 0; i < info.spawns[1][time][weather].Count; i++)
+            monsterIds.Add(info.spawns[1][time][weather][Random.Range(0,info.spawns[1][time][weather].Count)]);
+        }
+        for (int i = 0; i < count; i++)//prefer monster that spawned cause of landuse
+        {
+            for (int j = 0; j < System.Int32.Parse(MonsterInfo.getMonsterInfo().spawnData[monsterIds[i]]["rarity"].ToString().Replace("\"","")); j++)
             {
-                monsterIds.Add(info.spawns[1][time][weather][i]);
+                monsterIds.Add(monsterIds[i]);
             }
         }
+
         GameObject.Find("MonsterDex").transform.FindChild("Text").GetComponent<UnityEngine.UI.Text>().text = "wow";
         GameObject obj = GameObject.CreatePrimitive(PrimitiveType.Sphere);
         GameObject.Find("MonsterDex").transform.FindChild("Text").GetComponent<UnityEngine.UI.Text>().text = "SPHERE SUCKSSSSSSS";

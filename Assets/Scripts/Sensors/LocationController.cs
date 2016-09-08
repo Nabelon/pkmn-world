@@ -52,8 +52,8 @@ public class LocationController : MonoBehaviour
 
 	void Update()
 	{
-        mockLongitude += Input.GetAxis("Horizontal") * speed;
-        mockLatitude += Input.GetAxis("Vertical") * speed;
+        mockLongitude -= Input.GetAxis("Horizontal") * speed;
+        mockLatitude -= Input.GetAxis("Vertical") * speed;
 
         _mockStatus = mockStatus;
 		_mockLatitude = mockLatitude;

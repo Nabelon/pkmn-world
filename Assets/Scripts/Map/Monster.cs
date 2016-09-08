@@ -65,8 +65,6 @@ namespace map
             float distance = Mathf.Sqrt(Mathf.Pow(p.transform.position.x - transform.position.x, 2.0f) + Mathf.Pow(p.transform.position.z - transform.position.z, 2.0f));
             if (distance > 90.0f)
             {
-                Debug.Log("destroyed");
-                GameObject.FindObjectOfType<Spawner>().monsterDespawned();
                 Destroy(gameObject);
             }
             // Check for left mouse button
@@ -95,13 +93,18 @@ namespace map
                     if (hit.transform == transform && distance < 5)
                     {
                         bag.MonsterBag.getBag().addMonster(new bag.Monster(id));
-                        GameObject.FindObjectOfType<Spawner>().monsterDespawned();
                         Destroy(gameObject);
-
                     }
                 }
             }
-
+        }
+        void OnDestroy()
+        {
+            Spawner s = GameObject.FindObjectOfType<Spawner>();
+            if (s != null)
+            {
+                s.monsterDespawned();
+            }
         }
 
     }
