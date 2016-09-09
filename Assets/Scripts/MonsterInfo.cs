@@ -9,11 +9,15 @@ public class MonsterInfo {
     public JSONNode spawnData;
     public static MonsterInfo getMonsterInfo()
     {
-        if (monsterInfo == null) monsterInfo = new MonsterInfo();
+        if (monsterInfo == null)
+        {
+            monsterInfo = new MonsterInfo();
+        }
         return monsterInfo;
     }
     private MonsterInfo()
     {
+        Debug.Log("MonsterInfo created");
         info = JSON.Parse(Resources.Load<TextAsset>("MonsterData/monster").ToString());
         spawns = JSON.Parse(Resources.Load<TextAsset>("MonsterData/encounters").ToString());
         baseStats = JSON.Parse(Resources.Load<TextAsset>("MonsterData/pokemonBaseStats").ToString());

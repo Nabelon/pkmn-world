@@ -32,7 +32,10 @@ void Start () {
 }
  
 void LateUpdate () {
-
+    if (target == null)
+    {
+        target = Player.player.transform;
+    }
     var position = rotation * new Vector3(0.0f, 0.0f, -distance) + target.position;
     transform.position = position;
     transform.rotation = rotation;

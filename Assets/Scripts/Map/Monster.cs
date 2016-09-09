@@ -92,8 +92,11 @@ namespace map
                 { 
                     if (hit.transform == transform && distance < 5)
                     {
+                        fight.FightingManager.attacker = new fight.Monster(bag.MonsterBag.getBag().getMonsters()[0]);
+                        fight.FightingManager.defender = new fight.Monster(new bag.Monster(id));
                         bag.MonsterBag.getBag().addMonster(new bag.Monster(id));
                         Destroy(gameObject);
+                        UnityEngine.SceneManagement.SceneManager.LoadScene("FightingScene");
                     }
                 }
             }

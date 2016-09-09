@@ -3,13 +3,27 @@ using System.Linq;
 
 public class Player : MonoBehaviour
 {
+    public static Player player;
 	public float lerpMultiply = 10;
 
 	private Vector3 prevPos;
 
+    void Awake()
+    {
+        if (player == null)
+        {
+            player = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
 	void Start()
 	{
 		prevPos = transform.position;
+        DontDestroyOnLoad(gameObject);
 	}
 
 	void FixedUpdate()

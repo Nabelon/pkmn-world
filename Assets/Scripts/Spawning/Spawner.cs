@@ -66,9 +66,7 @@ public class Spawner : MonoBehaviour {
             }
         }
 
-        GameObject.Find("MonsterDex").transform.FindChild("Text").GetComponent<UnityEngine.UI.Text>().text = "wow";
         GameObject obj = GameObject.CreatePrimitive(PrimitiveType.Sphere);
-        GameObject.Find("MonsterDex").transform.FindChild("Text").GetComponent<UnityEngine.UI.Text>().text = "SPHERE SUCKSSSSSSS";
         obj.AddComponent<Animation>();
         obj.AddComponent<MeshCollider>();
         map.Monster monster = obj.AddComponent<map.Monster>();

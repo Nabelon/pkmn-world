@@ -15,13 +15,13 @@ When you start working on something, please create an issue (or comment on one i
 
 ### Encounters
 - [ ] Track player distance moved/speed
-- [ ] Query 3rd party data sources (weather etc)
-- [ ] Generate encounters based on available data
+- [x] Query 3rd party data sources (weather etc)
+- [x] Generate encounters based on available data
   - [ ] Altitude
-  - [ ] Time
+  - [x] Time
   - [ ] Date/Season
-  - [ ] Weather
-  - [ ] Landuse/Landcover
+  - [x] Weather
+  - [x] Landuse/Landcover
   - [ ] Waterway
 - [ ] Keep encounters on map for set time/until interacted
 - [ ] Destroy old/far away encounters
@@ -58,7 +58,7 @@ When you start working on something, please create an issue (or comment on one i
 
 ### Data
 - [ ] Pokedex
-  - [ ] Encounter locations/conditions
+  - [x] Encounter locations/conditions
   - [ ] Rarity
 - [ ] Move list/effects
 - [ ] Item list/effects
