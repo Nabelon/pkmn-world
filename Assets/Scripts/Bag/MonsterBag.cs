@@ -51,10 +51,10 @@ namespace bag
     {
         public readonly string name;
         public readonly string id;
-        public readonly string[] attackMoves = new string[4];
+        public string[] attackMoves = new string[4];
         public int mAtk, mDef, mMaxHp,  mSpDef, mSpAtk, mExp, mSpeed;
         public int mCurrHp;
-        private int ivHp, ivAtk, ivDef, ivSpAtk, ivSpDef, ivSpeed, xpToNextLevel;
+        public int ivHp, ivAtk, ivDef, ivSpAtk, ivSpDef, ivSpeed, xpToNextLevel;
         public int mLevel;
         public Monster(string id, int level = 5, int ivHp = 0,int ivAtk = 0, int ivDef = 0, int ivSpAtk = 0, int ivSpDef = 0, int ivSpeed = 0)
         {

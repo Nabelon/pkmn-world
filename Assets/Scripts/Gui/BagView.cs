@@ -6,7 +6,6 @@ public class BagView : MonoBehaviour {
     static bool wasDestroyed = false;
     void Awake()
     {
-        Debug.Log("AwakeCalled");
         bag.MonsterBag.getBag().setMonsterPanel(gameObject.transform.FindChild("ScrollContent").FindChild("MonsterPanel").gameObject);
 
     }

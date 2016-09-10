@@ -382,17 +382,19 @@
 	},
 	"29": {
 		"name": "Nidoran",
+		"type": "poison",
 		"attack": 47,
 		"defense": 52,
 		"evolveLevel": 16,
 		"evolveTo": "30",
+	},
+	"29": {
+		"name": "Nidorina",
 		"type": "poison",
-		"moves": [
-			"scratch"
-		],
-		"curve": 1.3,
-		"levels": [5, 8],
-		"probability": 15
+		"attack": 47,
+		"defense": 52,
+		"evolveLevel": 30,
+		"evolveTo": "31",
 	},
 	"31": {
 		"name": "Nidoqueen",
@@ -421,6 +423,13 @@
 		"levels": [5, 8],
 		"probability": 15
 	},
+	"33": {
+		"name": "Nidorino",
+		"attack": 47,
+		"defense": 52,
+		"evolveLevel": 30,
+		"evolveTo": "34",
+	},
 	"34": {
 		"name": "Nidoking",
 		"attack": 92,
@@ -433,6 +442,24 @@
 		],
 		"curve": 1.3
 	},
+	"35": {
+		"name": "Clefairy",
+		"attack": 47,
+		"defense": 52,
+		"evolveLevel": 25,
+		"evolveTo": "37",
+	},
+	"36": {
+		"name": "Clefable",
+		"attack": 47,
+		"defense": 52,
+	},
+	"37": {
+		"name": "Vulpix",
+		"type": "fire",
+		"evolveLevel": 30,
+		"evolveTo": "38",
+	},
 	"38": {
 		"name": "Ninetales",
 		"attack": 76,
@@ -442,6 +469,14 @@
 			"ember"
 		],
 		"curve": 1.6
+	},
+	"39": {
+		"name": "Jigglypuff",
+		"evolveLevel": 30,
+		"evolveTo": "40",
+	},
+	"40": {
+		"name": "Wigglytuff",
 	},
 	"41": {
 		"name": "Zubat",
@@ -471,6 +506,19 @@
 			"air cutter"
 		],
 		"curve": 1.6
+	},
+	"43": {
+		"name": "Oddish",
+		"evolveLevel": 20,
+		"evolveTo": "44",
+	},
+	"44": {
+		"name": "Gloom",
+		"evolveLevel": 35,
+		"evolveTo": "44",
+	},
+	"45": {
+		"name": "Vileplume",
 	},
 	"46": {
 		"name": "Paras",
@@ -634,6 +682,11 @@
 		],
 		"curve": 1.6
 	},
+	"58": {
+		"name": "Growlith",
+		"evolveLevel": 30,
+		"evolveTo": "59",
+	},
 	"59": {
 		"name": "Arcanine",
 		"attack": 110,
@@ -660,6 +713,11 @@
 		"levels": [5, 18],
 		"probability": 6
 	},
+	"61": {
+		"name": "Poliwhirl",
+		"evolveLevel": 40,
+		"evolveTo": "62",
+	},
 	"62": {
 		"name": "Poliwrath",
 		"attack": 85,
@@ -669,6 +727,16 @@
 			"water gun"
 		],
 		"curve": 1.3
+	},
+	"63": {
+		"name": "Abra",
+		"evolveLevel": 30,
+		"evolveTo": "64",
+	},
+	"64": {
+		"name": "Kadabra",
+		"evolveLevel": 40,
+		"evolveTo": "65",
 	},
 	"65": {
 		"name": "Alakazam",
@@ -697,6 +765,11 @@
 		"levels": [5, 19],
 		"probability": 12
 	},
+	"67": {
+		"name": "Machoke",
+		"evolveLevel": 40,
+		"evolveTo": "68",
+	},
 	"68": {
 		"name": "Machamp",
 		"attack": 130,
@@ -723,6 +796,11 @@
 		"curve": 1.3,
 		"levels": [5, 20],
 		"probability": 15
+	},
+	"70": {
+		"name": "Weepinbell",
+		"evolveLevel": 40,
+		"evolveTo": "71",
 	},
 	"71": {
 		"name": "Victreebel",
@@ -779,6 +857,11 @@
 		"curve": 1.3,
 		"levels": [5, 20],
 		"probability": 15
+	},
+	"75": {
+		"name": "Graveler",
+		"evolveLevel": 40,
+		"evolveTo": "76",
 	},
 	"76": {
 		"name": "Golem",
@@ -972,6 +1055,11 @@
 		],
 		"curve": 1.6
 	},
+	"90": {
+		"name": "Shellder",
+		"evolveLevel": 40,
+		"evolveTo": "91",
+	},
 	"91": {
 		"name": "Cloyster",
 		"attack": 95,
@@ -996,6 +1084,11 @@
 		"curve": 1.3,
 		"levels": [5, 15],
 		"probability": 10
+	},
+	"93": {
+		"name": "Haunter",
+		"evolveLevel": 40,
+		"evolveTo": "94",
 	},
 	"94": {
 		"name": "Gengar",
@@ -1110,6 +1203,11 @@
 			"swift"
 		],
 		"curve": 1.6
+	},
+	"102": {
+		"name": "Exeggcute",
+		"evolveLevel": 40,
+		"evolveTo": "103",
 	},
 	"103": {
 		"name": "Exeggutor",
@@ -1344,6 +1442,11 @@
 		],
 		"curve": 1.6
 	},
+	"120": {
+		"name": "Staryu",
+		"evolveLevel": 40,
+		"evolveTo": "121",
+	},
 	"121": {
 		"name": "Starmie",
 		"attack": 75,
@@ -1494,6 +1597,9 @@
 		"levels": [5, 15],
 		"probability": 4
 	},
+	"132": {
+		"name": "Ditto",
+	},
 	"133": {
 		"name": "Eevee",
 		"attack": 55,
@@ -1506,6 +1612,9 @@
 		"curve": 1.6,
 		"levels": [5, 35],
 		"probability": 8
+	},
+	"134": {
+		"name": "Vaporeon",
 	},
 	"135": {
 		"levels": [5, 15],

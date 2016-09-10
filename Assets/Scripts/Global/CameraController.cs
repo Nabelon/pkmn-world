@@ -59,8 +59,8 @@ void LateUpdate () {
                
         rotation = Quaternion.Euler(y, x, 0);
         position = rotation * new Vector3(0.0f, 0.0f, -distance) + target.position;
+        position.y = Mathf.Max(position.y, 1);
         transform.position = position;
-       
         transform.rotation = rotation;
     }
     }

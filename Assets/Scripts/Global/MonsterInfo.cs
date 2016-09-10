@@ -17,7 +17,6 @@ public class MonsterInfo {
     }
     private MonsterInfo()
     {
-        Debug.Log("MonsterInfo created");
         info = JSON.Parse(Resources.Load<TextAsset>("MonsterData/monster").ToString());
         spawns = JSON.Parse(Resources.Load<TextAsset>("MonsterData/encounters").ToString());
         baseStats = JSON.Parse(Resources.Load<TextAsset>("MonsterData/pokemonBaseStats").ToString());
