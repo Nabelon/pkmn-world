@@ -7,12 +7,19 @@ public abstract class AttackMove : fight.Action{
     protected int priority = 2;
     protected int movesLeft;
     protected string category;
-    abstract public bool attack(fight.Monster attacker, fight.Monster defender);
+    protected fight.Monster user, target;
+    abstract public bool attack();
     public override void doAction()
     {
-        if (attack(fight.FightingManager.attacker, fight.FightingManager.defender))
+        if (attack())
         {
-            Debug.Log("fainbted");
+            if (fight.FightingManager.attacker.getMCurrHp() == 0)
+            {
+                TextBox.addText(fight.FightingManager.attacker.name + "fainted.");
+            } else if (fight.FightingManager.defender.getMCurrHp() == 0)
+            {
+                TextBox.addText(fight.FightingManager.defender.name + "fainted.");
+            }
         }
     }
     public override int getPriority()
@@ -29,7 +36,7 @@ public class SimpleAttack : AttackMove
     public readonly int hitChance;
     private AttackMove child;
     //hitchance == -1 means always hits
-    public SimpleAttack(string name, int damage = 40, int hitChance = 100,int movesLeft = 40, string category = "Physical", AttackMove child = null)
+    public SimpleAttack(string name, fight.Monster user, fight.Monster target, int damage = 40, int hitChance = 100,int movesLeft = 40, string category = "Physical", AttackMove child = null)
     {
         mName = name;
         this.damage = damage;
@@ -37,22 +44,24 @@ public class SimpleAttack : AttackMove
         this.category = category;
         this.child = child;
         this.movesLeft = movesLeft;
+        this.user = user;
+        this.target = target;
     }
-    public override bool attack(fight.Monster attacker, fight.Monster defender) {
+    public override bool attack() {
         if (child != null)
         {
-            child.attack(attacker, defender);
+            child.attack();
         }
         int atk, def;
         if (category == "Physical")
         {
-            atk = attacker.getMAtk();
-            def = defender.getMDef();
+            atk = user.getMAtk();
+            def = target.getMDef();
         }
         else if (category == "Special")
         {
-            atk = attacker.getMSpAtk();
-            def = defender.getMSpDef();
+            atk = user.getMSpAtk();
+            def = target.getMSpDef();
         }
         else
         {
@@ -60,8 +69,8 @@ public class SimpleAttack : AttackMove
             return false;
         }
         float modifier = 1.0f; //TODO
-        int damageDealt = Mathf.FloorToInt((((2.0f * attacker.level + 10.0f) / 250.0f) * ((float)atk / (float)def) * (float) damage + 2.0f) * modifier);
-        return defender.getAttacked(damageDealt, attacker, this);
+        int damageDealt = Mathf.FloorToInt((((2.0f * user.mLevel + 10.0f) / 250.0f) * ((float)atk / (float)def) * (float) damage + 2.0f) * modifier);
+        return target.getAttacked(damageDealt, user, this);
     }
 
 }

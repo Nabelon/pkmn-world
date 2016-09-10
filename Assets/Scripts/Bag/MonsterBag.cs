@@ -52,8 +52,9 @@ namespace bag
         public readonly string name;
         public readonly string id;
         public readonly string[] attackMoves = new string[4];
-        public int mAtk, mDef, mMaxHp, mCurrHp, mSpDef, mSpAtk, mSpeed;
-        private int ivHp, ivAtk, ivDef, ivSpAtk, ivSpDef, ivSpeed, mExp, xpToNextLevel;
+        public int mAtk, mDef, mMaxHp,  mSpDef, mSpAtk, mExp, mSpeed;
+        public int mCurrHp;
+        private int ivHp, ivAtk, ivDef, ivSpAtk, ivSpDef, ivSpeed, xpToNextLevel;
         public int mLevel;
         public Monster(string id, int level = 5, int ivHp = 0,int ivAtk = 0, int ivDef = 0, int ivSpAtk = 0, int ivSpDef = 0, int ivSpeed = 0)
         {
@@ -100,7 +101,7 @@ namespace bag
             mCurrHp += newMaxHp - mMaxHp;
             mMaxHp = newMaxHp;
         }
-        private int getExpToNextLevel() {
+        public int getExpToNextLevel() {
             int powAdd = (int)Mathf.Pow((float)mLevel, 2.0f);
             int rarity = System.Int32.Parse(MonsterInfo.getMonsterInfo().spawnData[id]["rarity"].ToString().Replace("\"", ""));
             return (int)(100 + mLevel * (2500/(Mathf.Pow((float)rarity ,2.0f) + 25)) + powAdd);
