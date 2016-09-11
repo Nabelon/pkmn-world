@@ -7,7 +7,7 @@ namespace fight
         public readonly string name,id;
         public readonly int mLevel;
         private int mAtk, mDef, mMaxHp, mCurrHp, mSpDef, mSpAtk, mSpeed;
-        public readonly string[] type = new string[2];
+        public readonly string[] types = new string[2];
         private bag.Monster bagmonster;
         public string[] moves = new string[4];
         public Monster(bag.Monster m) {
@@ -21,7 +21,7 @@ namespace fight
             mSpDef = m.mSpDef;
             mSpAtk = m.mSpAtk;
             mSpeed = m.mSpeed;
-            type = m.type;
+            types = m.types;
             bagmonster = m;
             for (int i = 0; i < 4; i++)
             {

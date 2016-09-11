@@ -3,10 +3,10 @@ using System.Collections;
 using SimpleJSON;
 public class MonsterInfo {
     private static MonsterInfo monsterInfo;
-    public JSONNode info;
+    private JSONNode info;
     public JSONNode spawns;
-    public JSONNode baseStats;
-    public JSONNode spawnData;
+    private JSONNode baseStats;
+    private JSONNode spawnData;
     public JSONNode typeEffectiveness;
     public static MonsterInfo getMonsterInfo()
     {
@@ -15,6 +15,24 @@ public class MonsterInfo {
             monsterInfo = new MonsterInfo();
         }
         return monsterInfo;
+    }
+    public string getName(string id)
+    {
+        return info[id]["name"].ToString().Replace("\"","");
+    }
+    public JSONNode getBaseStatsJson(string id)
+    {
+        return baseStats[getName(id)]["stats"];
+    }
+    public int getRarity(string id)
+    {
+        return int.Parse(spawnData[id]["rarity"].ToString().Replace("\"", ""));
+    }
+    public string[] getTypes(string id)
+    {
+        string[] types = new string[2];
+        types[0] = info[id]["type"].ToString().Replace("\"", "");
+        return types;
     }
     private MonsterInfo()
     {

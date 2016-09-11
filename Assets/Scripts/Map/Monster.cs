@@ -10,9 +10,9 @@ namespace map
         public void initiate(string id)
         {
             this.id = id;
-            monsterName = MonsterInfo.getMonsterInfo().info[id]["name"];
-            string type = MonsterInfo.getMonsterInfo().info[id]["type"];
-            switch (type)
+            monsterName = MonsterInfo.getMonsterInfo().getName(id);
+            string[] type = MonsterInfo.getMonsterInfo().getTypes(id);
+            switch (type[0])
             {
                 case "fire":
                     color = toColor(255, 82, 0); break;

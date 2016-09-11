@@ -53,17 +53,17 @@ namespace bag
         public readonly string name;
         public readonly string id;
         public string[] attackMoves = new string[4];
-        public string[] type = new string[2];
+        public string[] types;
         public int mAtk, mDef, mMaxHp,  mSpDef, mSpAtk, mExp, mSpeed;
         public int mCurrHp;
         public int ivHp, ivAtk, ivDef, ivSpAtk, ivSpDef, ivSpeed, xpToNextLevel;
         public int mLevel;
         public Monster(string id, int level = 5, int ivHp = 0,int ivAtk = 0, int ivDef = 0, int ivSpAtk = 0, int ivSpDef = 0, int ivSpeed = 0)
         {
-            type[0] = MonsterInfo.getMonsterInfo().info[id]["type"].ToString().Replace("\"","");
+            types = MonsterInfo.getMonsterInfo().getTypes(id);
             this.id = id;
-            name = MonsterInfo.getMonsterInfo().info[id]["name"];
-            SimpleJSON.JSONNode baseStats = MonsterInfo.getMonsterInfo().baseStats[name]["stats"];
+            name = MonsterInfo.getMonsterInfo().getName(id);
+            SimpleJSON.JSONNode baseStats = MonsterInfo.getMonsterInfo().getBaseStatsJson(id);
             mLevel = level;
             mExp = 0;
             this.ivAtk = ivAtk; this.ivDef = ivDef; this.ivHp = ivHp; this.ivSpDef = ivSpDef; this.ivSpeed = ivSpeed; this.ivSpAtk = ivSpAtk; //set stats
@@ -94,7 +94,7 @@ namespace bag
         private void levelUp() {
             //TODO: Animation
             mLevel++;
-            SimpleJSON.JSONNode baseStats = MonsterInfo.getMonsterInfo().baseStats[name]["stats"];      //increase stats
+            SimpleJSON.JSONNode baseStats = MonsterInfo.getMonsterInfo().getBaseStatsJson(id);      //increase stats
             mAtk = Mathf.FloorToInt(Mathf.Floor((System.Int32.Parse(baseStats["attack"].ToString().Replace("\"","")) + ivAtk) * mLevel / 100.0f + 5.0f));
             mDef = Mathf.FloorToInt(Mathf.Floor((System.Int32.Parse(baseStats["defense"].ToString().Replace("\"", "")) + ivDef) * mLevel / 100.0f + 5.0f));
             mSpAtk = Mathf.FloorToInt(Mathf.Floor((System.Int32.Parse(baseStats["special_attack"].ToString().Replace("\"", "")) + ivSpAtk) * mLevel / 100.0f + 5.0f));
@@ -106,7 +106,7 @@ namespace bag
         }
         public int getExpToNextLevel() {
             int powAdd = (int)Mathf.Pow((float)mLevel, 2.0f);
-            int rarity = System.Int32.Parse(MonsterInfo.getMonsterInfo().spawnData[id]["rarity"].ToString().Replace("\"", ""));
+            int rarity = MonsterInfo.getMonsterInfo().getRarity(id);
             return (int)(100 + mLevel * (2500/(Mathf.Pow((float)rarity ,2.0f) + 25)) + powAdd);
         }
     }

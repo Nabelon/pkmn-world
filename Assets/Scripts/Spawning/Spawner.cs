@@ -60,7 +60,7 @@ public class Spawner : MonoBehaviour {
         }
         for (int i = 0; i < count; i++)//prefer monster that spawned cause of landuse
         {
-            for (int j = 0; j < System.Int32.Parse(MonsterInfo.getMonsterInfo().spawnData[monsterIds[i]]["rarity"].ToString().Replace("\"","")); j++)
+            for (int j = 0; j < MonsterInfo.getMonsterInfo().getRarity(monsterIds[i]); j++)
             {
                 monsterIds.Add(monsterIds[i]);
             }

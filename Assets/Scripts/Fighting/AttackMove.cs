@@ -76,9 +76,9 @@ public class SimpleAttack : AttackMove
         }
         var format = System.Globalization.CultureInfo.InvariantCulture.NumberFormat;
         bool crit = (Random.Range(0.0f, 1.0f) > critChance) ? false : true;
-        float type1Mult = (MonsterInfo.getMonsterInfo().typeEffectiveness[type][target.type[0]] == null ? 1.0f : float.Parse(MonsterInfo.getMonsterInfo().typeEffectiveness[type][target.type[0]].ToString().Replace("\"", ""), format));
-        float type2Mult = target.type[1] == null ? 1.0f : (MonsterInfo.getMonsterInfo().typeEffectiveness[type][target.type[1]] == null ? 1.0f : float.Parse(MonsterInfo.getMonsterInfo().typeEffectiveness[type][target.type[1]].ToString().Replace("\"", ""), format));
-        float modifier = 1.0f * (user.type[0] == type ? 1.5f : 1.0f) * (user.type[1] == type ? 1.5f : 1.0f) * type1Mult * type2Mult * Random.Range(0.8f,1.0f) * (crit ? 2.0f : 1.0f);
+        float type1Mult = (MonsterInfo.getMonsterInfo().typeEffectiveness[type][target.types[0]] == null ? 1.0f : float.Parse(MonsterInfo.getMonsterInfo().typeEffectiveness[type][target.types[0]].ToString().Replace("\"", ""), format));
+        float type2Mult = target.types[1] == null ? 1.0f : (MonsterInfo.getMonsterInfo().typeEffectiveness[type][target.types[1]] == null ? 1.0f : float.Parse(MonsterInfo.getMonsterInfo().typeEffectiveness[type][target.types[1]].ToString().Replace("\"", ""), format));
+        float modifier = 1.0f * (user.types[0] == type ? 1.5f : 1.0f) * (user.types[1] == type ? 1.5f : 1.0f) * type1Mult * type2Mult * Random.Range(0.8f,1.0f) * (crit ? 2.0f : 1.0f);
         int damageDealt = Mathf.FloorToInt((((2.0f * user.mLevel + 10.0f) / 250.0f) * ((float)atk / (float)def) * (float)damage + 2.0f) * modifier);
         return target.getAttacked(damageDealt, user, this,crit, type1Mult * type2Mult);
     }
