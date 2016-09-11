@@ -43,6 +43,7 @@ namespace bag
             {
                 bag = new MonsterBag();
                 bag.addMonster(new Monster("4", 10));
+                bag.getMonsters()[0].attackMoves[1] = "Ember";
             }
             return bag;
         }
@@ -52,12 +53,14 @@ namespace bag
         public readonly string name;
         public readonly string id;
         public string[] attackMoves = new string[4];
+        public string[] type = new string[2];
         public int mAtk, mDef, mMaxHp,  mSpDef, mSpAtk, mExp, mSpeed;
         public int mCurrHp;
         public int ivHp, ivAtk, ivDef, ivSpAtk, ivSpDef, ivSpeed, xpToNextLevel;
         public int mLevel;
         public Monster(string id, int level = 5, int ivHp = 0,int ivAtk = 0, int ivDef = 0, int ivSpAtk = 0, int ivSpDef = 0, int ivSpeed = 0)
         {
+            type[0] = MonsterInfo.getMonsterInfo().info[id]["type"].ToString().Replace("\"","");
             this.id = id;
             name = MonsterInfo.getMonsterInfo().info[id]["name"];
             SimpleJSON.JSONNode baseStats = MonsterInfo.getMonsterInfo().baseStats[name]["stats"];

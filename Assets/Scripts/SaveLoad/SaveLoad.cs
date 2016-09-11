@@ -21,6 +21,7 @@ namespace saveload
         {
             if (File.Exists(Application.persistentDataPath + "/bag.dat"))
             {
+                Debug.Log("LOADING");
                 BinaryFormatter bf = new BinaryFormatter();
                 FileStream file = File.Open(Application.persistentDataPath + "/bag.dat", FileMode.Open);
                 Bag data = (Bag)bf.Deserialize(file);

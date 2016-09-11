@@ -7,6 +7,7 @@ public class MonsterInfo {
     public JSONNode spawns;
     public JSONNode baseStats;
     public JSONNode spawnData;
+    public JSONNode typeEffectiveness;
     public static MonsterInfo getMonsterInfo()
     {
         if (monsterInfo == null)
@@ -21,5 +22,6 @@ public class MonsterInfo {
         spawns = JSON.Parse(Resources.Load<TextAsset>("MonsterData/encounters").ToString());
         baseStats = JSON.Parse(Resources.Load<TextAsset>("MonsterData/pokemonBaseStats").ToString());
         spawnData = JSON.Parse(Resources.Load<TextAsset>("MonsterData/monsterSpawnData").ToString());
+        typeEffectiveness = JSON.Parse(Resources.Load<TextAsset>("MonsterData/typeEffectiveness").ToString());
     }
 }

@@ -147,8 +147,8 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 14
-    m_FontStyle: 0
-    m_BestFit: 0
+    m_FontStyle: 1
+    m_BestFit: 1
     m_MinSize: 10
     m_MaxSize: 40
     m_Alignment: 4
@@ -157,7 +157,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: MonsterDex
+  m_Text: Save
 --- !u!222 &93990756
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -175,6 +175,7 @@ GameObject:
   - 222: {fileID: 215102311}
   - 114: {fileID: 215102310}
   - 114: {fileID: 215102309}
+  - 114: {fileID: 215102312}
   m_Layer: 5
   m_Name: MonsterDex
   m_TagString: Untagged
@@ -239,7 +240,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 215102310}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 215102312}
+        m_MethodName: clicked
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &215102310
@@ -275,6 +287,17 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 215102307}
+--- !u!114 &215102312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 215102307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc0c247fff0376849892ccbcf66c20bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &298044404
 GameObject:
   m_ObjectHideFlags: 0
@@ -720,6 +743,7 @@ GameObject:
   - 114: {fileID: 880907155}
   - 114: {fileID: 880907153}
   - 114: {fileID: 880907156}
+  - 114: {fileID: 880907157}
   m_Layer: 0
   m_Name: Global
   m_TagString: Untagged
@@ -780,6 +804,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de4e04691fa5cd64ba0a0ae94f2c096a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &880907157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 880907152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd5c06710d0a0aa4883d7b721d9b1897, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  loadGame: 1
 --- !u!1 &995138246
 GameObject:
   m_ObjectHideFlags: 0
@@ -1073,7 +1109,7 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 20
     m_FontStyle: 1
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 2
     m_MaxSize: 40
     m_Alignment: 4
@@ -1143,8 +1179,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   monsterPanel: {fileID: 1700931696}
-  monstersButton: {fileID: 2104496914}
-  monsterDexButton: {fileID: 215102307}
+  buttonsPanel: {fileID: 700828410}
 --- !u!4 &1807813243
 Transform:
   m_ObjectHideFlags: 0

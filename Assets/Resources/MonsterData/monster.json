@@ -425,6 +425,7 @@
 	},
 	"33": {
 		"name": "Nidorino",
+		"type": "poison",
 		"attack": 47,
 		"defense": 52,
 		"evolveLevel": 30,
@@ -444,15 +445,13 @@
 	},
 	"35": {
 		"name": "Clefairy",
-		"attack": 47,
-		"defense": 52,
+		"type": "normal",
 		"evolveLevel": 25,
 		"evolveTo": "37",
 	},
 	"36": {
 		"name": "Clefable",
-		"attack": 47,
-		"defense": 52,
+		"type": "normal",
 	},
 	"37": {
 		"name": "Vulpix",
@@ -472,11 +471,13 @@
 	},
 	"39": {
 		"name": "Jigglypuff",
+		"type": "normal",
 		"evolveLevel": 30,
 		"evolveTo": "40",
 	},
 	"40": {
 		"name": "Wigglytuff",
+		"type": "normal"
 	},
 	"41": {
 		"name": "Zubat",
@@ -509,16 +510,19 @@
 	},
 	"43": {
 		"name": "Oddish",
+		"type": "grass",
 		"evolveLevel": 20,
 		"evolveTo": "44",
 	},
 	"44": {
 		"name": "Gloom",
+		"type": "grass",
 		"evolveLevel": 35,
 		"evolveTo": "44",
 	},
 	"45": {
 		"name": "Vileplume",
+		"type": "grass",
 	},
 	"46": {
 		"name": "Paras",
@@ -684,6 +688,7 @@
 	},
 	"58": {
 		"name": "Growlith",
+		"type": "fire",
 		"evolveLevel": 30,
 		"evolveTo": "59",
 	},
@@ -715,6 +720,7 @@
 	},
 	"61": {
 		"name": "Poliwhirl",
+		"type": "water",
 		"evolveLevel": 40,
 		"evolveTo": "62",
 	},
@@ -730,11 +736,13 @@
 	},
 	"63": {
 		"name": "Abra",
+		"type": "psychic",
 		"evolveLevel": 30,
 		"evolveTo": "64",
 	},
 	"64": {
 		"name": "Kadabra",
+		"type": "psychic",
 		"evolveLevel": 40,
 		"evolveTo": "65",
 	},
@@ -767,6 +775,7 @@
 	},
 	"67": {
 		"name": "Machoke",
+		"type": "fighting",
 		"evolveLevel": 40,
 		"evolveTo": "68",
 	},

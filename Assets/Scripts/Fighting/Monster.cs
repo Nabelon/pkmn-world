@@ -7,6 +7,7 @@ namespace fight
         public readonly string name,id;
         public readonly int mLevel;
         private int mAtk, mDef, mMaxHp, mCurrHp, mSpDef, mSpAtk, mSpeed;
+        public readonly string[] type = new string[2];
         private bag.Monster bagmonster;
         public string[] moves = new string[4];
         public Monster(bag.Monster m) {
@@ -20,6 +21,7 @@ namespace fight
             mSpDef = m.mSpDef;
             mSpAtk = m.mSpAtk;
             mSpeed = m.mSpeed;
+            type = m.type;
             bagmonster = m;
             for (int i = 0; i < 4; i++)
             {
@@ -42,8 +44,18 @@ namespace fight
             return null;
         }
         //returns true if monster died
-        public bool getAttacked(int damage, Monster attacker = null, AttackMove attack = null) {
+        public bool getAttacked(int damage, Monster attacker = null, AttackMove attack = null, bool crit = false, float typeMult = 1.0f) {
+            if (crit)
+            {
+                TextBox.addText("Critical Hit!");
+            }
             TextBox.addText(attacker.name + "'s "+attack.getName() + " dealt " + damage + " to " + name);
+            if (typeMult > 1.01f)
+            {
+                TextBox.addText("Thats very effective");
+            } else if (typeMult < 0.99f) {
+                TextBox.addText("Thats not effective");
+            }
             mCurrHp = Mathf.Max(mCurrHp - damage, 0);
             if (mCurrHp == 0)
             {

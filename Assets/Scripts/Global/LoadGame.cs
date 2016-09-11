@@ -2,11 +2,12 @@
 using System.Collections;
 
 public class LoadGame : MonoBehaviour {
-    bool gameLoaded = false;
+    static bool gameLoaded = false; //load game once
+    public bool loadGame = true;    //for testing
 	// Use this for initialization
     void Awake()
     {
-        if (!gameLoaded)
+        if (!gameLoaded && loadGame)
         {
             saveload.SaveLoad.load();
             gameLoaded = true;
