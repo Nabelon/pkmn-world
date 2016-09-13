@@ -6,14 +6,32 @@ namespace bag
     public class MonsterBag
     {
         
-        private List<Monster> monsterList = new List<Monster>();
-        private GameObject monsterPanel;
+        private List<Monster> monsterBox = new List<Monster>();
+        private Monster[] team = new Monster[6];
         private static MonsterBag bag;
-        public void addMonster(Monster m)
+        private bool teamIsFull = false;
+
+        //true if monster was added to team
+        public bool addMonster(Monster m)
         {
-            monsterList.Add(m);
+            if (!teamIsFull)
+            {
+                for (int i = 0; i < 6; i++)
+                {
+                    if (team[i] == null)
+                    {
+                        team[i] = m;
+                        return true;
+                    }
+                }
+            }
+            monsterBox.Add(m);
+            return false;
         }
-        private void addToPanel(Monster m)
+        public Monster[] getTeam() {
+            return team;
+        }
+        private void addToPanel(Monster m, GameObject monsterPanel)
         {
             GameObject b = (GameObject)Object.Instantiate(Resources.Load("Prefabs/MonsterButton"));
             b.transform.FindChild("Text").GetComponent<UnityEngine.UI.Text>().text = m.name + "\nLevel: " + m.mLevel;
@@ -22,50 +40,44 @@ namespace bag
             b.transform.SetParent(monsterPanel.transform);
 
         }
-        public void setMonsterPanel(GameObject panel)
+        public List<Monster> getBox()
         {
-            monsterPanel = panel;
-            foreach (Monster m in monsterList) {
-                addToPanel(m);
-            }
-        }
-        public List<Monster> getMonsters()
-        {
-            return monsterList;
+            return monsterBox;
         }
         private MonsterBag()
         {
-            monsterList = new List<Monster>();
-            monsterPanel = GameObject.Find("GameObjectList").GetComponent<ImportantObjects>().monsterPanel;
+            monsterBox = new List<Monster>();
         }
         public static MonsterBag getBag() {
             if (bag == null)
             {
                 bag = new MonsterBag();
-                bag.addMonster(new Monster("4", 10));
-                bag.getMonsters()[0].attackMoves[1] = "Ember";
+                bag.team[0] = new Monster("4", 10);
+                bag.team[0].attackMoves[1] = "Ember";
             }
             return bag;
         }
     }
     public class Monster
     {
-        public readonly string name;
+        public readonly string name, nature;
         public readonly string id;
         public string[] attackMoves = new string[4];
         public string[] types;
-        public int mAtk, mDef, mMaxHp,  mSpDef, mSpAtk, mExp, mSpeed;
+        private int mAtk, mDef, mMaxHp,  mSpDef, mSpAtk, mExp, mSpeed;
         public int mCurrHp;
         public int ivHp, ivAtk, ivDef, ivSpAtk, ivSpDef, ivSpeed, xpToNextLevel;
         public int mLevel;
-        public Monster(string id, int level = 5, int ivHp = 0,int ivAtk = 0, int ivDef = 0, int ivSpAtk = 0, int ivSpDef = 0, int ivSpeed = 0)
+        public Monster(string id, int level = 5, string nature = "Jolly", int ivHp = 0,int ivAtk = 0, int ivDef = 0, int ivSpAtk = 0, int ivSpDef = 0, int ivSpeed = 0, int currExp = 0)
         {
             types = MonsterInfo.getMonsterInfo().getTypes(id);
             this.id = id;
+            this.nature = nature;
             name = MonsterInfo.getMonsterInfo().getName(id);
             SimpleJSON.JSONNode baseStats = MonsterInfo.getMonsterInfo().getBaseStatsJson(id);
             mLevel = level;
             mExp = 0;
+            this.mExp = currExp;
             this.ivAtk = ivAtk; this.ivDef = ivDef; this.ivHp = ivHp; this.ivSpDef = ivSpDef; this.ivSpeed = ivSpeed; this.ivSpAtk = ivSpAtk; //set stats
             this.mAtk = Mathf.FloorToInt(Mathf.Floor((System.Int32.Parse(baseStats["attack"].ToString().Replace("\"","")) + ivAtk) * mLevel / 100.0f + 5.0f));
             this.mDef = Mathf.FloorToInt(Mathf.Floor((System.Int32.Parse(baseStats["defense"].ToString().Replace("\"", "")) + ivDef) * mLevel / 100.0f + 5.0f));
@@ -108,6 +120,39 @@ namespace bag
             int powAdd = (int)Mathf.Pow((float)mLevel, 2.0f);
             int rarity = MonsterInfo.getMonsterInfo().getRarity(id);
             return (int)(100 + mLevel * (2500/(Mathf.Pow((float)rarity ,2.0f) + 25)) + powAdd);
+        }
+
+        public int getMAtk()
+        {
+            return Mathf.FloorToInt(mAtk * MonsterInfo.getMonsterInfo().getNatureMult(nature, "atk"));
+        }
+        public int getMDef()
+        {
+            return Mathf.FloorToInt(mDef * MonsterInfo.getMonsterInfo().getNatureMult(nature, "def"));
+        }
+        public int getMMaxHp()
+        {
+            return mMaxHp;
+        }
+        public int getMCurrHp()
+        {
+            return mCurrHp;
+        }
+        public int getMSpDef()
+        {
+            return Mathf.FloorToInt(mSpDef * MonsterInfo.getMonsterInfo().getNatureMult(nature, "spDef"));
+        }
+        public int getMSpAtk()
+        {
+            return Mathf.FloorToInt(mSpAtk * MonsterInfo.getMonsterInfo().getNatureMult(nature, "spAtk"));
+        }
+        public int getMSpeed()
+        {
+            return Mathf.FloorToInt(mSpeed * MonsterInfo.getMonsterInfo().getNatureMult(nature, "speed"));
+        }
+        public int getMExp()
+        {
+            return mExp;
         }
     }
 }

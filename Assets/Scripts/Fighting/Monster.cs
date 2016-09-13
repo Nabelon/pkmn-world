@@ -14,13 +14,13 @@ namespace fight
             id = m.id;
             name = m.name;
             mLevel = m.mLevel;
-            mAtk = m.mAtk;
-            mDef = m.mDef;
-            mMaxHp = m.mMaxHp;
+            mAtk = m.getMAtk();
+            mDef = m.getMDef();
+            mMaxHp = m.getMMaxHp();
             mCurrHp = m.mCurrHp;
-            mSpDef = m.mSpDef;
-            mSpAtk = m.mSpAtk;
-            mSpeed = m.mSpeed;
+            mSpDef = m.getMSpDef();
+            mSpAtk = m.getMSpAtk();
+            mSpeed = m.getMSpeed();
             types = m.types;
             bagmonster = m;
             for (int i = 0; i < 4; i++)
@@ -78,7 +78,7 @@ namespace fight
             }
             else
             {
-                TextBox.addText("Exp left: " + (bagmonster.getExpToNextLevel() - bagmonster.mExp));
+                TextBox.addText("Exp left: " + (bagmonster.getExpToNextLevel() - bagmonster.getMExp()));
             }
         }
         //TODO: add modifiers

@@ -33,32 +33,42 @@ namespace saveload
     [Serializable]
     public class Bag
     {
-        private List<Monster> monsterList;
+        private List<Monster> monsterBox;
+        private Monster[] team;
         public Bag(bag.MonsterBag mBag) {
-            monsterList = new List<Monster>();
-            List<bag.Monster> l = mBag.getMonsters();
+            monsterBox = new List<Monster>();
+            List<bag.Monster> l = mBag.getBox();
             foreach (bag.Monster m in l)
             {
-                monsterList.Add(new Monster(m));
+                monsterBox.Add(new Monster(m));
             }
         }
         public void recreate() {
-            bag.MonsterBag.getBag().getMonsters().RemoveAt(0);
-            foreach (Monster m in monsterList)
+            bag.MonsterBag mBag = bag.MonsterBag.getBag();
+            mBag.getBox().RemoveAt(0);
+            foreach (Monster m in monsterBox)
             {
-                bag.MonsterBag.getBag().addMonster(m.getBagMonster());
+                mBag.addMonster(m.getBagMonster());
+            }
+            for (int i = 0; i < 6; i++)
+            {
+                if (team[i] != null)
+                {
+                    mBag.getTeam()[i] = team[i].getBagMonster();
+                }
             }
         }
     }
     [Serializable]
     public class Monster
     {
-        private string id;
+        private string id, nature;
         private int mExp, mLevel, ivAtk, ivDef, ivHp, ivSpDef, ivSpAtk, ivSpeed, mCurrHp;
         public string[] moves = new string[4];
         public Monster(bag.Monster m)
         {
             id = m.id;
+            nature = m.nature;
             mLevel = m.mLevel;
             ivAtk = m.ivAtk;
             ivDef = m.ivDef;
@@ -67,14 +77,13 @@ namespace saveload
             ivSpDef = m.ivSpDef;
             ivSpAtk = m.ivSpAtk;
             ivSpeed = m.ivSpeed;
-            mExp = m.mExp;
+            mExp = m.getMExp();
             moves = m.attackMoves;
         }
         public bag.Monster getBagMonster()
         {
-            bag.Monster b = new bag.Monster(id, mLevel, ivHp, ivAtk, ivDef, ivSpAtk, ivSpDef, ivSpeed);
+            bag.Monster b = new bag.Monster(id, mLevel, nature, ivHp, ivAtk, ivDef, ivSpAtk, ivSpDef, ivSpeed, mExp);
             b.attackMoves = moves;
-            b.mExp = mExp;
             return b;
         }
     } 

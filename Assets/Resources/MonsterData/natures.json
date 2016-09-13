@@ -1,0 +1,177 @@
+{
+  "Rash": {
+    "spAtk": 1.1, 
+    "spDef": 0.9, 
+    "speed": 1, 
+    "atk": 1, 
+    "def": 1
+  }, 
+  "Jolly": {
+    "spAtk": 0.9, 
+    "spDef": 1, 
+    "speed": 1.1, 
+    "atk": 1, 
+    "def": 1
+  }, 
+  "Calm": {
+    "spAtk": 1, 
+    "spDef": 1.1, 
+    "speed": 1, 
+    "atk": 0.9, 
+    "def": 1
+  }, 
+  "Serious": {
+    "spAtk": 1, 
+    "spDef": 1, 
+    "speed": 1, 
+    "atk": 1, 
+    "def": 1
+  }, 
+  "Quirky": {
+    "spAtk": 1, 
+    "spDef": 1, 
+    "speed": 1, 
+    "atk": 1, 
+    "def": 1
+  }, 
+  "Lonely": {
+    "spAtk": 1, 
+    "spDef": 1, 
+    "speed": 1, 
+    "atk": 1.1, 
+    "def": 0.9
+  }, 
+  "Bold": {
+    "spAtk": 1, 
+    "spDef": 1, 
+    "speed": 1, 
+    "atk": 0.9, 
+    "def": 1.1
+  }, 
+  "Gentle": {
+    "spAtk": 1, 
+    "spDef": 1.1, 
+    "speed": 1, 
+    "atk": 1, 
+    "def": 0.9
+  }, 
+  "Naive": {
+    "spAtk": 1, 
+    "spDef": 0.9, 
+    "speed": 1.1, 
+    "atk": 1, 
+    "def": 1
+  }, 
+  "Bashful": {
+    "spAtk": 1, 
+    "spDef": 1, 
+    "speed": 1, 
+    "atk": 1, 
+    "def": 1
+  }, 
+  "Modest": {
+    "spAtk": 1.1, 
+    "spDef": 1, 
+    "speed": 1, 
+    "atk": 0.9, 
+    "def": 1
+  }, 
+  "Lax": {
+    "spAtk": 1, 
+    "spDef": 0.9, 
+    "speed": 1, 
+    "atk": 1, 
+    "def": 1.1
+  }, 
+  "Docile": {
+    "spAtk": 1, 
+    "spDef": 1, 
+    "speed": 1, 
+    "atk": 1, 
+    "def": 1
+  }, 
+  "Sassy": {
+    "spAtk": 1, 
+    "spDef": 1.1, 
+    "speed": 0.9, 
+    "atk": 1, 
+    "def": 1
+  }, 
+  "Adamant": {
+    "spAtk": 0.9, 
+    "spDef": 1, 
+    "speed": 1, 
+    "atk": 1.1, 
+    "def": 1
+  }, 
+  "Timid": {
+    "spAtk": 1, 
+    "spDef": 1, 
+    "speed": 1.1, 
+    "atk": 0.9, 
+    "def": 1
+  }, 
+  "Hasty": {
+    "spAtk": 1, 
+    "spDef": 1, 
+    "speed": 1.1, 
+    "atk": 1, 
+    "def": 0.9
+  }, 
+  "Quiet": {
+    "spAtk": 1.1, 
+    "spDef": 1, 
+    "speed": 0.9, 
+    "atk": 1, 
+    "def": 1
+  }, 
+  "Naughty": {
+    "spAtk": 1, 
+    "spDef": 0.9, 
+    "speed": 1, 
+    "atk": 1.1, 
+    "def": 1
+  }, 
+  "Careful": {
+    "spAtk": 0.9, 
+    "spDef": 1.1, 
+    "speed": 1, 
+    "atk": 1, 
+    "def": 1
+  }, 
+  "Brave": {
+    "spAtk": 1, 
+    "spDef": 1, 
+    "speed": 0.9, 
+    "atk": 1.1, 
+    "def": 1
+  }, 
+  "Impish": {
+    "spAtk": 0.9, 
+    "spDef": 1, 
+    "speed": 1, 
+    "atk": 1, 
+    "def": 1.1
+  }, 
+  "Hardy": {
+    "spAtk": 1, 
+    "spDef": 1, 
+    "speed": 1, 
+    "atk": 1, 
+    "def": 1
+  }, 
+  "Mild": {
+    "spAtk": 1.1, 
+    "spDef": 1, 
+    "speed": 1, 
+    "atk": 1, 
+    "def": 0.9
+  }, 
+  "Relaxed": {
+    "spAtk": 1, 
+    "spDef": 1, 
+    "speed": 0.9, 
+    "atk": 1, 
+    "def": 1.1
+  }
+}

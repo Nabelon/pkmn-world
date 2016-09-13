@@ -4,7 +4,7 @@ using System.Collections;
 public class BagView : MonoBehaviour {
 
     static bool wasDestroyed = false;
-    void Awake()
+    /*void Awake()
     {
         bag.MonsterBag.getBag().setMonsterPanel(gameObject.transform.FindChild("ScrollContent").FindChild("MonsterPanel").gameObject);
 
@@ -20,5 +20,5 @@ public class BagView : MonoBehaviour {
     void onDestroy()
     {
         wasDestroyed = true;
-    }
+    }*/
 }

@@ -38,8 +38,7 @@ public class Spawner : MonoBehaviour {
     }
     private map.Monster getMonster(float lat, float lng)
     {
-
-        MonsterInfo info = MonsterInfo.getMonsterInfo();
+         MonsterInfo info = MonsterInfo.getMonsterInfo();
         List<string> landuses = landuseManager.getLanduse(lat, lng);
         List<string> monsterIds = new List<string>();
         WeatherControler weatherCon = WeatherControler.getWeatherControler();

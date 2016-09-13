@@ -40,29 +40,44 @@ public class Tile : MonoBehaviour
     {
 
         // Placeholder URL stuff
-        string url = "http://vector.mapzen.com/osm/water,earth,roads/15/";
+        string url = "http://vector.mapzen.com/osm/water,earth,roads,pois/15/";
         string tileUrl = position.x + "/" + position.y;
 
         // Create the request and wait for a response
         WWW request = new WWW (url + tileUrl + ".json");
         yield return request;
-
         // Parse response into the SimpleJSON format
         JSONNode response = JSON.Parse (request.text);
-
         // Add water to the tile
         AddLayer<Ground> ("Ground", response ["earth"], 0);
         AddLayer<Water> ("Water", response ["water"], 1);
         AddLayer<Road> ("Roads", response ["roads"], 2);
-
         transform.position = WorldPosition;
+        addPOIs(response["pois"]);
     }
-
     void Update ()
     {
         transform.position = Vector3.zero;
     }
+    private void addPOIs(JSONNode data)
+    {
+        var format = System.Globalization.CultureInfo.InvariantCulture.NumberFormat;
+        JSONNode features = data["features"];
+        for (int i = 0; i < features.Count; i++)
+        {
+            if (features[i]["properties"]["kind"].Value != "place_of_worship" && features[i]["properties"]["kind"].Value != "biergarten" && features[i]["properties"]["kind"].Value != "school")
+            {
+                continue;
+            }
+            Vector2 posWc = new Vector2(float.Parse(features[i]["geometry"]["coordinates"][0].Value, format), float.Parse(features[i]["geometry"]["coordinates"][1].Value, format));
+            Vector2 posOnTile = BoundingBox.Interpolate(posWc.y, posWc.x);
+            GameObject g = (GameObject) GameObject.Instantiate(Resources.Load("Prefabs/MonsterCenter"));
+            g.name = features[i]["properties"]["kind"].Value;
+            g.transform.parent = transform; 
+            g.transform.localPosition = new Vector3( - posOnTile.x - WorldPosition.x, 0.0f, posOnTile.y + WorldPosition.z);
 
+        }
+    }
     /*
      * Create a tile layer.
      *

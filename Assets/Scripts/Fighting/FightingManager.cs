@@ -6,6 +6,7 @@ namespace fight
     public class FightingManager : MonoBehaviour
     {
         public static fight.Monster attacker, defender;
+        public static Monster[] attackerTeam, defenderTeam;
         public static Action attackerAction, defenderAction;
         bool fightIsOver = false;
         // Use this for initialization
@@ -21,7 +22,7 @@ namespace fight
             defenderAction = defender.getMove(0);
             for (int i = 0; i < 4; i++)
             {
-                GameObject.Find("Move" + (i+1).ToString()).GetComponent<AttackButton>().setMove(attacker.getMove(i));
+                GameObject.Find("Move" + (i + 1).ToString()).GetComponent<AttackButton>().setMove(attacker.getMove(i));
             }
             GameObject.Find("MovesPanel").SetActive(false);
         }
@@ -29,13 +30,14 @@ namespace fight
         // Update is called once per frame
         void Update()
         {
-                if (TextBox.showsText())
-                {
-                    return;
-                }
-                
+            if (TextBox.showsText())
+            {
+                return;
+            }
+
             if (fightIsOver)
-                {UnityEngine.SceneManagement.SceneManager.LoadScene("Main");
+            {
+                UnityEngine.SceneManagement.SceneManager.LoadScene("Main");
             }
             if (attackerAction == null || defenderAction == null)
             {
@@ -76,7 +78,8 @@ namespace fight
             TextBox.addText(reciver.name + " recived " + giveExp + " exp.");
             reciver.addExp(giveExp);
         }
-        private bool checkFainted() {
+        private bool checkFainted()
+        {
             if (defender.getMCurrHp() < 1)
             {
                 return true;
@@ -87,6 +90,40 @@ namespace fight
             }
             return false;
         }
+        public static bool addTeam(string side, bag.Monster[] team)
+        {
+            int count = 0;
+            if (side == "attacker")
+            {
+                attackerTeam = new Monster[3];
+                for (int i = 0; i < 6 && count < 3; i++)
+                {
+                    if (team[i] != null && team[i].mCurrHp > 0)
+                    {
+                        attackerTeam[count++] = new Monster(team[i]);
+                    }
+                }
+                attacker = attackerTeam[0];
+            }
+            else if (side == "defender")
+            {
+                defenderTeam = new Monster[3];
+                for (int i = 0; i < 6 && count < 3; i++)
+                {
+                    if (team[i] != null && team[i].mCurrHp > 0)
+                    {
+                        defenderTeam[count++] = new Monster(team[i]);
+                    }
+                }
+                defender = defenderTeam[0];
+            }
+            if (count > 0)
+            {
+                return true;
+            }
+            return false;
+        }
+
     }
     public abstract class Action
     {
