@@ -44,7 +44,7 @@ public class SimpleAttack : AttackMove
         mName = name;
         this.damage = damage;
         this.hitChance = hitChance;
-        this.category = category;
+        this.category = category.ToLower();
         this.child = child;
         this.movesLeft = movesLeft;
         this.user = user;
@@ -59,16 +59,22 @@ public class SimpleAttack : AttackMove
             child.attack();
         }
         int atk, def;
-        if (category == "Physical")
+        if (category == "physical")
         {
             atk = user.getMAtk();
             def = target.getMDef();
         }
-        else if (category == "Special")
+        else if (category == "special")
         {
             atk = user.getMSpAtk();
             def = target.getMSpDef();
         }
+        else if (category == "status")
+        {
+            //TODO: troll
+            atk = user.getMSpAtk();
+            def = target.getMSpDef();
+        } 
         else
         {
             Debug.Log("Error: categorie of attack move impossible: " + category);

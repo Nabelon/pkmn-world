@@ -7,6 +7,7 @@ public class Spawner : MonoBehaviour {
     LanduseManager.LanduseManager landuseManager;
     public int numberOfSpawns = 0;
     public int minNumberOfSpawns = 20;
+    private bool lastSpawnFailed = false;
 	// Use this for initialization
 	void Start () {
         landuseManager = new LanduseManager.LanduseManager();
@@ -31,10 +32,29 @@ public class Spawner : MonoBehaviour {
     }
     public bool spawn(float lat, float lng)
     {
-        map.Monster monster = getMonster(lat, lng);
-        if (monster == null) return false;
-        GameObject.FindObjectOfType<Map>().Spawn(monster, lat, lng);
-        return true;
+        if (lastSpawnFailed || Random.Range(1, 100) > 10)
+        {
+            map.Monster monster = getMonster(lat, lng);
+            if (monster == null) { lastSpawnFailed = true; return false; }
+            GameObject.FindObjectOfType<Map>().Spawn(monster.gameObject, lat, lng);
+            lastSpawnFailed = false;
+            return true;
+        }
+        else
+        {
+            GameObject thief = (GameObject)GameObject.Instantiate(Resources.Load("Prefabs/Thief"));
+            string[] team = new string[3];
+            team[0] = Random.Range(1,140).ToString();
+            while (MonsterInfo.getMonsterInfo().getRarity(team[0]) + PlayerData.getLevel() < 5)
+            {
+                team[0] = Random.Range(1, 140).ToString();
+
+            }
+            thief.GetComponent<map.Thief>().initiate(team, bag.MonsterBag.getBag().getTeam()[0].mLevel);
+            GameObject.FindObjectOfType<Map>().Spawn(thief, lat, lng);
+
+            return true;
+        }
     }
     private map.Monster getMonster(float lat, float lng)
     {
@@ -45,13 +65,16 @@ public class Spawner : MonoBehaviour {
         string time = weatherCon.getTime();
         string weather = weatherCon.getWeather(lat,lng);
         if (weather == null || landuses == null) return null;
+        string landusess = "";
         foreach (string landuse in landuses) //add monster that spawn cause of landuse
         {
+            landusess += landuse;
             for (int i = 0; i < info.spawns[0][landuse][time][weather].Count; i++)
             {
                 monsterIds.Add(info.spawns[0][landuse][time][weather][i]);
             }
         }
+        Debug.Log(landusess + " " + time + " " + weather);
         int count = monsterIds.Count;
         for (int i = 0; i < info.spawns[1][time][weather].Count && monsterIds.Count < 3; i++) //if not enough variety, add some more
         {

@@ -8,7 +8,7 @@ namespace fight
         public readonly int mLevel;
         private int mAtk, mDef, mMaxHp, mCurrHp, mSpDef, mSpAtk, mSpeed;
         public readonly string[] types = new string[2];
-        private bag.Monster bagmonster;
+        public bag.Monster bagmonster;
         public string[] moves = new string[4];
         public Monster(bag.Monster m) {
             id = m.id;
@@ -57,6 +57,7 @@ namespace fight
                 TextBox.addText("Thats not effective");
             }
             mCurrHp = Mathf.Max(mCurrHp - damage, 0);
+            bagmonster.mCurrHp = mCurrHp;
             if (mCurrHp == 0)
             {
                 return true;
@@ -68,11 +69,13 @@ namespace fight
         }
         public void addExp(int exp)
         {
-            bagmonster.mCurrHp = mCurrHp;
             bagmonster.addExp(exp);
             if (bagmonster.mLevel > mLevel)
             {
-                TextBox.addText(name + " leveled up!");
+                for (int i = mLevel + 1; i <= bagmonster.mLevel; i++)
+                {
+                    TextBox.addActionLast(new LevelUp(bagmonster, i));
+                }
                 //TODO: change count of attack Moves
                 fight.FightingManager.attacker = new Monster(bagmonster);
             }

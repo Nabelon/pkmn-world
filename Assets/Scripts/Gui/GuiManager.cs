@@ -5,8 +5,9 @@ using System.Collections.Generic;
 public class GuiManager : MonoBehaviour {
 
     public static GuiManager guiManager;
-    public GameObject mapGui, boxGui, monsterView, teamView, exitButton;
+    public GameObject mapGui, boxGui, monsterView, teamView, exitButton, monsterCenterView;
     private Stack<GameObject> stack = new Stack<GameObject>();
+    private Stack<bool> stackButton = new Stack<bool>();
     void Awake()
     {
         boxGui.SetActive(false);
@@ -15,6 +16,7 @@ public class GuiManager : MonoBehaviour {
         exitButton.SetActive(false);
         mapGui.SetActive(true);
         stack.Push(mapGui);
+        stackButton.Push(false);
         guiManager = this;
     }
     public void showElement(GameObject element)
@@ -23,14 +25,24 @@ public class GuiManager : MonoBehaviour {
         element.SetActive(true);
         stack.Push(element);
         exitButton.SetActive(true);
+        stackButton.Push(true);
+    }
+    public void showElementNoButton(GameObject element)
+    {
+        stack.Peek().SetActive(false);
+        element.SetActive(true);
+        stack.Push(element);
+        stackButton.Push(false);
     }
     public void closeElement()
     {
         stack.Pop().SetActive(false);
         stack.Peek().SetActive(true);
-        if (stack.Count == 1)
-        {
-            exitButton.SetActive(false);
-        }
+        stackButton.Pop();
+        exitButton.SetActive(stackButton.Peek());
+    }
+    public int getStackSize()
+    {
+        return stack.Count;
     }
 }

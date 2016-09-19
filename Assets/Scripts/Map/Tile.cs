@@ -42,12 +42,24 @@ public class Tile : MonoBehaviour
         // Placeholder URL stuff
         string url = "http://vector.mapzen.com/osm/water,earth,roads,pois/15/";
         string tileUrl = position.x + "/" + position.y;
+        string savedAsUrl = "water,earth,roads,pois,15," + position.x + "," + position.y;
+        JSONNode response;
+        string savedData = saveload.SaveLoad.getMapData(savedAsUrl);
+        if (savedData == null)
+        {
+            // Create the request and wait for a response
+            WWW request = new WWW(url + tileUrl + ".json");
+            yield return request;
+            // Parse response into the SimpleJSON format
+            response = JSON.Parse(request.text);
+            saveload.SaveLoad.saveMapData(savedAsUrl, request.text);
+        }
+        else
+        {
+            yield return new WaitForSeconds(1);
+            response = JSON.Parse(savedData);
 
-        // Create the request and wait for a response
-        WWW request = new WWW (url + tileUrl + ".json");
-        yield return request;
-        // Parse response into the SimpleJSON format
-        JSONNode response = JSON.Parse (request.text);
+        }
         // Add water to the tile
         AddLayer<Ground> ("Ground", response ["earth"], 0);
         AddLayer<Water> ("Water", response ["water"], 1);

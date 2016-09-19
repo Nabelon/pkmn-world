@@ -121,7 +121,7 @@ public class Map : MonoBehaviour {
      * Spawns a monster on the map. It will add the monster as a child
      * to the Tile it tries to spawn on.
      */
-    public void Spawn (map.Monster monster, float latitude, float longitude) {
+    public void Spawn (GameObject monster, float latitude, float longitude) {
         Vector2 tileCoords = Map.WorldToTileCoords(latitude, longitude);
 
         // Don't spawn if the tile is not in our active set
@@ -134,7 +134,7 @@ public class Map : MonoBehaviour {
         monster.transform.parent = tile.transform;
         Vector2 position = tile.BoundingBox.Interpolate (latitude, longitude);
         position.x = -position.x;
-        monster.transform.position = new Vector3(position.x - tile.WorldPosition.x, 2.0f, position.y + tile.WorldPosition.z);
+        monster.transform.position = new Vector3(position.x - tile.WorldPosition.x, 1.0f, position.y + tile.WorldPosition.z);
 	}
 
 	/*

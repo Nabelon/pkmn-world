@@ -3,7 +3,6 @@ using System.Collections;
 
 public class CameraController : MonoBehaviour
 {
-	 
     public Transform target;
 float distance = 30.0f;
  
@@ -30,8 +29,9 @@ void Start () {
  
    
 }
- 
-void LateUpdate () {
+
+void LateUpdate()
+{
     if (target == null)
     {
         target = Player.player.transform;
@@ -40,30 +40,35 @@ void LateUpdate () {
     position.y = Mathf.Max(position.y, 1);
     transform.position = position;
     transform.rotation = rotation;
-   
+
     //get the rotationsigns
-   
+
     var forward = transform.TransformDirection(Vector3.up);
     var forward2 = target.transform.TransformDirection(Vector3.up);
-     if (Vector3.Dot(forward,forward2) < 0)
-            xsign = -1;
-            else
-            xsign =1;
-   
-   
-    foreach (Touch touch  in Input.touches) {
-    if (touch.phase == TouchPhase.Moved) {
-        x += xsign * touch.deltaPosition.x * xSpeed *0.02f;
-        y -= touch.deltaPosition.y * ySpeed *0.02f;
-       
-       
-               
-        rotation = Quaternion.Euler(y, x, 0);
-        position = rotation * new Vector3(0.0f, 0.0f, -distance) + target.position;
-        position.y = Mathf.Max(position.y, 1);
-        transform.position = position;
-        transform.rotation = rotation;
+    if (Vector3.Dot(forward, forward2) < 0)
+        xsign = -1;
+    else
+        xsign = 1;
+
+    if (GuiManager.guiManager.getStackSize() > 1)
+    {
+        return;
     }
+    foreach (Touch touch in Input.touches)
+    {
+        if (touch.phase == TouchPhase.Moved)
+        {
+            x += xsign * touch.deltaPosition.x * xSpeed * 0.02f;
+            y -= touch.deltaPosition.y * ySpeed * 0.02f;
+
+
+
+            rotation = Quaternion.Euler(y, x, 0);
+            position = rotation * new Vector3(0.0f, 0.0f, -distance) + target.position;
+            position.y = Mathf.Max(position.y, 1);
+            transform.position = position;
+            transform.rotation = rotation;
+        }
     }
 }
 

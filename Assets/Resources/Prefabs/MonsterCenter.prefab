@@ -55,6 +55,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 4000010054935722}
+  - 114: {fileID: 114000011159106096}
   m_Layer: 0
   m_Name: MonsterCenter
   m_TagString: Untagged
@@ -255,6 +256,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &114000011159106096
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012529152020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55b4daa4380ccf94ebe4a0cde8e8c6d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!135 &135000012049778702
 SphereCollider:
   m_ObjectHideFlags: 1

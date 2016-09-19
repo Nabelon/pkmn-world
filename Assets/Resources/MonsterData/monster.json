@@ -44,7 +44,7 @@
 		"name": "Charmander",
 		"attack": 52,
 		"defense": 43,
-		"evolveLevel": 16,
+		"evolveLevel": 11,
 		"evolveTo": "5",
 		"type": "fire",
 		"moves": [

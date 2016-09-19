@@ -8,12 +8,13 @@ namespace saveload
 {
     public class SaveLoad
     {
+        private static MapDataSaver mapDataSaver;
         public static void save()
         {
             BinaryFormatter bf = new BinaryFormatter();
             FileStream file = File.Open(Application.persistentDataPath + "/bag.dat", FileMode.OpenOrCreate);
 
-            Bag data = new Bag(bag.MonsterBag.getBag());
+            Bag data = new Bag(bag.MonsterBag.getBag(), bag.ItemBag.getBag());
             bf.Serialize(file, data);
             file.Close();
         }
@@ -28,35 +29,71 @@ namespace saveload
                 file.Close();
                 data.recreate();
             }
+        }    
+        public static string getMapData(string url) {
+            if (mapDataSaver == null)
+            {
+                mapDataSaver = new MapDataSaver();
+            }
+            return mapDataSaver.getMapData(url);
+        }
+        public static void saveMapData(string url, string data)
+        {
+            if (mapDataSaver == null)
+            {
+                mapDataSaver = new MapDataSaver();
+            }
+            mapDataSaver.saveMapData(url, data);
+        }
+    }
+    [Serializable]
+    public class Player
+    {
+        public readonly int money;
+        public readonly int exp;
+        public readonly int level;
+        public readonly string name;
+        public Player()
+        {
+            money = PlayerData.getMoney();
+            exp = PlayerData.getExp();
+            level = PlayerData.getLevel();
+            name = PlayerData.getName();
+        }
+        public void recreate() {
+            PlayerData.recreate(this);
         }
     }
     [Serializable]
     public class Bag
     {
+        private Player p;
+        private Dictionary<bag.Item, int> itemsDict;
         private List<Monster> monsterBox;
         private Monster[] team;
-        public Bag(bag.MonsterBag mBag) {
+        public Bag(bag.MonsterBag mBag, bag.ItemBag itemBag) {
             monsterBox = new List<Monster>();
+            team = new Monster[6];
+            for (int i = 0; i < 6; i++)
+            {
+                bag.Monster m = mBag.getTeam()[i];
+                if (m != null)
+                {
+                    team[i] = new Monster(m);
+                }
+            }
             List<bag.Monster> l = mBag.getBox();
+            itemsDict = itemBag.getItemsDict();
             foreach (bag.Monster m in l)
             {
                 monsterBox.Add(new Monster(m));
             }
+            p = new Player();
         }
         public void recreate() {
-            bag.MonsterBag mBag = bag.MonsterBag.getBag();
-            mBag.getBox().RemoveAt(0);
-            foreach (Monster m in monsterBox)
-            {
-                mBag.addMonster(m.getBagMonster());
-            }
-            for (int i = 0; i < 6; i++)
-            {
-                if (team[i] != null)
-                {
-                    mBag.getTeam()[i] = team[i].getBagMonster();
-                }
-            }
+            bag.ItemBag.createBag(itemsDict);
+            bag.MonsterBag.createBag(team, monsterBox);
+            p.recreate();
         }
     }
     [Serializable]

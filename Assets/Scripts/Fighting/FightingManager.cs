@@ -8,9 +8,16 @@ namespace fight
         public static fight.Monster attacker, defender;
         public static Monster[] attackerTeam, defenderTeam;
         public static Action attackerAction, defenderAction;
-        bool fightIsOver = false;
+        static bool figthTrainer = false;
+        public static bool fightIsOver = false;
         // Use this for initialization
         void Start()
+        {
+            fightIsOver = false;
+            reload();
+            GameObject.Find("MovesPanel").SetActive(false);
+        }
+        public static void reload()
         {
             Image attackerImage = GameObject.Find("AttackerImage").GetComponent<Image>();
             Sprite sprite = (Sprite)Resources.Load<Sprite>("MonsterData/icons/back/" + attacker.id);
@@ -19,14 +26,16 @@ namespace fight
             Image defenderImage = GameObject.Find("DefenderImage").GetComponent<Image>();
             sprite = (Sprite)Resources.Load<Sprite>("MonsterData/icons/" + defender.id);
             defenderImage.overrideSprite = sprite;
-            defenderAction = defender.getMove(0);
+            defenderAction = null;
+            for (int i = 3; i >= 0 && defenderAction == null; i--)
+            {
+                defenderAction = defender.getMove(Random.Range(0, i));
+            }
             for (int i = 0; i < 4; i++)
             {
                 GameObject.Find("Move" + (i + 1).ToString()).GetComponent<AttackButton>().setMove(attacker.getMove(i));
             }
-            GameObject.Find("MovesPanel").SetActive(false);
         }
-
         // Update is called once per frame
         void Update()
         {
@@ -37,6 +46,7 @@ namespace fight
 
             if (fightIsOver)
             {
+                figthTrainer = false;
                 UnityEngine.SceneManagement.SceneManager.LoadScene("Main");
             }
             if (attackerAction == null || defenderAction == null)
@@ -45,28 +55,37 @@ namespace fight
             }
             if (doMoves())
             {
-                if (attacker.getMCurrHp() > 0)
+                if (defender.getMCurrHp() == 0)
                 {
                     giveExp(attacker, defender);
                     fightIsOver = true;
                 }
+                else 
+                {
+                    fightIsOver = true;
+                }
             }
             attackerAction = null;
-            checkFainted();
+
+            defenderAction = null;
+            for (int i = 3; i >= 0 && defenderAction == null; i--)
+            {
+                defenderAction = defender.getMove(Random.Range(0, i));
+            }
         }
         private bool doMoves()
         {
             if (attackerAction.getPriority() < defenderAction.getPriority())
             {
                 defenderAction.doAction();
-                if (checkFainted()) return true;
+                if (checkFainted() || fightIsOver) return true;
                 attackerAction.doAction();
 
             }
             else
             {
                 attackerAction.doAction();
-                if (checkFainted()) return true;
+                if (checkFainted() || fightIsOver) return true;
                 defenderAction.doAction();
             }
             if (checkFainted()) return true;
@@ -74,9 +93,11 @@ namespace fight
         }
         private void giveExp(Monster reciver, Monster lost)
         {
-            int giveExp = lost.mLevel * 20 + 100;
+            int giveExp = lost.mLevel * 20 * (figthTrainer ? 2 : 1) + 100;
             TextBox.addText(reciver.name + " recived " + giveExp + " exp.");
             reciver.addExp(giveExp);
+            PlayerData.addExp(giveExp);
+            PlayerData.addMoney(isTrainerFight() ? 500 + lost.mLevel * 50 : 0);
         }
         private bool checkFainted()
         {
@@ -89,6 +110,10 @@ namespace fight
                 return true;
             }
             return false;
+        }
+        public static bool isTrainerFight()
+        {
+            return figthTrainer;
         }
         public static bool addTeam(string side, bag.Monster[] team)
         {
@@ -124,6 +149,11 @@ namespace fight
             return false;
         }
 
+
+        public static void setTrainerFight(bool p)
+        {
+            figthTrainer = p;
+        }
     }
     public abstract class Action
     {

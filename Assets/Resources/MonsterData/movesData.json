@@ -1,0 +1,6578 @@
+{
+  "simple-beam": {
+    "acc": 100, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "normal", 
+    "id": 493
+  }, 
+  "scratch": {
+    "acc": 100, 
+    "pp": 35, 
+    "prio": 0, 
+    "dmg": 40, 
+    "cat": "physical", 
+    "type": "normal", 
+    "id": 10
+  }, 
+  "867": {
+    "name": "Error"
+  }, 
+  "ice-punch": {
+    "acc": 100, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 75, 
+    "cat": "physical", 
+    "type": "ice", 
+    "id": 8
+  }, 
+  "trump-card": {
+    "acc": 0, 
+    "pp": 5, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "special", 
+    "type": "normal", 
+    "id": 376
+  }, 
+  "avalanche": {
+    "acc": 100, 
+    "pp": 10, 
+    "prio": -4, 
+    "dmg": 60, 
+    "cat": "physical", 
+    "type": "ice", 
+    "id": 419
+  }, 
+  "stealth-rock": {
+    "acc": 0, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "rock", 
+    "id": 446
+  }, 
+  "fiery-dance": {
+    "acc": 100, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 80, 
+    "cat": "special", 
+    "type": "fire", 
+    "id": 552
+  }, 
+  "798": {
+    "name": "Error"
+  }, 
+  "horn-leech": {
+    "acc": 100, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 75, 
+    "cat": "physical", 
+    "type": "grass", 
+    "id": 532
+  }, 
+  "superpower": {
+    "acc": 100, 
+    "pp": 5, 
+    "prio": 0, 
+    "dmg": 120, 
+    "cat": "physical", 
+    "type": "fighting", 
+    "id": 276
+  }, 
+  "fairy-wind": {
+    "acc": 100, 
+    "pp": 30, 
+    "prio": 0, 
+    "dmg": 40, 
+    "cat": "special", 
+    "type": "fairy", 
+    "id": 584
+  }, 
+  "drill-peck": {
+    "acc": 100, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 80, 
+    "cat": "physical", 
+    "type": "flying", 
+    "id": 65
+  }, 
+  "734": {
+    "name": "Error"
+  }, 
+  "razor-leaf": {
+    "acc": 95, 
+    "pp": 25, 
+    "prio": 0, 
+    "dmg": 55, 
+    "cat": "physical", 
+    "type": "grass", 
+    "id": 75
+  }, 
+  "spiky-shield": {
+    "acc": 0, 
+    "pp": 10, 
+    "prio": 4, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "grass", 
+    "id": 596
+  }, 
+  "flash": {
+    "acc": 100, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "normal", 
+    "id": 148
+  }, 
+  "lucky-chant": {
+    "acc": 0, 
+    "pp": 30, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "normal", 
+    "id": 381
+  }, 
+  "steel-wing": {
+    "acc": 90, 
+    "pp": 25, 
+    "prio": 0, 
+    "dmg": 70, 
+    "cat": "physical", 
+    "type": "steel", 
+    "id": 211
+  }, 
+  "mega-kick": {
+    "acc": 75, 
+    "pp": 5, 
+    "prio": 0, 
+    "dmg": 120, 
+    "cat": "physical", 
+    "type": "normal", 
+    "id": 25
+  }, 
+  "energy-ball": {
+    "acc": 100, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 90, 
+    "cat": "special", 
+    "type": "grass", 
+    "id": 412
+  }, 
+  "charge": {
+    "acc": 0, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "electric", 
+    "id": 268
+  }, 
+  "quash": {
+    "acc": 100, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "dark", 
+    "id": 511
+  }, 
+  "phantom-force": {
+    "acc": 100, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 90, 
+    "cat": "physical", 
+    "type": "ghost", 
+    "id": 566
+  }, 
+  "water-gun": {
+    "acc": 100, 
+    "pp": 25, 
+    "prio": 0, 
+    "dmg": 40, 
+    "cat": "special", 
+    "type": "water", 
+    "id": 55
+  }, 
+  "recycle": {
+    "acc": 0, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "normal", 
+    "id": 278
+  }, 
+  "811": {
+    "name": "Error"
+  }, 
+  "812": {
+    "name": "Error"
+  }, 
+  "flower-shield": {
+    "acc": 0, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "fairy", 
+    "id": 579
+  }, 
+  "814": {
+    "name": "Error"
+  }, 
+  "815": {
+    "name": "Error"
+  }, 
+  "shadow-force": {
+    "acc": 100, 
+    "pp": 5, 
+    "prio": 0, 
+    "dmg": 120, 
+    "cat": "physical", 
+    "type": "ghost", 
+    "id": 467
+  }, 
+  "tail-slap": {
+    "acc": 85, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 25, 
+    "cat": "physical", 
+    "type": "normal", 
+    "id": 541
+  }, 
+  "691": {
+    "name": "Error"
+  }, 
+  "extrasensory": {
+    "acc": 100, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 80, 
+    "cat": "special", 
+    "type": "psychic", 
+    "id": 326
+  }, 
+  "719": {
+    "name": "Error"
+  }, 
+  "718": {
+    "name": "Error"
+  }, 
+  "717": {
+    "name": "Error"
+  }, 
+  "716": {
+    "name": "Error"
+  }, 
+  "miracle-eye": {
+    "acc": 0, 
+    "pp": 40, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "psychic", 
+    "id": 357
+  }, 
+  "shadow-sneak": {
+    "acc": 100, 
+    "pp": 30, 
+    "prio": 1, 
+    "dmg": 40, 
+    "cat": "physical", 
+    "type": "ghost", 
+    "id": 425
+  }, 
+  "giga-impact": {
+    "acc": 90, 
+    "pp": 5, 
+    "prio": 0, 
+    "dmg": 150, 
+    "cat": "physical", 
+    "type": "normal", 
+    "id": 416
+  }, 
+  "water-pledge": {
+    "acc": 100, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 80, 
+    "cat": "special", 
+    "type": "water", 
+    "id": 518
+  }, 
+  "air-cutter": {
+    "acc": 95, 
+    "pp": 25, 
+    "prio": 0, 
+    "dmg": 60, 
+    "cat": "special", 
+    "type": "flying", 
+    "id": 314
+  }, 
+  "710": {
+    "name": "Error"
+  }, 
+  "914": {
+    "name": "Error"
+  }, 
+  "struggle-bug": {
+    "acc": 100, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 50, 
+    "cat": "special", 
+    "type": "bug", 
+    "id": 522
+  }, 
+  "916": {
+    "name": "Error"
+  }, 
+  "sweet-scent": {
+    "acc": 100, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "normal", 
+    "id": 230
+  }, 
+  "dig": {
+    "acc": 100, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 80, 
+    "cat": "physical", 
+    "type": "ground", 
+    "id": 91
+  }, 
+  "shift-gear": {
+    "acc": 0, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "steel", 
+    "id": 508
+  }, 
+  "sleep-powder": {
+    "acc": 75, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "grass", 
+    "id": 79
+  }, 
+  "912": {
+    "name": "Error"
+  }, 
+  "round": {
+    "acc": 100, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 60, 
+    "cat": "special", 
+    "type": "normal", 
+    "id": 496
+  }, 
+  "whirlwind": {
+    "acc": 0, 
+    "pp": 20, 
+    "prio": -6, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "normal", 
+    "id": 18
+  }, 
+  "bubble-beam": {
+    "acc": 100, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 65, 
+    "cat": "special", 
+    "type": "water", 
+    "id": 61
+  }, 
+  "poison-gas": {
+    "acc": 90, 
+    "pp": 40, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "poison", 
+    "id": 139
+  }, 
+  "spike-cannon": {
+    "acc": 100, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 20, 
+    "cat": "physical", 
+    "type": "normal", 
+    "id": 131
+  }, 
+  "aurora-beam": {
+    "acc": 100, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 65, 
+    "cat": "special", 
+    "type": "ice", 
+    "id": 62
+  }, 
+  "mean-look": {
+    "acc": 0, 
+    "pp": 5, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "normal", 
+    "id": 212
+  }, 
+  "hyperspace-hole": {
+    "acc": 0, 
+    "pp": 5, 
+    "prio": 0, 
+    "dmg": 80, 
+    "cat": "special", 
+    "type": "psychic", 
+    "id": 593
+  }, 
+  "psyshock": {
+    "acc": 100, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 80, 
+    "cat": "special", 
+    "type": "psychic", 
+    "id": 473
+  }, 
+  "ice-fang": {
+    "acc": 95, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 65, 
+    "cat": "physical", 
+    "type": "ice", 
+    "id": 423
+  }, 
+  "eerie-impulse": {
+    "acc": 100, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "electric", 
+    "id": 598
+  }, 
+  "guillotine": {
+    "acc": 30, 
+    "pp": 5, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "physical", 
+    "type": "normal", 
+    "id": 12
+  }, 
+  "fell-stinger": {
+    "acc": 100, 
+    "pp": 25, 
+    "prio": 0, 
+    "dmg": 30, 
+    "cat": "physical", 
+    "type": "bug", 
+    "id": 565
+  }, 
+  "acid": {
+    "acc": 100, 
+    "pp": 30, 
+    "prio": 0, 
+    "dmg": 40, 
+    "cat": "special", 
+    "type": "poison", 
+    "id": 51
+  }, 
+  "doom-desire": {
+    "acc": 100, 
+    "pp": 5, 
+    "prio": 0, 
+    "dmg": 140, 
+    "cat": "special", 
+    "type": "steel", 
+    "id": 353
+  }, 
+  "substitute": {
+    "acc": 0, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "normal", 
+    "id": 164
+  }, 
+  "hydro-pump": {
+    "acc": 80, 
+    "pp": 5, 
+    "prio": 0, 
+    "dmg": 110, 
+    "cat": "special", 
+    "type": "water", 
+    "id": 56
+  }, 
+  "icy-wind": {
+    "acc": 95, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 55, 
+    "cat": "special", 
+    "type": "ice", 
+    "id": 196
+  }, 
+  "harden": {
+    "acc": 0, 
+    "pp": 30, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "normal", 
+    "id": 106
+  }, 
+  "curse": {
+    "acc": 0, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "ghost", 
+    "id": 174
+  }, 
+  "mach-punch": {
+    "acc": 100, 
+    "pp": 30, 
+    "prio": 1, 
+    "dmg": 40, 
+    "cat": "physical", 
+    "type": "fighting", 
+    "id": 183
+  }, 
+  "628": {
+    "name": "Error"
+  }, 
+  "thunder": {
+    "acc": 70, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 110, 
+    "cat": "special", 
+    "type": "electric", 
+    "id": 87
+  }, 
+  "kings-shield": {
+    "acc": 0, 
+    "pp": 10, 
+    "prio": 4, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "steel", 
+    "id": 588
+  }, 
+  "haze": {
+    "acc": 0, 
+    "pp": 30, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "ice", 
+    "id": 114
+  }, 
+  "695": {
+    "name": "Error"
+  }, 
+  "parabolic-charge": {
+    "acc": 100, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 50, 
+    "cat": "special", 
+    "type": "electric", 
+    "id": 570
+  }, 
+  "crunch": {
+    "acc": 100, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 80, 
+    "cat": "physical", 
+    "type": "dark", 
+    "id": 242
+  }, 
+  "aeroblast": {
+    "acc": 95, 
+    "pp": 5, 
+    "prio": 0, 
+    "dmg": 100, 
+    "cat": "special", 
+    "type": "flying", 
+    "id": 177
+  }, 
+  "explosion": {
+    "acc": 100, 
+    "pp": 5, 
+    "prio": 0, 
+    "dmg": 250, 
+    "cat": "physical", 
+    "type": "normal", 
+    "id": 153
+  }, 
+  "heart-stamp": {
+    "acc": 100, 
+    "pp": 25, 
+    "prio": 0, 
+    "dmg": 60, 
+    "cat": "physical", 
+    "type": "psychic", 
+    "id": 531
+  }, 
+  "water-pulse": {
+    "acc": 100, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 60, 
+    "cat": "special", 
+    "type": "water", 
+    "id": 352
+  }, 
+  "sky-drop": {
+    "acc": 100, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 60, 
+    "cat": "physical", 
+    "type": "flying", 
+    "id": 507
+  }, 
+  "895": {
+    "name": "Error"
+  }, 
+  "freeze-dry": {
+    "acc": 100, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 70, 
+    "cat": "special", 
+    "type": "ice", 
+    "id": 573
+  }, 
+  "pursuit": {
+    "acc": 100, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 40, 
+    "cat": "physical", 
+    "type": "dark", 
+    "id": 228
+  }, 
+  "fake-out": {
+    "acc": 100, 
+    "pp": 10, 
+    "prio": 3, 
+    "dmg": 40, 
+    "cat": "physical", 
+    "type": "normal", 
+    "id": 252
+  }, 
+  "sing": {
+    "acc": 55, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "normal", 
+    "id": 47
+  }, 
+  "rain-dance": {
+    "acc": 0, 
+    "pp": 5, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "water", 
+    "id": 240
+  }, 
+  "earthquake": {
+    "acc": 100, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 100, 
+    "cat": "physical", 
+    "type": "ground", 
+    "id": 89
+  }, 
+  "902": {
+    "name": "Error"
+  }, 
+  "903": {
+    "name": "Error"
+  }, 
+  "incinerate": {
+    "acc": 100, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 60, 
+    "cat": "special", 
+    "type": "fire", 
+    "id": 510
+  }, 
+  "901": {
+    "name": "Error"
+  }, 
+  "quiver-dance": {
+    "acc": 0, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "bug", 
+    "id": 483
+  }, 
+  "spite": {
+    "acc": 100, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "ghost", 
+    "id": 180
+  }, 
+  "904": {
+    "name": "Error"
+  }, 
+  "905": {
+    "name": "Error"
+  }, 
+  "908": {
+    "name": "Error"
+  }, 
+  "magical-leaf": {
+    "acc": 0, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 60, 
+    "cat": "special", 
+    "type": "grass", 
+    "id": 345
+  }, 
+  "screech": {
+    "acc": 85, 
+    "pp": 40, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "normal", 
+    "id": 103
+  }, 
+  "milk-drink": {
+    "acc": 0, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "normal", 
+    "id": 208
+  }, 
+  "heavy-slam": {
+    "acc": 100, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "physical", 
+    "type": "steel", 
+    "id": 484
+  }, 
+  "641": {
+    "name": "Error"
+  }, 
+  "640": {
+    "name": "Error"
+  }, 
+  "643": {
+    "name": "Error"
+  }, 
+  "642": {
+    "name": "Error"
+  }, 
+  "645": {
+    "name": "Error"
+  }, 
+  "psych-up": {
+    "acc": 0, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "normal", 
+    "id": 244
+  }, 
+  "dark-void": {
+    "acc": 80, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "dark", 
+    "id": 464
+  }, 
+  "grass-knot": {
+    "acc": 100, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "special", 
+    "type": "grass", 
+    "id": 447
+  }, 
+  "649": {
+    "name": "Error"
+  }, 
+  "648": {
+    "name": "Error"
+  }, 
+  "body-slam": {
+    "acc": 100, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 85, 
+    "cat": "physical", 
+    "type": "normal", 
+    "id": 34
+  }, 
+  "punishment": {
+    "acc": 100, 
+    "pp": 5, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "physical", 
+    "type": "dark", 
+    "id": 386
+  }, 
+  "rototiller": {
+    "acc": 0, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "ground", 
+    "id": 563
+  }, 
+  "spit-up": {
+    "acc": 100, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "special", 
+    "type": "normal", 
+    "id": 255
+  }, 
+  "blizzard": {
+    "acc": 70, 
+    "pp": 5, 
+    "prio": 0, 
+    "dmg": 110, 
+    "cat": "special", 
+    "type": "ice", 
+    "id": 59
+  }, 
+  "rock-climb": {
+    "acc": 85, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 90, 
+    "cat": "physical", 
+    "type": "normal", 
+    "id": 431
+  }, 
+  "742": {
+    "name": "Error"
+  }, 
+  "baton-pass": {
+    "acc": 0, 
+    "pp": 40, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "normal", 
+    "id": 226
+  }, 
+  "bug-bite": {
+    "acc": 100, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 60, 
+    "cat": "physical", 
+    "type": "bug", 
+    "id": 450
+  }, 
+  "rock-tomb": {
+    "acc": 95, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 60, 
+    "cat": "physical", 
+    "type": "rock", 
+    "id": 317
+  }, 
+  "will-o-wisp": {
+    "acc": 85, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "fire", 
+    "id": 261
+  }, 
+  "dragon-dance": {
+    "acc": 0, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "dragon", 
+    "id": 349
+  }, 
+  "854": {
+    "name": "Error"
+  }, 
+  "self-destruct": {
+    "acc": 100, 
+    "pp": 5, 
+    "prio": 0, 
+    "dmg": 200, 
+    "cat": "physical", 
+    "type": "normal", 
+    "id": 120
+  }, 
+  "bone-club": {
+    "acc": 85, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 65, 
+    "cat": "physical", 
+    "type": "ground", 
+    "id": 125
+  }, 
+  "857": {
+    "name": "Error"
+  }, 
+  "overheat": {
+    "acc": 90, 
+    "pp": 5, 
+    "prio": 0, 
+    "dmg": 130, 
+    "cat": "special", 
+    "type": "fire", 
+    "id": 315
+  }, 
+  "746": {
+    "name": "Error"
+  }, 
+  "thousand-arrows": {
+    "acc": 100, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 90, 
+    "cat": "physical", 
+    "type": "ground", 
+    "id": 614
+  }, 
+  "power-swap": {
+    "acc": 0, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "psychic", 
+    "id": 384
+  }, 
+  "captivate": {
+    "acc": 100, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "normal", 
+    "id": 445
+  }, 
+  "858": {
+    "name": "Error"
+  }, 
+  "859": {
+    "name": "Error"
+  }, 
+  "rapid-spin": {
+    "acc": 100, 
+    "pp": 40, 
+    "prio": 0, 
+    "dmg": 20, 
+    "cat": "physical", 
+    "type": "normal", 
+    "id": 229
+  }, 
+  "vine-whip": {
+    "acc": 100, 
+    "pp": 25, 
+    "prio": 0, 
+    "dmg": 45, 
+    "cat": "physical", 
+    "type": "grass", 
+    "id": 22
+  }, 
+  "splash": {
+    "acc": 0, 
+    "pp": 40, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "normal", 
+    "id": 150
+  }, 
+  "843": {
+    "name": "Error"
+  }, 
+  "749": {
+    "name": "Error"
+  }, 
+  "lock-on": {
+    "acc": 0, 
+    "pp": 5, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "normal", 
+    "id": 199
+  }, 
+  "swagger": {
+    "acc": 90, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "normal", 
+    "id": 207
+  }, 
+  "gyro-ball": {
+    "acc": 100, 
+    "pp": 5, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "physical", 
+    "type": "steel", 
+    "id": 360
+  }, 
+  "mirror-shot": {
+    "acc": 85, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 65, 
+    "cat": "special", 
+    "type": "steel", 
+    "id": 429
+  }, 
+  "900": {
+    "name": "Error"
+  }, 
+  "wonder-room": {
+    "acc": 0, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "psychic", 
+    "id": 472
+  }, 
+  "hyperspace-fury": {
+    "acc": 0, 
+    "pp": 5, 
+    "prio": 0, 
+    "dmg": 100, 
+    "cat": "physical", 
+    "type": "dark", 
+    "id": 621
+  }, 
+  "934": {
+    "name": "Error"
+  }, 
+  "bolt-strike": {
+    "acc": 85, 
+    "pp": 5, 
+    "prio": 0, 
+    "dmg": 130, 
+    "cat": "physical", 
+    "type": "electric", 
+    "id": 550
+  }, 
+  "iron-tail": {
+    "acc": 75, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 100, 
+    "cat": "physical", 
+    "type": "steel", 
+    "id": 231
+  }, 
+  "pain-split": {
+    "acc": 0, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "normal", 
+    "id": 220
+  }, 
+  "dragon-breath": {
+    "acc": 100, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 60, 
+    "cat": "special", 
+    "type": "dragon", 
+    "id": 225
+  }, 
+  "focus-blast": {
+    "acc": 70, 
+    "pp": 5, 
+    "prio": 0, 
+    "dmg": 120, 
+    "cat": "special", 
+    "type": "fighting", 
+    "id": 411
+  }, 
+  "813": {
+    "name": "Error"
+  }, 
+  "hammer-arm": {
+    "acc": 90, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 100, 
+    "cat": "physical", 
+    "type": "fighting", 
+    "id": 359
+  }, 
+  "750": {
+    "name": "Error"
+  }, 
+  "pin-missile": {
+    "acc": 95, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 25, 
+    "cat": "physical", 
+    "type": "bug", 
+    "id": 42
+  }, 
+  "842": {
+    "name": "Error"
+  }, 
+  "fly": {
+    "acc": 95, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 90, 
+    "cat": "physical", 
+    "type": "flying", 
+    "id": 19
+  }, 
+  "dragon-ascent": {
+    "acc": 100, 
+    "pp": 5, 
+    "prio": 0, 
+    "dmg": 120, 
+    "cat": "physical", 
+    "type": "flying", 
+    "id": 620
+  }, 
+  "flame-charge": {
+    "acc": 100, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 50, 
+    "cat": "physical", 
+    "type": "fire", 
+    "id": 488
+  }, 
+  "ominous-wind": {
+    "acc": 100, 
+    "pp": 5, 
+    "prio": 0, 
+    "dmg": 60, 
+    "cat": "special", 
+    "type": "ghost", 
+    "id": 466
+  }, 
+  "brave-bird": {
+    "acc": 100, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 120, 
+    "cat": "physical", 
+    "type": "flying", 
+    "id": 413
+  }, 
+  "belch": {
+    "acc": 90, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 120, 
+    "cat": "special", 
+    "type": "poison", 
+    "id": 562
+  }, 
+  "mega-punch": {
+    "acc": 85, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 80, 
+    "cat": "physical", 
+    "type": "normal", 
+    "id": 5
+  }, 
+  "attack-order": {
+    "acc": 100, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 90, 
+    "cat": "physical", 
+    "type": "bug", 
+    "id": 454
+  }, 
+  "sandstorm": {
+    "acc": 0, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "rock", 
+    "id": 201
+  }, 
+  "roar": {
+    "acc": 0, 
+    "pp": 20, 
+    "prio": -6, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "normal", 
+    "id": 46
+  }, 
+  "816": {
+    "name": "Error"
+  }, 
+  "817": {
+    "name": "Error"
+  }, 
+  "ice-ball": {
+    "acc": 90, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 30, 
+    "cat": "physical", 
+    "type": "ice", 
+    "id": 301
+  }, 
+  "karate-chop": {
+    "acc": 100, 
+    "pp": 25, 
+    "prio": 0, 
+    "dmg": 50, 
+    "cat": "physical", 
+    "type": "fighting", 
+    "id": 2
+  }, 
+  "night-shade": {
+    "acc": 100, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "special", 
+    "type": "ghost", 
+    "id": 101
+  }, 
+  "reflect-type": {
+    "acc": 0, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "normal", 
+    "id": 513
+  }, 
+  "743": {
+    "name": "Error"
+  }, 
+  "744": {
+    "name": "Error"
+  }, 
+  "745": {
+    "name": "Error"
+  }, 
+  "vital-throw": {
+    "acc": 0, 
+    "pp": 10, 
+    "prio": -1, 
+    "dmg": 70, 
+    "cat": "physical", 
+    "type": "fighting", 
+    "id": 233
+  }, 
+  "747": {
+    "name": "Error"
+  }, 
+  "748": {
+    "name": "Error"
+  }, 
+  "scald": {
+    "acc": 100, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 80, 
+    "cat": "special", 
+    "type": "water", 
+    "id": 503
+  }, 
+  "seismic-toss": {
+    "acc": 100, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "physical", 
+    "type": "fighting", 
+    "id": 69
+  }, 
+  "calm-mind": {
+    "acc": 0, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "psychic", 
+    "id": 347
+  }, 
+  "close-combat": {
+    "acc": 100, 
+    "pp": 5, 
+    "prio": 0, 
+    "dmg": 120, 
+    "cat": "physical", 
+    "type": "fighting", 
+    "id": 370
+  }, 
+  "toxic-spikes": {
+    "acc": 0, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "poison", 
+    "id": 390
+  }, 
+  "attract": {
+    "acc": 100, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "normal", 
+    "id": 213
+  }, 
+  "lunar-dance": {
+    "acc": 0, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "psychic", 
+    "id": 461
+  }, 
+  "shadow-ball": {
+    "acc": 100, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 80, 
+    "cat": "special", 
+    "type": "ghost", 
+    "id": 247
+  }, 
+  "sticky-web": {
+    "acc": 0, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "bug", 
+    "id": 564
+  }, 
+  "tailwind": {
+    "acc": 0, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "flying", 
+    "id": 366
+  }, 
+  "roar-of-time": {
+    "acc": 90, 
+    "pp": 5, 
+    "prio": 0, 
+    "dmg": 150, 
+    "cat": "special", 
+    "type": "dragon", 
+    "id": 459
+  }, 
+  "906": {
+    "name": "Error"
+  }, 
+  "bullet-punch": {
+    "acc": 100, 
+    "pp": 30, 
+    "prio": 1, 
+    "dmg": 40, 
+    "cat": "physical", 
+    "type": "steel", 
+    "id": 418
+  }, 
+  "crabhammer": {
+    "acc": 90, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 100, 
+    "cat": "physical", 
+    "type": "water", 
+    "id": 152
+  }, 
+  "bind": {
+    "acc": 85, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 15, 
+    "cat": "physical", 
+    "type": "normal", 
+    "id": 20
+  }, 
+  "water-spout": {
+    "acc": 100, 
+    "pp": 5, 
+    "prio": 0, 
+    "dmg": 150, 
+    "cat": "special", 
+    "type": "water", 
+    "id": 323
+  }, 
+  "toxic": {
+    "acc": 90, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "poison", 
+    "id": 92
+  }, 
+  "715": {
+    "name": "Error"
+  }, 
+  "light-screen": {
+    "acc": 0, 
+    "pp": 30, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "psychic", 
+    "id": 113
+  }, 
+  "714": {
+    "name": "Error"
+  }, 
+  "stone-edge": {
+    "acc": 80, 
+    "pp": 5, 
+    "prio": 0, 
+    "dmg": 100, 
+    "cat": "physical", 
+    "type": "rock", 
+    "id": 444
+  }, 
+  "dual-chop": {
+    "acc": 90, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 40, 
+    "cat": "physical", 
+    "type": "dragon", 
+    "id": 530
+  }, 
+  "teleport": {
+    "acc": 0, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "psychic", 
+    "id": 100
+  }, 
+  "713": {
+    "name": "Error"
+  }, 
+  "dive": {
+    "acc": 100, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 80, 
+    "cat": "physical", 
+    "type": "water", 
+    "id": 291
+  }, 
+  "712": {
+    "name": "Error"
+  }, 
+  "hyper-voice": {
+    "acc": 100, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 90, 
+    "cat": "special", 
+    "type": "normal", 
+    "id": 304
+  }, 
+  "hone-claws": {
+    "acc": 0, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "dark", 
+    "id": 468
+  }, 
+  "disable": {
+    "acc": 100, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "normal", 
+    "id": 50
+  }, 
+  "tackle": {
+    "acc": 100, 
+    "pp": 35, 
+    "prio": 0, 
+    "dmg": 50, 
+    "cat": "physical", 
+    "type": "normal", 
+    "id": 33
+  }, 
+  "trick-room": {
+    "acc": 0, 
+    "pp": 5, 
+    "prio": -7, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "psychic", 
+    "id": 433
+  }, 
+  "future-sight": {
+    "acc": 100, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 120, 
+    "cat": "special", 
+    "type": "psychic", 
+    "id": 248
+  }, 
+  "ingrain": {
+    "acc": 0, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "grass", 
+    "id": 275
+  }, 
+  "supersonic": {
+    "acc": 55, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "normal", 
+    "id": 48
+  }, 
+  "948": {
+    "name": "Error"
+  }, 
+  "818": {
+    "name": "Error"
+  }, 
+  "946": {
+    "name": "Error"
+  }, 
+  "icicle-spear": {
+    "acc": 100, 
+    "pp": 30, 
+    "prio": 0, 
+    "dmg": 25, 
+    "cat": "physical", 
+    "type": "ice", 
+    "id": 333
+  }, 
+  "944": {
+    "name": "Error"
+  }, 
+  "counter": {
+    "acc": 100, 
+    "pp": 20, 
+    "prio": -5, 
+    "dmg": 0, 
+    "cat": "physical", 
+    "type": "fighting", 
+    "id": 68
+  }, 
+  "942": {
+    "name": "Error"
+  }, 
+  "double-hit": {
+    "acc": 90, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 35, 
+    "cat": "physical", 
+    "type": "normal", 
+    "id": 458
+  }, 
+  "940": {
+    "name": "Error"
+  }, 
+  "941": {
+    "name": "Error"
+  }, 
+  "heal-order": {
+    "acc": 0, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "bug", 
+    "id": 456
+  }, 
+  "689": {
+    "name": "Error"
+  }, 
+  "688": {
+    "name": "Error"
+  }, 
+  "sludge-wave": {
+    "acc": 100, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 95, 
+    "cat": "special", 
+    "type": "poison", 
+    "id": 482
+  }, 
+  "retaliate": {
+    "acc": 100, 
+    "pp": 5, 
+    "prio": 0, 
+    "dmg": 70, 
+    "cat": "physical", 
+    "type": "normal", 
+    "id": 514
+  }, 
+  "684": {
+    "name": "Error"
+  }, 
+  "guard-split": {
+    "acc": 0, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "psychic", 
+    "id": 470
+  }, 
+  "686": {
+    "name": "Error"
+  }, 
+  "destiny-bond": {
+    "acc": 0, 
+    "pp": 5, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "ghost", 
+    "id": 194
+  }, 
+  "680": {
+    "name": "Error"
+  }, 
+  "683": {
+    "name": "Error"
+  }, 
+  "wide-guard": {
+    "acc": 0, 
+    "pp": 10, 
+    "prio": 3, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "rock", 
+    "id": 469
+  }, 
+  "reversal": {
+    "acc": 100, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "physical", 
+    "type": "fighting", 
+    "id": 179
+  }, 
+  "622": {
+    "name": "Error"
+  }, 
+  "light-of-ruin": {
+    "acc": 90, 
+    "pp": 5, 
+    "prio": 0, 
+    "dmg": 140, 
+    "cat": "special", 
+    "type": "fairy", 
+    "id": 617
+  }, 
+  "secret-sword": {
+    "acc": 100, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 85, 
+    "cat": "special", 
+    "type": "fighting", 
+    "id": 548
+  }, 
+  "873": {
+    "name": "Error"
+  }, 
+  "tail-glow": {
+    "acc": 0, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "bug", 
+    "id": 294
+  }, 
+  "wood-hammer": {
+    "acc": 100, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 120, 
+    "cat": "physical", 
+    "type": "grass", 
+    "id": 452
+  }, 
+  "sludge": {
+    "acc": 100, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 65, 
+    "cat": "special", 
+    "type": "poison", 
+    "id": 124
+  }, 
+  "bulldoze": {
+    "acc": 100, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 60, 
+    "cat": "physical", 
+    "type": "ground", 
+    "id": 523
+  }, 
+  "sky-attack": {
+    "acc": 90, 
+    "pp": 5, 
+    "prio": 0, 
+    "dmg": 140, 
+    "cat": "physical", 
+    "type": "flying", 
+    "id": 143
+  }, 
+  "625": {
+    "name": "Error"
+  }, 
+  "fissure": {
+    "acc": 30, 
+    "pp": 5, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "physical", 
+    "type": "ground", 
+    "id": 90
+  }, 
+  "sunny-day": {
+    "acc": 0, 
+    "pp": 5, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "fire", 
+    "id": 241
+  }, 
+  "939": {
+    "name": "Error"
+  }, 
+  "938": {
+    "name": "Error"
+  }, 
+  "ally-switch": {
+    "acc": 0, 
+    "pp": 15, 
+    "prio": 1, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "psychic", 
+    "id": 502
+  }, 
+  "astonish": {
+    "acc": 100, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 30, 
+    "cat": "physical", 
+    "type": "ghost", 
+    "id": 310
+  }, 
+  "933": {
+    "name": "Error"
+  }, 
+  "932": {
+    "name": "Error"
+  }, 
+  "931": {
+    "name": "Error"
+  }, 
+  "930": {
+    "name": "Error"
+  }, 
+  "937": {
+    "name": "Error"
+  }, 
+  "936": {
+    "name": "Error"
+  }, 
+  "935": {
+    "name": "Error"
+  }, 
+  "whirlpool": {
+    "acc": 85, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 35, 
+    "cat": "special", 
+    "type": "water", 
+    "id": 250
+  }, 
+  "ice-shard": {
+    "acc": 100, 
+    "pp": 30, 
+    "prio": 1, 
+    "dmg": 40, 
+    "cat": "physical", 
+    "type": "ice", 
+    "id": 420
+  }, 
+  "wild-charge": {
+    "acc": 100, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 90, 
+    "cat": "physical", 
+    "type": "electric", 
+    "id": 528
+  }, 
+  "fury-swipes": {
+    "acc": 80, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 18, 
+    "cat": "physical", 
+    "type": "normal", 
+    "id": 154
+  }, 
+  "return": {
+    "acc": 100, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "physical", 
+    "type": "normal", 
+    "id": 216
+  }, 
+  "circle-throw": {
+    "acc": 90, 
+    "pp": 10, 
+    "prio": -6, 
+    "dmg": 60, 
+    "cat": "physical", 
+    "type": "fighting", 
+    "id": 509
+  }, 
+  "fling": {
+    "acc": 100, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "physical", 
+    "type": "dark", 
+    "id": 374
+  }, 
+  "dazzling-gleam": {
+    "acc": 100, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 80, 
+    "cat": "special", 
+    "type": "fairy", 
+    "id": 605
+  }, 
+  "magic-coat": {
+    "acc": 0, 
+    "pp": 15, 
+    "prio": 4, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "psychic", 
+    "id": 277
+  }, 
+  "shadow-punch": {
+    "acc": 0, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 60, 
+    "cat": "physical", 
+    "type": "ghost", 
+    "id": 325
+  }, 
+  "roost": {
+    "acc": 0, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "flying", 
+    "id": 355
+  }, 
+  "fire-pledge": {
+    "acc": 100, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 80, 
+    "cat": "special", 
+    "type": "fire", 
+    "id": 519
+  }, 
+  "magnet-rise": {
+    "acc": 0, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "electric", 
+    "id": 393
+  }, 
+  "payback": {
+    "acc": 100, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 50, 
+    "cat": "physical", 
+    "type": "dark", 
+    "id": 371
+  }, 
+  "origin-pulse": {
+    "acc": 85, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 110, 
+    "cat": "special", 
+    "type": "water", 
+    "id": 618
+  }, 
+  "flail": {
+    "acc": 100, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "physical", 
+    "type": "normal", 
+    "id": 175
+  }, 
+  "boomburst": {
+    "acc": 100, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 140, 
+    "cat": "special", 
+    "type": "normal", 
+    "id": 586
+  }, 
+  "refresh": {
+    "acc": 0, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "normal", 
+    "id": 287
+  }, 
+  "spacial-rend": {
+    "acc": 95, 
+    "pp": 5, 
+    "prio": 0, 
+    "dmg": 100, 
+    "cat": "special", 
+    "type": "dragon", 
+    "id": 460
+  }, 
+  "sweet-kiss": {
+    "acc": 75, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "fairy", 
+    "id": 186
+  }, 
+  "magnitude": {
+    "acc": 100, 
+    "pp": 30, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "physical", 
+    "type": "ground", 
+    "id": 222
+  }, 
+  "precipice-blades": {
+    "acc": 85, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 120, 
+    "cat": "physical", 
+    "type": "ground", 
+    "id": 619
+  }, 
+  "828": {
+    "name": "Error"
+  }, 
+  "825": {
+    "name": "Error"
+  }, 
+  "824": {
+    "name": "Error"
+  }, 
+  "827": {
+    "name": "Error"
+  }, 
+  "826": {
+    "name": "Error"
+  }, 
+  "821": {
+    "name": "Error"
+  }, 
+  "820": {
+    "name": "Error"
+  }, 
+  "823": {
+    "name": "Error"
+  }, 
+  "822": {
+    "name": "Error"
+  }, 
+  "clamp": {
+    "acc": 85, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 35, 
+    "cat": "physical", 
+    "type": "water", 
+    "id": 128
+  }, 
+  "seed-bomb": {
+    "acc": 100, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 80, 
+    "cat": "physical", 
+    "type": "grass", 
+    "id": 402
+  }, 
+  "708": {
+    "name": "Error"
+  }, 
+  "709": {
+    "name": "Error"
+  }, 
+  "hold-back": {
+    "acc": 100, 
+    "pp": 40, 
+    "prio": 0, 
+    "dmg": 40, 
+    "cat": "physical", 
+    "type": "normal", 
+    "id": 610
+  }, 
+  "704": {
+    "name": "Error"
+  }, 
+  "705": {
+    "name": "Error"
+  }, 
+  "706": {
+    "name": "Error"
+  }, 
+  "707": {
+    "name": "Error"
+  }, 
+  "700": {
+    "name": "Error"
+  }, 
+  "701": {
+    "name": "Error"
+  }, 
+  "702": {
+    "name": "Error"
+  }, 
+  "703": {
+    "name": "Error"
+  }, 
+  "dynamic-punch": {
+    "acc": 50, 
+    "pp": 5, 
+    "prio": 0, 
+    "dmg": 100, 
+    "cat": "physical", 
+    "type": "fighting", 
+    "id": 223
+  }, 
+  "extreme-speed": {
+    "acc": 100, 
+    "pp": 5, 
+    "prio": 2, 
+    "dmg": 80, 
+    "cat": "physical", 
+    "type": "normal", 
+    "id": 245
+  }, 
+  "ice-burn": {
+    "acc": 90, 
+    "pp": 5, 
+    "prio": 0, 
+    "dmg": 140, 
+    "cat": "special", 
+    "type": "ice", 
+    "id": 554
+  }, 
+  "fusion-bolt": {
+    "acc": 100, 
+    "pp": 5, 
+    "prio": 0, 
+    "dmg": 100, 
+    "cat": "physical", 
+    "type": "electric", 
+    "id": 559
+  }, 
+  "double-team": {
+    "acc": 0, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "normal", 
+    "id": 104
+  }, 
+  "894": {
+    "name": "Error"
+  }, 
+  "oblivion-wing": {
+    "acc": 100, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 80, 
+    "cat": "special", 
+    "type": "flying", 
+    "id": 613
+  }, 
+  "dragon-pulse": {
+    "acc": 100, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 85, 
+    "cat": "special", 
+    "type": "dragon", 
+    "id": 406
+  }, 
+  "take-down": {
+    "acc": 85, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 90, 
+    "cat": "physical", 
+    "type": "normal", 
+    "id": 36
+  }, 
+  "797": {
+    "name": "Error"
+  }, 
+  "796": {
+    "name": "Error"
+  }, 
+  "aqua-ring": {
+    "acc": 0, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "water", 
+    "id": 392
+  }, 
+  "794": {
+    "name": "Error"
+  }, 
+  "crush-grip": {
+    "acc": 100, 
+    "pp": 5, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "physical", 
+    "type": "normal", 
+    "id": 462
+  }, 
+  "792": {
+    "name": "Error"
+  }, 
+  "791": {
+    "name": "Error"
+  }, 
+  "mud-bomb": {
+    "acc": 85, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 65, 
+    "cat": "special", 
+    "type": "ground", 
+    "id": 426
+  }, 
+  "psychic": {
+    "acc": 100, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 90, 
+    "cat": "special", 
+    "type": "psychic", 
+    "id": 94
+  }, 
+  "897": {
+    "name": "Error"
+  }, 
+  "electroweb": {
+    "acc": 95, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 55, 
+    "cat": "special", 
+    "type": "electric", 
+    "id": 527
+  }, 
+  "799": {
+    "name": "Error"
+  }, 
+  "gunk-shot": {
+    "acc": 80, 
+    "pp": 5, 
+    "prio": 0, 
+    "dmg": 120, 
+    "cat": "physical", 
+    "type": "poison", 
+    "id": 441
+  }, 
+  "low-sweep": {
+    "acc": 100, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 65, 
+    "cat": "physical", 
+    "type": "fighting", 
+    "id": 490
+  }, 
+  "898": {
+    "name": "Error"
+  }, 
+  "fire-spin": {
+    "acc": 85, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 35, 
+    "cat": "special", 
+    "type": "fire", 
+    "id": 83
+  }, 
+  "aqua-tail": {
+    "acc": 90, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 90, 
+    "cat": "physical", 
+    "type": "water", 
+    "id": 401
+  }, 
+  "899": {
+    "name": "Error"
+  }, 
+  "mirror-coat": {
+    "acc": 100, 
+    "pp": 20, 
+    "prio": -5, 
+    "dmg": 0, 
+    "cat": "special", 
+    "type": "psychic", 
+    "id": 243
+  }, 
+  "smog": {
+    "acc": 70, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 30, 
+    "cat": "special", 
+    "type": "poison", 
+    "id": 123
+  }, 
+  "hyper-beam": {
+    "acc": 90, 
+    "pp": 5, 
+    "prio": 0, 
+    "dmg": 150, 
+    "cat": "special", 
+    "type": "normal", 
+    "id": 63
+  }, 
+  "assurance": {
+    "acc": 100, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 60, 
+    "cat": "physical", 
+    "type": "dark", 
+    "id": 372
+  }, 
+  "barrier": {
+    "acc": 0, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "psychic", 
+    "id": 112
+  }, 
+  "head-charge": {
+    "acc": 100, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 120, 
+    "cat": "physical", 
+    "type": "normal", 
+    "id": 543
+  }, 
+  "gear-grind": {
+    "acc": 85, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 50, 
+    "cat": "physical", 
+    "type": "steel", 
+    "id": 544
+  }, 
+  "revenge": {
+    "acc": 100, 
+    "pp": 10, 
+    "prio": -4, 
+    "dmg": 60, 
+    "cat": "physical", 
+    "type": "fighting", 
+    "id": 279
+  }, 
+  "synchronoise": {
+    "acc": 100, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 120, 
+    "cat": "special", 
+    "type": "psychic", 
+    "id": 485
+  }, 
+  "bestow": {
+    "acc": 0, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "normal", 
+    "id": 516
+  }, 
+  "struggle": {
+    "acc": 0, 
+    "pp": 0, 
+    "prio": 0, 
+    "dmg": 50, 
+    "cat": "physical", 
+    "type": "normal", 
+    "id": 165
+  }, 
+  "810": {
+    "name": "Error"
+  }, 
+  "belly-drum": {
+    "acc": 0, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "normal", 
+    "id": 187
+  }, 
+  "sheer-cold": {
+    "acc": 30, 
+    "pp": 5, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "special", 
+    "type": "ice", 
+    "id": 329
+  }, 
+  "seed-flare": {
+    "acc": 85, 
+    "pp": 5, 
+    "prio": 0, 
+    "dmg": 120, 
+    "cat": "special", 
+    "type": "grass", 
+    "id": 465
+  }, 
+  "reflect": {
+    "acc": 0, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "psychic", 
+    "id": 115
+  }, 
+  "vacuum-wave": {
+    "acc": 100, 
+    "pp": 30, 
+    "prio": 1, 
+    "dmg": 40, 
+    "cat": "special", 
+    "type": "fighting", 
+    "id": 410
+  }, 
+  "baby-doll-eyes": {
+    "acc": 100, 
+    "pp": 30, 
+    "prio": 1, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "fairy", 
+    "id": 608
+  }, 
+  "headbutt": {
+    "acc": 100, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 70, 
+    "cat": "physical", 
+    "type": "normal", 
+    "id": 29
+  }, 
+  "925": {
+    "name": "Error"
+  }, 
+  "hypnosis": {
+    "acc": 60, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "psychic", 
+    "id": 95
+  }, 
+  "icicle-crash": {
+    "acc": 90, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 85, 
+    "cat": "physical", 
+    "type": "ice", 
+    "id": 556
+  }, 
+  "helping-hand": {
+    "acc": 0, 
+    "pp": 20, 
+    "prio": 5, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "normal", 
+    "id": 270
+  }, 
+  "880": {
+    "name": "Error"
+  }, 
+  "v-create": {
+    "acc": 95, 
+    "pp": 5, 
+    "prio": 0, 
+    "dmg": 180, 
+    "cat": "physical", 
+    "type": "fire", 
+    "id": 557
+  }, 
+  "623": {
+    "name": "Error"
+  }, 
+  "teeter-dance": {
+    "acc": 100, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "normal", 
+    "id": 298
+  }, 
+  "power-trick": {
+    "acc": 0, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "psychic", 
+    "id": 379
+  }, 
+  "627": {
+    "name": "Error"
+  }, 
+  "626": {
+    "name": "Error"
+  }, 
+  "psycho-boost": {
+    "acc": 90, 
+    "pp": 5, 
+    "prio": 0, 
+    "dmg": 140, 
+    "cat": "special", 
+    "type": "psychic", 
+    "id": 354
+  }, 
+  "624": {
+    "name": "Error"
+  }, 
+  "629": {
+    "name": "Error"
+  }, 
+  "arm-thrust": {
+    "acc": 100, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 15, 
+    "cat": "physical", 
+    "type": "fighting", 
+    "id": 292
+  }, 
+  "powder-snow": {
+    "acc": 100, 
+    "pp": 25, 
+    "prio": 0, 
+    "dmg": 40, 
+    "cat": "special", 
+    "type": "ice", 
+    "id": 181
+  }, 
+  "887": {
+    "name": "Error"
+  }, 
+  "mist": {
+    "acc": 0, 
+    "pp": 30, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "ice", 
+    "id": 54
+  }, 
+  "double-slap": {
+    "acc": 85, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 15, 
+    "cat": "physical", 
+    "type": "normal", 
+    "id": 3
+  }, 
+  "mud-slap": {
+    "acc": 100, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 20, 
+    "cat": "special", 
+    "type": "ground", 
+    "id": 189
+  }, 
+  "ancient-power": {
+    "acc": 100, 
+    "pp": 5, 
+    "prio": 0, 
+    "dmg": 60, 
+    "cat": "special", 
+    "type": "rock", 
+    "id": 246
+  }, 
+  "bite": {
+    "acc": 100, 
+    "pp": 25, 
+    "prio": 0, 
+    "dmg": 60, 
+    "cat": "physical", 
+    "type": "dark", 
+    "id": 44
+  }, 
+  "zap-cannon": {
+    "acc": 50, 
+    "pp": 5, 
+    "prio": 0, 
+    "dmg": 120, 
+    "cat": "special", 
+    "type": "electric", 
+    "id": 192
+  }, 
+  "656": {
+    "name": "Error"
+  }, 
+  "aromatherapy": {
+    "acc": 0, 
+    "pp": 5, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "grass", 
+    "id": 312
+  }, 
+  "654": {
+    "name": "Error"
+  }, 
+  "655": {
+    "name": "Error"
+  }, 
+  "scary-face": {
+    "acc": 100, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "normal", 
+    "id": 184
+  }, 
+  "653": {
+    "name": "Error"
+  }, 
+  "650": {
+    "name": "Error"
+  }, 
+  "651": {
+    "name": "Error"
+  }, 
+  "flash-cannon": {
+    "acc": 100, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 80, 
+    "cat": "special", 
+    "type": "steel", 
+    "id": 430
+  }, 
+  "652": {
+    "name": "Error"
+  }, 
+  "inferno": {
+    "acc": 50, 
+    "pp": 5, 
+    "prio": 0, 
+    "dmg": 100, 
+    "cat": "special", 
+    "type": "fire", 
+    "id": 517
+  }, 
+  "twister": {
+    "acc": 100, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 40, 
+    "cat": "special", 
+    "type": "dragon", 
+    "id": 239
+  }, 
+  "x-scissor": {
+    "acc": 100, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 80, 
+    "cat": "physical", 
+    "type": "bug", 
+    "id": 404
+  }, 
+  "beat-up": {
+    "acc": 100, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "physical", 
+    "type": "dark", 
+    "id": 251
+  }, 
+  "flamethrower": {
+    "acc": 100, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 90, 
+    "cat": "special", 
+    "type": "fire", 
+    "id": 53
+  }, 
+  "659": {
+    "name": "Error"
+  }, 
+  "agility": {
+    "acc": 0, 
+    "pp": 30, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "psychic", 
+    "id": 97
+  }, 
+  "perish-song": {
+    "acc": 0, 
+    "pp": 5, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "normal", 
+    "id": 195
+  }, 
+  "smelling-salts": {
+    "acc": 100, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 70, 
+    "cat": "physical", 
+    "type": "normal", 
+    "id": 265
+  }, 
+  "947": {
+    "name": "Error"
+  }, 
+  "misty-terrain": {
+    "acc": 0, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "fairy", 
+    "id": 581
+  }, 
+  "snatch": {
+    "acc": 0, 
+    "pp": 10, 
+    "prio": 4, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "dark", 
+    "id": 289
+  }, 
+  "mud-shot": {
+    "acc": 95, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 55, 
+    "cat": "special", 
+    "type": "ground", 
+    "id": 341
+  }, 
+  "764": {
+    "name": "Error"
+  }, 
+  "peck": {
+    "acc": 100, 
+    "pp": 35, 
+    "prio": 0, 
+    "dmg": 35, 
+    "cat": "physical", 
+    "type": "flying", 
+    "id": 64
+  }, 
+  "psywave": {
+    "acc": 100, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "special", 
+    "type": "psychic", 
+    "id": 149
+  }, 
+  "869": {
+    "name": "Error"
+  }, 
+  "868": {
+    "name": "Error"
+  }, 
+  "flying-press": {
+    "acc": 95, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 80, 
+    "cat": "physical", 
+    "type": "fighting", 
+    "id": 560
+  }, 
+  "focus-energy": {
+    "acc": 0, 
+    "pp": 30, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "normal", 
+    "id": 116
+  }, 
+  "sonic-boom": {
+    "acc": 90, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "special", 
+    "type": "normal", 
+    "id": 49
+  }, 
+  "giga-drain": {
+    "acc": 100, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 75, 
+    "cat": "special", 
+    "type": "grass", 
+    "id": 202
+  }, 
+  "861": {
+    "name": "Error"
+  }, 
+  "860": {
+    "name": "Error"
+  }, 
+  "863": {
+    "name": "Error"
+  }, 
+  "862": {
+    "name": "Error"
+  }, 
+  "865": {
+    "name": "Error"
+  }, 
+  "864": {
+    "name": "Error"
+  }, 
+  "shell-smash": {
+    "acc": 0, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "normal", 
+    "id": 504
+  }, 
+  "after-you": {
+    "acc": 0, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "normal", 
+    "id": 495
+  }, 
+  "rock-blast": {
+    "acc": 90, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 25, 
+    "cat": "physical", 
+    "type": "rock", 
+    "id": 350
+  }, 
+  "dragon-rage": {
+    "acc": 100, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "special", 
+    "type": "dragon", 
+    "id": 82
+  }, 
+  "power-whip": {
+    "acc": 85, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 120, 
+    "cat": "physical", 
+    "type": "grass", 
+    "id": 438
+  }, 
+  "endure": {
+    "acc": 0, 
+    "pp": 10, 
+    "prio": 4, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "normal", 
+    "id": 203
+  }, 
+  "acid-armor": {
+    "acc": 0, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "poison", 
+    "id": 151
+  }, 
+  "819": {
+    "name": "Error"
+  }, 
+  "encore": {
+    "acc": 100, 
+    "pp": 5, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "normal", 
+    "id": 227
+  }, 
+  "powder": {
+    "acc": 100, 
+    "pp": 20, 
+    "prio": 1, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "bug", 
+    "id": 600
+  }, 
+  "883": {
+    "name": "Error"
+  }, 
+  "wing-attack": {
+    "acc": 100, 
+    "pp": 35, 
+    "prio": 0, 
+    "dmg": 60, 
+    "cat": "physical", 
+    "type": "flying", 
+    "id": 17
+  }, 
+  "881": {
+    "name": "Error"
+  }, 
+  "lick": {
+    "acc": 100, 
+    "pp": 30, 
+    "prio": 0, 
+    "dmg": 30, 
+    "cat": "physical", 
+    "type": "ghost", 
+    "id": 122
+  }, 
+  "draining-kiss": {
+    "acc": 100, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 50, 
+    "cat": "special", 
+    "type": "fairy", 
+    "id": 577
+  }, 
+  "831": {
+    "name": "Error"
+  }, 
+  "885": {
+    "name": "Error"
+  }, 
+  "884": {
+    "name": "Error"
+  }, 
+  "928": {
+    "name": "Error"
+  }, 
+  "889": {
+    "name": "Error"
+  }, 
+  "888": {
+    "name": "Error"
+  }, 
+  "751": {
+    "name": "Error"
+  }, 
+  "943": {
+    "name": "Error"
+  }, 
+  "megahorn": {
+    "acc": 85, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 120, 
+    "cat": "physical", 
+    "type": "bug", 
+    "id": 224
+  }, 
+  "slam": {
+    "acc": 75, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 80, 
+    "cat": "physical", 
+    "type": "normal", 
+    "id": 21
+  }, 
+  "torment": {
+    "acc": 100, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "dark", 
+    "id": 259
+  }, 
+  "recover": {
+    "acc": 0, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "normal", 
+    "id": 105
+  }, 
+  "heal-block": {
+    "acc": 100, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "psychic", 
+    "id": 377
+  }, 
+  "657": {
+    "name": "Error"
+  }, 
+  "879": {
+    "name": "Error"
+  }, 
+  "conversion": {
+    "acc": 0, 
+    "pp": 30, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "normal", 
+    "id": 160
+  }, 
+  "strength": {
+    "acc": 100, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 80, 
+    "cat": "physical", 
+    "type": "normal", 
+    "id": 70
+  }, 
+  "bulk-up": {
+    "acc": 0, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "fighting", 
+    "id": 339
+  }, 
+  "soak": {
+    "acc": 100, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "water", 
+    "id": 487
+  }, 
+  "mat-block": {
+    "acc": 0, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "fighting", 
+    "id": 561
+  }, 
+  "bone-rush": {
+    "acc": 90, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 25, 
+    "cat": "physical", 
+    "type": "ground", 
+    "id": 198
+  }, 
+  "fire-fang": {
+    "acc": 95, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 65, 
+    "cat": "physical", 
+    "type": "fire", 
+    "id": 424
+  }, 
+  "gravity": {
+    "acc": 0, 
+    "pp": 5, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "psychic", 
+    "id": 356
+  }, 
+  "camouflage": {
+    "acc": 0, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "normal", 
+    "id": 293
+  }, 
+  "echoed-voice": {
+    "acc": 100, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 40, 
+    "cat": "special", 
+    "type": "normal", 
+    "id": 497
+  }, 
+  "rock-smash": {
+    "acc": 100, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 40, 
+    "cat": "physical", 
+    "type": "fighting", 
+    "id": 249
+  }, 
+  "ice-beam": {
+    "acc": 100, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 90, 
+    "cat": "special", 
+    "type": "ice", 
+    "id": 58
+  }, 
+  "steam-eruption": {
+    "acc": 95, 
+    "pp": 5, 
+    "prio": 0, 
+    "dmg": 110, 
+    "cat": "special", 
+    "type": "water", 
+    "id": 592
+  }, 
+  "bug-buzz": {
+    "acc": 100, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 90, 
+    "cat": "special", 
+    "type": "bug", 
+    "id": 405
+  }, 
+  "759": {
+    "name": "Error"
+  }, 
+  "surf": {
+    "acc": 100, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 90, 
+    "cat": "special", 
+    "type": "water", 
+    "id": 57
+  }, 
+  "secret-power": {
+    "acc": 100, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 70, 
+    "cat": "physical", 
+    "type": "normal", 
+    "id": 290
+  }, 
+  "777": {
+    "name": "Error"
+  }, 
+  "776": {
+    "name": "Error"
+  }, 
+  "poison-sting": {
+    "acc": 100, 
+    "pp": 35, 
+    "prio": 0, 
+    "dmg": 15, 
+    "cat": "physical", 
+    "type": "poison", 
+    "id": 40
+  }, 
+  "770": {
+    "name": "Error"
+  }, 
+  "super-fang": {
+    "acc": 90, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "physical", 
+    "type": "normal", 
+    "id": 162
+  }, 
+  "772": {
+    "name": "Error"
+  }, 
+  "switcheroo": {
+    "acc": 100, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "dark", 
+    "id": 415
+  }, 
+  "eruption": {
+    "acc": 100, 
+    "pp": 5, 
+    "prio": 0, 
+    "dmg": 150, 
+    "cat": "special", 
+    "type": "fire", 
+    "id": 284
+  }, 
+  "778": {
+    "name": "Error"
+  }, 
+  "yawn": {
+    "acc": 0, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "normal", 
+    "id": 281
+  }, 
+  "barrage": {
+    "acc": 85, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 15, 
+    "cat": "physical", 
+    "type": "normal", 
+    "id": 140
+  }, 
+  "charm": {
+    "acc": 100, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "fairy", 
+    "id": 204
+  }, 
+  "hyper-fang": {
+    "acc": 90, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 80, 
+    "cat": "physical", 
+    "type": "normal", 
+    "id": 158
+  }, 
+  "rollout": {
+    "acc": 90, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 30, 
+    "cat": "physical", 
+    "type": "rock", 
+    "id": 205
+  }, 
+  "coil": {
+    "acc": 0, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "poison", 
+    "id": 489
+  }, 
+  "confuse-ray": {
+    "acc": 100, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "ghost", 
+    "id": 109
+  }, 
+  "687": {
+    "name": "Error"
+  }, 
+  "834": {
+    "name": "Error"
+  }, 
+  "890": {
+    "name": "Error"
+  }, 
+  "aerial-ace": {
+    "acc": 0, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 60, 
+    "cat": "physical", 
+    "type": "flying", 
+    "id": 332
+  }, 
+  "949": {
+    "name": "Error"
+  }, 
+  "681": {
+    "name": "Error"
+  }, 
+  "covet": {
+    "acc": 100, 
+    "pp": 25, 
+    "prio": 0, 
+    "dmg": 60, 
+    "cat": "physical", 
+    "type": "normal", 
+    "id": 343
+  }, 
+  "806": {
+    "name": "Error"
+  }, 
+  "805": {
+    "name": "Error"
+  }, 
+  "lava-plume": {
+    "acc": 100, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 80, 
+    "cat": "special", 
+    "type": "fire", 
+    "id": 436
+  }, 
+  "constrict": {
+    "acc": 100, 
+    "pp": 35, 
+    "prio": 0, 
+    "dmg": 10, 
+    "cat": "physical", 
+    "type": "normal", 
+    "id": 132
+  }, 
+  "682": {
+    "name": "Error"
+  }, 
+  "838": {
+    "name": "Error"
+  }, 
+  "669": {
+    "name": "Error"
+  }, 
+  "668": {
+    "name": "Error"
+  }, 
+  "667": {
+    "name": "Error"
+  }, 
+  "666": {
+    "name": "Error"
+  }, 
+  "665": {
+    "name": "Error"
+  }, 
+  "664": {
+    "name": "Error"
+  }, 
+  "663": {
+    "name": "Error"
+  }, 
+  "662": {
+    "name": "Error"
+  }, 
+  "661": {
+    "name": "Error"
+  }, 
+  "660": {
+    "name": "Error"
+  }, 
+  "brine": {
+    "acc": 100, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 65, 
+    "cat": "special", 
+    "type": "water", 
+    "id": 362
+  }, 
+  "low-kick": {
+    "acc": 100, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "physical", 
+    "type": "fighting", 
+    "id": 67
+  }, 
+  "fairy-lock": {
+    "acc": 0, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "fairy", 
+    "id": 587
+  }, 
+  "wring-out": {
+    "acc": 100, 
+    "pp": 5, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "special", 
+    "type": "normal", 
+    "id": 378
+  }, 
+  "692": {
+    "name": "Error"
+  }, 
+  "693": {
+    "name": "Error"
+  }, 
+  "690": {
+    "name": "Error"
+  }, 
+  "mind-reader": {
+    "acc": 0, 
+    "pp": 5, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "normal", 
+    "id": 170
+  }, 
+  "696": {
+    "name": "Error"
+  }, 
+  "697": {
+    "name": "Error"
+  }, 
+  "rolling-kick": {
+    "acc": 85, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 60, 
+    "cat": "physical", 
+    "type": "fighting", 
+    "id": 27
+  }, 
+  "signal-beam": {
+    "acc": 100, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 75, 
+    "cat": "special", 
+    "type": "bug", 
+    "id": 324
+  }, 
+  "sand-tomb": {
+    "acc": 85, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 35, 
+    "cat": "physical", 
+    "type": "ground", 
+    "id": 328
+  }, 
+  "698": {
+    "name": "Error"
+  }, 
+  "699": {
+    "name": "Error"
+  }, 
+  "acupressure": {
+    "acc": 0, 
+    "pp": 30, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "normal", 
+    "id": 367
+  }, 
+  "694": {
+    "name": "Error"
+  }, 
+  "aqua-jet": {
+    "acc": 100, 
+    "pp": 20, 
+    "prio": 1, 
+    "dmg": 40, 
+    "cat": "physical", 
+    "type": "water", 
+    "id": 453
+  }, 
+  "thousand-waves": {
+    "acc": 100, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 90, 
+    "cat": "physical", 
+    "type": "ground", 
+    "id": 615
+  }, 
+  "outrage": {
+    "acc": 100, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 120, 
+    "cat": "physical", 
+    "type": "dragon", 
+    "id": 200
+  }, 
+  "hydro-cannon": {
+    "acc": 90, 
+    "pp": 5, 
+    "prio": 0, 
+    "dmg": 150, 
+    "cat": "special", 
+    "type": "water", 
+    "id": 308
+  }, 
+  "kinesis": {
+    "acc": 80, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "psychic", 
+    "id": 134
+  }, 
+  "675": {
+    "name": "Error"
+  }, 
+  "stomp": {
+    "acc": 100, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 65, 
+    "cat": "physical", 
+    "type": "normal", 
+    "id": 23
+  }, 
+  "night-daze": {
+    "acc": 95, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 85, 
+    "cat": "special", 
+    "type": "dark", 
+    "id": 539
+  }, 
+  "stored-power": {
+    "acc": 100, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 20, 
+    "cat": "special", 
+    "type": "psychic", 
+    "id": 500
+  }, 
+  "meditate": {
+    "acc": 0, 
+    "pp": 40, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "psychic", 
+    "id": 96
+  }, 
+  "nature-power": {
+    "acc": 0, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "normal", 
+    "id": 267
+  }, 
+  "morning-sun": {
+    "acc": 0, 
+    "pp": 5, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "normal", 
+    "id": 234
+  }, 
+  "meteor-mash": {
+    "acc": 90, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 90, 
+    "cat": "physical", 
+    "type": "steel", 
+    "id": 309
+  }, 
+  "poison-fang": {
+    "acc": 100, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 50, 
+    "cat": "physical", 
+    "type": "poison", 
+    "id": 305
+  }, 
+  "celebrate": {
+    "acc": 0, 
+    "pp": 40, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "normal", 
+    "id": 606
+  }, 
+  "nasty-plot": {
+    "acc": 0, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "dark", 
+    "id": 417
+  }, 
+  "spikes": {
+    "acc": 0, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "ground", 
+    "id": 191
+  }, 
+  "gust": {
+    "acc": 100, 
+    "pp": 35, 
+    "prio": 0, 
+    "dmg": 40, 
+    "cat": "special", 
+    "type": "flying", 
+    "id": 16
+  }, 
+  "odor-sleuth": {
+    "acc": 0, 
+    "pp": 40, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "normal", 
+    "id": 316
+  }, 
+  "freeze-shock": {
+    "acc": 90, 
+    "pp": 5, 
+    "prio": 0, 
+    "dmg": 140, 
+    "cat": "physical", 
+    "type": "ice", 
+    "id": 553
+  }, 
+  "fury-cutter": {
+    "acc": 95, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 40, 
+    "cat": "physical", 
+    "type": "bug", 
+    "id": 210
+  }, 
+  "sky-uppercut": {
+    "acc": 90, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 85, 
+    "cat": "physical", 
+    "type": "fighting", 
+    "id": 327
+  }, 
+  "929": {
+    "name": "Error"
+  }, 
+  "945": {
+    "name": "Error"
+  }, 
+  "water-sport": {
+    "acc": 0, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "water", 
+    "id": 346
+  }, 
+  "920": {
+    "name": "Error"
+  }, 
+  "921": {
+    "name": "Error"
+  }, 
+  "922": {
+    "name": "Error"
+  }, 
+  "luster-purge": {
+    "acc": 100, 
+    "pp": 5, 
+    "prio": 0, 
+    "dmg": 70, 
+    "cat": "special", 
+    "type": "psychic", 
+    "id": 295
+  }, 
+  "924": {
+    "name": "Error"
+  }, 
+  "fire-punch": {
+    "acc": 100, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 75, 
+    "cat": "physical", 
+    "type": "fire", 
+    "id": 7
+  }, 
+  "926": {
+    "name": "Error"
+  }, 
+  "927": {
+    "name": "Error"
+  }, 
+  "spore": {
+    "acc": 100, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "grass", 
+    "id": 147
+  }, 
+  "skill-swap": {
+    "acc": 0, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "psychic", 
+    "id": 285
+  }, 
+  "sand-attack": {
+    "acc": 100, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "ground", 
+    "id": 28
+  }, 
+  "geomancy": {
+    "acc": 0, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "fairy", 
+    "id": 601
+  }, 
+  "disarming-voice": {
+    "acc": 0, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 40, 
+    "cat": "special", 
+    "type": "fairy", 
+    "id": 574
+  }, 
+  "role-play": {
+    "acc": 0, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "psychic", 
+    "id": 272
+  }, 
+  "storm-throw": {
+    "acc": 100, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 60, 
+    "cat": "physical", 
+    "type": "fighting", 
+    "id": 480
+  }, 
+  "feint": {
+    "acc": 100, 
+    "pp": 10, 
+    "prio": 2, 
+    "dmg": 30, 
+    "cat": "physical", 
+    "type": "normal", 
+    "id": 364
+  }, 
+  "711": {
+    "name": "Error"
+  }, 
+  "twineedle": {
+    "acc": 100, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 25, 
+    "cat": "physical", 
+    "type": "bug", 
+    "id": 41
+  }, 
+  "worry-seed": {
+    "acc": 100, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "grass", 
+    "id": 388
+  }, 
+  "840": {
+    "name": "Error"
+  }, 
+  "832": {
+    "name": "Error"
+  }, 
+  "726": {
+    "name": "Error"
+  }, 
+  "830": {
+    "name": "Error"
+  }, 
+  "detect": {
+    "acc": 0, 
+    "pp": 5, 
+    "prio": 4, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "fighting", 
+    "id": 197
+  }, 
+  "836": {
+    "name": "Error"
+  }, 
+  "837": {
+    "name": "Error"
+  }, 
+  "sleep-talk": {
+    "acc": 0, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "normal", 
+    "id": 214
+  }, 
+  "835": {
+    "name": "Error"
+  }, 
+  "magnet-bomb": {
+    "acc": 0, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 60, 
+    "cat": "physical", 
+    "type": "steel", 
+    "id": 443
+  }, 
+  "night-slash": {
+    "acc": 100, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 70, 
+    "cat": "physical", 
+    "type": "dark", 
+    "id": 400
+  }, 
+  "nightmare": {
+    "acc": 100, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "ghost", 
+    "id": 171
+  }, 
+  "839": {
+    "name": "Error"
+  }, 
+  "poison-jab": {
+    "acc": 100, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 80, 
+    "cat": "physical", 
+    "type": "poison", 
+    "id": 398
+  }, 
+  "diamond-storm": {
+    "acc": 95, 
+    "pp": 5, 
+    "prio": 0, 
+    "dmg": 100, 
+    "cat": "physical", 
+    "type": "rock", 
+    "id": 591
+  }, 
+  "parting-shot": {
+    "acc": 100, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "dark", 
+    "id": 575
+  }, 
+  "skull-bash": {
+    "acc": 100, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 130, 
+    "cat": "physical", 
+    "type": "normal", 
+    "id": 130
+  }, 
+  "swords-dance": {
+    "acc": 0, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "normal", 
+    "id": 14
+  }, 
+  "833": {
+    "name": "Error"
+  }, 
+  "leech-life": {
+    "acc": 100, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 20, 
+    "cat": "physical", 
+    "type": "bug", 
+    "id": 141
+  }, 
+  "magma-storm": {
+    "acc": 75, 
+    "pp": 5, 
+    "prio": 0, 
+    "dmg": 100, 
+    "cat": "special", 
+    "type": "fire", 
+    "id": 463
+  }, 
+  "720": {
+    "name": "Error"
+  }, 
+  "rock-polish": {
+    "acc": 0, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "rock", 
+    "id": 397
+  }, 
+  "confusion": {
+    "acc": 100, 
+    "pp": 25, 
+    "prio": 0, 
+    "dmg": 50, 
+    "cat": "special", 
+    "type": "psychic", 
+    "id": 93
+  }, 
+  "draco-meteor": {
+    "acc": 90, 
+    "pp": 5, 
+    "prio": 0, 
+    "dmg": 130, 
+    "cat": "special", 
+    "type": "dragon", 
+    "id": 434
+  }, 
+  "785": {
+    "name": "Error"
+  }, 
+  "pluck": {
+    "acc": 100, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 60, 
+    "cat": "physical", 
+    "type": "flying", 
+    "id": 365
+  }, 
+  "double-kick": {
+    "acc": 100, 
+    "pp": 30, 
+    "prio": 0, 
+    "dmg": 30, 
+    "cat": "physical", 
+    "type": "fighting", 
+    "id": 24
+  }, 
+  "blast-burn": {
+    "acc": 90, 
+    "pp": 5, 
+    "prio": 0, 
+    "dmg": 150, 
+    "cat": "special", 
+    "type": "fire", 
+    "id": 307
+  }, 
+  "923": {
+    "name": "Error"
+  }, 
+  "crush-claw": {
+    "acc": 95, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 75, 
+    "cat": "physical", 
+    "type": "normal", 
+    "id": 306
+  }, 
+  "telekinesis": {
+    "acc": 0, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "psychic", 
+    "id": 477
+  }, 
+  "hidden-power": {
+    "acc": 100, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 60, 
+    "cat": "special", 
+    "type": "normal", 
+    "id": 237
+  }, 
+  "thunder-fang": {
+    "acc": 95, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 65, 
+    "cat": "physical", 
+    "type": "electric", 
+    "id": 422
+  }, 
+  "spark": {
+    "acc": 100, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 65, 
+    "cat": "physical", 
+    "type": "electric", 
+    "id": 209
+  }, 
+  "pay-day": {
+    "acc": 100, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 40, 
+    "cat": "physical", 
+    "type": "normal", 
+    "id": 6
+  }, 
+  "memento": {
+    "acc": 100, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "dark", 
+    "id": 262
+  }, 
+  "me-first": {
+    "acc": 0, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "normal", 
+    "id": 382
+  }, 
+  "784": {
+    "name": "Error"
+  }, 
+  "heal-bell": {
+    "acc": 0, 
+    "pp": 5, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "normal", 
+    "id": 215
+  }, 
+  "protect": {
+    "acc": 0, 
+    "pp": 10, 
+    "prio": 4, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "normal", 
+    "id": 182
+  }, 
+  "787": {
+    "name": "Error"
+  }, 
+  "780": {
+    "name": "Error"
+  }, 
+  "781": {
+    "name": "Error"
+  }, 
+  "frenzy-plant": {
+    "acc": 90, 
+    "pp": 5, 
+    "prio": 0, 
+    "dmg": 150, 
+    "cat": "special", 
+    "type": "grass", 
+    "id": 338
+  }, 
+  "leech-seed": {
+    "acc": 90, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "grass", 
+    "id": 73
+  }, 
+  "power-gem": {
+    "acc": 100, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 80, 
+    "cat": "special", 
+    "type": "rock", 
+    "id": 408
+  }, 
+  "magic-room": {
+    "acc": 0, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "psychic", 
+    "id": 478
+  }, 
+  "razor-shell": {
+    "acc": 95, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 75, 
+    "cat": "physical", 
+    "type": "water", 
+    "id": 534
+  }, 
+  "789": {
+    "name": "Error"
+  }, 
+  "trick-or-treat": {
+    "acc": 100, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "ghost", 
+    "id": 567
+  }, 
+  "dizzy-punch": {
+    "acc": 100, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 70, 
+    "cat": "physical", 
+    "type": "normal", 
+    "id": 146
+  }, 
+  "final-gambit": {
+    "acc": 100, 
+    "pp": 5, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "special", 
+    "type": "fighting", 
+    "id": 515
+  }, 
+  "dragon-rush": {
+    "acc": 75, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 100, 
+    "cat": "physical", 
+    "type": "dragon", 
+    "id": 407
+  }, 
+  "swallow": {
+    "acc": 0, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "normal", 
+    "id": 256
+  }, 
+  "wake-up-slap": {
+    "acc": 100, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 70, 
+    "cat": "physical", 
+    "type": "fighting", 
+    "id": 358
+  }, 
+  "882": {
+    "name": "Error"
+  }, 
+  "work-up": {
+    "acc": 0, 
+    "pp": 30, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "normal", 
+    "id": 526
+  }, 
+  "confide": {
+    "acc": 0, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "normal", 
+    "id": 590
+  }, 
+  "shadow-claw": {
+    "acc": 100, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 70, 
+    "cat": "physical", 
+    "type": "ghost", 
+    "id": 421
+  }, 
+  "egg-bomb": {
+    "acc": 75, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 100, 
+    "cat": "physical", 
+    "type": "normal", 
+    "id": 121
+  }, 
+  "metal-burst": {
+    "acc": 100, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "physical", 
+    "type": "steel", 
+    "id": 368
+  }, 
+  "play-nice": {
+    "acc": 0, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "normal", 
+    "id": 589
+  }, 
+  "venom-drench": {
+    "acc": 100, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "poison", 
+    "id": 599
+  }, 
+  "endeavor": {
+    "acc": 100, 
+    "pp": 5, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "physical", 
+    "type": "normal", 
+    "id": 283
+  }, 
+  "886": {
+    "name": "Error"
+  }, 
+  "copycat": {
+    "acc": 0, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "normal", 
+    "id": 383
+  }, 
+  "658": {
+    "name": "Error"
+  }, 
+  "685": {
+    "name": "Error"
+  }, 
+  "electrify": {
+    "acc": 0, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "electric", 
+    "id": 582
+  }, 
+  "swift": {
+    "acc": 0, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 60, 
+    "cat": "special", 
+    "type": "normal", 
+    "id": 129
+  }, 
+  "632": {
+    "name": "Error"
+  }, 
+  "731": {
+    "name": "Error"
+  }, 
+  "730": {
+    "name": "Error"
+  }, 
+  "733": {
+    "name": "Error"
+  }, 
+  "732": {
+    "name": "Error"
+  }, 
+  "735": {
+    "name": "Error"
+  }, 
+  "amnesia": {
+    "acc": 0, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "psychic", 
+    "id": 133
+  }, 
+  "737": {
+    "name": "Error"
+  }, 
+  "736": {
+    "name": "Error"
+  }, 
+  "techno-blast": {
+    "acc": 100, 
+    "pp": 5, 
+    "prio": 0, 
+    "dmg": 120, 
+    "cat": "special", 
+    "type": "normal", 
+    "id": 546
+  }, 
+  "738": {
+    "name": "Error"
+  }, 
+  "gastro-acid": {
+    "acc": 100, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "poison", 
+    "id": 380
+  }, 
+  "630": {
+    "name": "Error"
+  }, 
+  "631": {
+    "name": "Error"
+  }, 
+  "healing-wish": {
+    "acc": 0, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "psychic", 
+    "id": 361
+  }, 
+  "633": {
+    "name": "Error"
+  }, 
+  "634": {
+    "name": "Error"
+  }, 
+  "635": {
+    "name": "Error"
+  }, 
+  "636": {
+    "name": "Error"
+  }, 
+  "637": {
+    "name": "Error"
+  }, 
+  "638": {
+    "name": "Error"
+  }, 
+  "639": {
+    "name": "Error"
+  }, 
+  "steamroller": {
+    "acc": 100, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 65, 
+    "cat": "physical", 
+    "type": "bug", 
+    "id": 537
+  }, 
+  "786": {
+    "name": "Error"
+  }, 
+  "cosmic-power": {
+    "acc": 0, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "psychic", 
+    "id": 322
+  }, 
+  "topsy-turvy": {
+    "acc": 0, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "dark", 
+    "id": 576
+  }, 
+  "infestation": {
+    "acc": 100, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 20, 
+    "cat": "special", 
+    "type": "bug", 
+    "id": 611
+  }, 
+  "chatter": {
+    "acc": 100, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 65, 
+    "cat": "special", 
+    "type": "flying", 
+    "id": 448
+  }, 
+  "present": {
+    "acc": 90, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "physical", 
+    "type": "normal", 
+    "id": 217
+  }, 
+  "907": {
+    "name": "Error"
+  }, 
+  "782": {
+    "name": "Error"
+  }, 
+  "740": {
+    "name": "Error"
+  }, 
+  "vice-grip": {
+    "acc": 100, 
+    "pp": 30, 
+    "prio": 0, 
+    "dmg": 55, 
+    "cat": "physical", 
+    "type": "normal", 
+    "id": 11
+  }, 
+  "783": {
+    "name": "Error"
+  }, 
+  "charge-beam": {
+    "acc": 90, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 50, 
+    "cat": "special", 
+    "type": "electric", 
+    "id": 451
+  }, 
+  "trick": {
+    "acc": 100, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "psychic", 
+    "id": 271
+  }, 
+  "solar-beam": {
+    "acc": 100, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 120, 
+    "cat": "special", 
+    "type": "grass", 
+    "id": 76
+  }, 
+  "mystical-fire": {
+    "acc": 100, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 65, 
+    "cat": "special", 
+    "type": "fire", 
+    "id": 595
+  }, 
+  "muddy-water": {
+    "acc": 85, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 90, 
+    "cat": "special", 
+    "type": "water", 
+    "id": 330
+  }, 
+  "thrash": {
+    "acc": 100, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 120, 
+    "cat": "physical", 
+    "type": "normal", 
+    "id": 37
+  }, 
+  "earth-power": {
+    "acc": 100, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 90, 
+    "cat": "special", 
+    "type": "ground", 
+    "id": 414
+  }, 
+  "conversion-2": {
+    "acc": 0, 
+    "pp": 30, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "normal", 
+    "id": 176
+  }, 
+  "pound": {
+    "acc": 100, 
+    "pp": 35, 
+    "prio": 0, 
+    "dmg": 40, 
+    "cat": "physical", 
+    "type": "normal", 
+    "id": 1
+  }, 
+  "moonblast": {
+    "acc": 100, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 95, 
+    "cat": "special", 
+    "type": "fairy", 
+    "id": 585
+  }, 
+  "fusion-flare": {
+    "acc": 100, 
+    "pp": 5, 
+    "prio": 0, 
+    "dmg": 100, 
+    "cat": "special", 
+    "type": "fire", 
+    "id": 558
+  }, 
+  "grass-pledge": {
+    "acc": 100, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 80, 
+    "cat": "special", 
+    "type": "grass", 
+    "id": 520
+  }, 
+  "779": {
+    "name": "Error"
+  }, 
+  "power-up-punch": {
+    "acc": 100, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 40, 
+    "cat": "physical", 
+    "type": "fighting", 
+    "id": 612
+  }, 
+  "slack-off": {
+    "acc": 0, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "normal", 
+    "id": 303
+  }, 
+  "aura-sphere": {
+    "acc": 0, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 80, 
+    "cat": "special", 
+    "type": "fighting", 
+    "id": 396
+  }, 
+  "facade": {
+    "acc": 100, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 70, 
+    "cat": "physical", 
+    "type": "normal", 
+    "id": 263
+  }, 
+  "sucker-punch": {
+    "acc": 100, 
+    "pp": 5, 
+    "prio": 1, 
+    "dmg": 80, 
+    "cat": "physical", 
+    "type": "dark", 
+    "id": 389
+  }, 
+  "heat-crash": {
+    "acc": 100, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "physical", 
+    "type": "fire", 
+    "id": 535
+  }, 
+  "growl": {
+    "acc": 100, 
+    "pp": 40, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "normal", 
+    "id": 45
+  }, 
+  "866": {
+    "name": "Error"
+  }, 
+  "mega-drain": {
+    "acc": 100, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 40, 
+    "cat": "special", 
+    "type": "grass", 
+    "id": 72
+  }, 
+  "878": {
+    "name": "Error"
+  }, 
+  "noble-roar": {
+    "acc": 100, 
+    "pp": 30, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "normal", 
+    "id": 568
+  }, 
+  "876": {
+    "name": "Error"
+  }, 
+  "877": {
+    "name": "Error"
+  }, 
+  "874": {
+    "name": "Error"
+  }, 
+  "875": {
+    "name": "Error"
+  }, 
+  "872": {
+    "name": "Error"
+  }, 
+  "acid-spray": {
+    "acc": 100, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 40, 
+    "cat": "special", 
+    "type": "poison", 
+    "id": 491
+  }, 
+  "870": {
+    "name": "Error"
+  }, 
+  "871": {
+    "name": "Error"
+  }, 
+  "fire-blast": {
+    "acc": 85, 
+    "pp": 5, 
+    "prio": 0, 
+    "dmg": 110, 
+    "cat": "special", 
+    "type": "fire", 
+    "id": 126
+  }, 
+  "smack-down": {
+    "acc": 100, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 50, 
+    "cat": "physical", 
+    "type": "rock", 
+    "id": 479
+  }, 
+  "knock-off": {
+    "acc": 100, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 65, 
+    "cat": "physical", 
+    "type": "dark", 
+    "id": 282
+  }, 
+  "heat-wave": {
+    "acc": 90, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 95, 
+    "cat": "special", 
+    "type": "fire", 
+    "id": 257
+  }, 
+  "644": {
+    "name": "Error"
+  }, 
+  "nuzzle": {
+    "acc": 100, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 20, 
+    "cat": "physical", 
+    "type": "electric", 
+    "id": 609
+  }, 
+  "891": {
+    "name": "Error"
+  }, 
+  "892": {
+    "name": "Error"
+  }, 
+  "893": {
+    "name": "Error"
+  }, 
+  "thunderbolt": {
+    "acc": 100, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 90, 
+    "cat": "special", 
+    "type": "electric", 
+    "id": 85
+  }, 
+  "silver-wind": {
+    "acc": 100, 
+    "pp": 5, 
+    "prio": 0, 
+    "dmg": 60, 
+    "cat": "special", 
+    "type": "bug", 
+    "id": 318
+  }, 
+  "896": {
+    "name": "Error"
+  }, 
+  "soft-boiled": {
+    "acc": 0, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "normal", 
+    "id": 135
+  }, 
+  "hold-hands": {
+    "acc": 0, 
+    "pp": 40, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "normal", 
+    "id": 607
+  }, 
+  "absorb": {
+    "acc": 100, 
+    "pp": 25, 
+    "prio": 0, 
+    "dmg": 20, 
+    "cat": "special", 
+    "type": "grass", 
+    "id": 71
+  }, 
+  "assist": {
+    "acc": 0, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "normal", 
+    "id": 274
+  }, 
+  "high-jump-kick": {
+    "acc": 90, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 130, 
+    "cat": "physical", 
+    "type": "fighting", 
+    "id": 136
+  }, 
+  "waterfall": {
+    "acc": 100, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 80, 
+    "cat": "physical", 
+    "type": "water", 
+    "id": 127
+  }, 
+  "metal-claw": {
+    "acc": 95, 
+    "pp": 35, 
+    "prio": 0, 
+    "dmg": 50, 
+    "cat": "physical", 
+    "type": "steel", 
+    "id": 232
+  }, 
+  "673": {
+    "name": "Error"
+  }, 
+  "judgment": {
+    "acc": 100, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 100, 
+    "cat": "special", 
+    "type": "normal", 
+    "id": 449
+  }, 
+  "blaze-kick": {
+    "acc": 90, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 85, 
+    "cat": "physical", 
+    "type": "fire", 
+    "id": 299
+  }, 
+  "dream-eater": {
+    "acc": 100, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 100, 
+    "cat": "special", 
+    "type": "psychic", 
+    "id": 138
+  }, 
+  "searing-shot": {
+    "acc": 100, 
+    "pp": 5, 
+    "prio": 0, 
+    "dmg": 100, 
+    "cat": "special", 
+    "type": "fire", 
+    "id": 545
+  }, 
+  "psybeam": {
+    "acc": 100, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 65, 
+    "cat": "special", 
+    "type": "psychic", 
+    "id": 60
+  }, 
+  "octazooka": {
+    "acc": 85, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 65, 
+    "cat": "special", 
+    "type": "water", 
+    "id": 190
+  }, 
+  "heart-swap": {
+    "acc": 0, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "psychic", 
+    "id": 391
+  }, 
+  "minimize": {
+    "acc": 0, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "normal", 
+    "id": 107
+  }, 
+  "blue-flare": {
+    "acc": 85, 
+    "pp": 5, 
+    "prio": 0, 
+    "dmg": 130, 
+    "cat": "special", 
+    "type": "fire", 
+    "id": 551
+  }, 
+  "809": {
+    "name": "Error"
+  }, 
+  "808": {
+    "name": "Error"
+  }, 
+  "withdraw": {
+    "acc": 0, 
+    "pp": 40, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "water", 
+    "id": 110
+  }, 
+  "950": {
+    "name": "Error"
+  }, 
+  "803": {
+    "name": "Error"
+  }, 
+  "802": {
+    "name": "Error"
+  }, 
+  "801": {
+    "name": "Error"
+  }, 
+  "800": {
+    "name": "Error"
+  }, 
+  "807": {
+    "name": "Error"
+  }, 
+  "741": {
+    "name": "Error"
+  }, 
+  "howl": {
+    "acc": 0, 
+    "pp": 40, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "normal", 
+    "id": 336
+  }, 
+  "804": {
+    "name": "Error"
+  }, 
+  "venoshock": {
+    "acc": 100, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 65, 
+    "cat": "special", 
+    "type": "poison", 
+    "id": 474
+  }, 
+  "768": {
+    "name": "Error"
+  }, 
+  "769": {
+    "name": "Error"
+  }, 
+  "feint-attack": {
+    "acc": 0, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 60, 
+    "cat": "physical", 
+    "type": "dark", 
+    "id": 185
+  }, 
+  "762": {
+    "name": "Error"
+  }, 
+  "763": {
+    "name": "Error"
+  }, 
+  "760": {
+    "name": "Error"
+  }, 
+  "761": {
+    "name": "Error"
+  }, 
+  "766": {
+    "name": "Error"
+  }, 
+  "767": {
+    "name": "Error"
+  }, 
+  "rest": {
+    "acc": 0, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "psychic", 
+    "id": 156
+  }, 
+  "765": {
+    "name": "Error"
+  }, 
+  "788": {
+    "name": "Error"
+  }, 
+  "909": {
+    "name": "Error"
+  }, 
+  "cotton-spore": {
+    "acc": 100, 
+    "pp": 40, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "grass", 
+    "id": 178
+  }, 
+  "drill-run": {
+    "acc": 95, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 80, 
+    "cat": "physical", 
+    "type": "ground", 
+    "id": 529
+  }, 
+  "leaf-blade": {
+    "acc": 100, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 90, 
+    "cat": "physical", 
+    "type": "grass", 
+    "id": 348
+  }, 
+  "grass-whistle": {
+    "acc": 55, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "grass", 
+    "id": 320
+  }, 
+  "sludge-bomb": {
+    "acc": 100, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 90, 
+    "cat": "special", 
+    "type": "poison", 
+    "id": 188
+  }, 
+  "cut": {
+    "acc": 95, 
+    "pp": 30, 
+    "prio": 0, 
+    "dmg": 50, 
+    "cat": "physical", 
+    "type": "normal", 
+    "id": 15
+  }, 
+  "790": {
+    "name": "Error"
+  }, 
+  "forests-curse": {
+    "acc": 100, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "grass", 
+    "id": 571
+  }, 
+  "grassy-terrain": {
+    "acc": 0, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "grass", 
+    "id": 580
+  }, 
+  "acrobatics": {
+    "acc": 100, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 55, 
+    "cat": "physical", 
+    "type": "flying", 
+    "id": 512
+  }, 
+  "spider-web": {
+    "acc": 0, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "bug", 
+    "id": 169
+  }, 
+  "razor-wind": {
+    "acc": 100, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 80, 
+    "cat": "special", 
+    "type": "normal", 
+    "id": 13
+  }, 
+  "mist-ball": {
+    "acc": 100, 
+    "pp": 5, 
+    "prio": 0, 
+    "dmg": 70, 
+    "cat": "special", 
+    "type": "psychic", 
+    "id": 296
+  }, 
+  "ion-deluge": {
+    "acc": 0, 
+    "pp": 25, 
+    "prio": 1, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "electric", 
+    "id": 569
+  }, 
+  "flame-burst": {
+    "acc": 100, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 70, 
+    "cat": "special", 
+    "type": "fire", 
+    "id": 481
+  }, 
+  "678": {
+    "name": "Error"
+  }, 
+  "679": {
+    "name": "Error"
+  }, 
+  "feather-dance": {
+    "acc": 100, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "flying", 
+    "id": 297
+  }, 
+  "773": {
+    "name": "Error"
+  }, 
+  "674": {
+    "name": "Error"
+  }, 
+  "taunt": {
+    "acc": 100, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "dark", 
+    "id": 269
+  }, 
+  "676": {
+    "name": "Error"
+  }, 
+  "677": {
+    "name": "Error"
+  }, 
+  "670": {
+    "name": "Error"
+  }, 
+  "671": {
+    "name": "Error"
+  }, 
+  "672": {
+    "name": "Error"
+  }, 
+  "psycho-shift": {
+    "acc": 100, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "psychic", 
+    "id": 375
+  }, 
+  "sacred-sword": {
+    "acc": 100, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 90, 
+    "cat": "physical", 
+    "type": "fighting", 
+    "id": 533
+  }, 
+  "snarl": {
+    "acc": 95, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 55, 
+    "cat": "special", 
+    "type": "dark", 
+    "id": 555
+  }, 
+  "play-rough": {
+    "acc": 90, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 90, 
+    "cat": "physical", 
+    "type": "fairy", 
+    "id": 583
+  }, 
+  "follow-me": {
+    "acc": 0, 
+    "pp": 20, 
+    "prio": 2, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "normal", 
+    "id": 266
+  }, 
+  "cross-poison": {
+    "acc": 100, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 70, 
+    "cat": "physical", 
+    "type": "poison", 
+    "id": 440
+  }, 
+  "thunder-wave": {
+    "acc": 100, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "electric", 
+    "id": 86
+  }, 
+  "snore": {
+    "acc": 100, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 50, 
+    "cat": "special", 
+    "type": "normal", 
+    "id": 173
+  }, 
+  "submission": {
+    "acc": 80, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 80, 
+    "cat": "physical", 
+    "type": "fighting", 
+    "id": 66
+  }, 
+  "petal-blizzard": {
+    "acc": 100, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 90, 
+    "cat": "physical", 
+    "type": "grass", 
+    "id": 572
+  }, 
+  "cotton-guard": {
+    "acc": 0, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "grass", 
+    "id": 538
+  }, 
+  "lands-wrath": {
+    "acc": 100, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 90, 
+    "cat": "physical", 
+    "type": "ground", 
+    "id": 616
+  }, 
+  "comet-punch": {
+    "acc": 85, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 18, 
+    "cat": "physical", 
+    "type": "normal", 
+    "id": 4
+  }, 
+  "uproar": {
+    "acc": 100, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 90, 
+    "cat": "special", 
+    "type": "normal", 
+    "id": 253
+  }, 
+  "leaf-tornado": {
+    "acc": 90, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 65, 
+    "cat": "special", 
+    "type": "grass", 
+    "id": 536
+  }, 
+  "imprison": {
+    "acc": 0, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "psychic", 
+    "id": 286
+  }, 
+  "rock-slide": {
+    "acc": 90, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 75, 
+    "cat": "physical", 
+    "type": "rock", 
+    "id": 157
+  }, 
+  "sketch": {
+    "acc": 0, 
+    "pp": 1, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "normal", 
+    "id": 166
+  }, 
+  "795": {
+    "name": "Error"
+  }, 
+  "glare": {
+    "acc": 100, 
+    "pp": 30, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "normal", 
+    "id": 137
+  }, 
+  "electro-ball": {
+    "acc": 100, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "special", 
+    "type": "electric", 
+    "id": 486
+  }, 
+  "774": {
+    "name": "Error"
+  }, 
+  "flatter": {
+    "acc": 100, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "dark", 
+    "id": 260
+  }, 
+  "electric-terrain": {
+    "acc": 0, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "electric", 
+    "id": 604
+  }, 
+  "relic-song": {
+    "acc": 100, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 75, 
+    "cat": "special", 
+    "type": "normal", 
+    "id": 547
+  }, 
+  "thief": {
+    "acc": 100, 
+    "pp": 25, 
+    "prio": 0, 
+    "dmg": 60, 
+    "cat": "physical", 
+    "type": "dark", 
+    "id": 168
+  }, 
+  "hail": {
+    "acc": 0, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "ice", 
+    "id": 258
+  }, 
+  "heal-pulse": {
+    "acc": 0, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "psychic", 
+    "id": 505
+  }, 
+  "flare-blitz": {
+    "acc": 100, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 120, 
+    "cat": "physical", 
+    "type": "fire", 
+    "id": 394
+  }, 
+  "tri-attack": {
+    "acc": 100, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 80, 
+    "cat": "special", 
+    "type": "normal", 
+    "id": 161
+  }, 
+  "growth": {
+    "acc": 0, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "normal", 
+    "id": 74
+  }, 
+  "775": {
+    "name": "Error"
+  }, 
+  "771": {
+    "name": "Error"
+  }, 
+  "lovely-kiss": {
+    "acc": 75, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "normal", 
+    "id": 142
+  }, 
+  "foul-play": {
+    "acc": 100, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 95, 
+    "cat": "physical", 
+    "type": "dark", 
+    "id": 492
+  }, 
+  "647": {
+    "name": "Error"
+  }, 
+  "jump-kick": {
+    "acc": 95, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 100, 
+    "cat": "physical", 
+    "type": "fighting", 
+    "id": 26
+  }, 
+  "thunder-shock": {
+    "acc": 100, 
+    "pp": 30, 
+    "prio": 0, 
+    "dmg": 40, 
+    "cat": "special", 
+    "type": "electric", 
+    "id": 84
+  }, 
+  "shock-wave": {
+    "acc": 0, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 60, 
+    "cat": "special", 
+    "type": "electric", 
+    "id": 351
+  }, 
+  "tickle": {
+    "acc": 100, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "normal", 
+    "id": 321
+  }, 
+  "volt-tackle": {
+    "acc": 100, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 120, 
+    "cat": "physical", 
+    "type": "electric", 
+    "id": 344
+  }, 
+  "hurricane": {
+    "acc": 70, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 110, 
+    "cat": "special", 
+    "type": "flying", 
+    "id": 542
+  }, 
+  "focus-punch": {
+    "acc": 100, 
+    "pp": 20, 
+    "prio": -3, 
+    "dmg": 150, 
+    "cat": "physical", 
+    "type": "fighting", 
+    "id": 264
+  }, 
+  "919": {
+    "name": "Error"
+  }, 
+  "918": {
+    "name": "Error"
+  }, 
+  "slash": {
+    "acc": 100, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 70, 
+    "cat": "physical", 
+    "type": "normal", 
+    "id": 163
+  }, 
+  "915": {
+    "name": "Error"
+  }, 
+  "829": {
+    "name": "Error"
+  }, 
+  "917": {
+    "name": "Error"
+  }, 
+  "false-swipe": {
+    "acc": 100, 
+    "pp": 40, 
+    "prio": 0, 
+    "dmg": 40, 
+    "cat": "physical", 
+    "type": "normal", 
+    "id": 206
+  }, 
+  "911": {
+    "name": "Error"
+  }, 
+  "910": {
+    "name": "Error"
+  }, 
+  "913": {
+    "name": "Error"
+  }, 
+  "646": {
+    "name": "Error"
+  }, 
+  "855": {
+    "name": "Error"
+  }, 
+  "petal-dance": {
+    "acc": 100, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 120, 
+    "cat": "special", 
+    "type": "grass", 
+    "id": 80
+  }, 
+  "fury-attack": {
+    "acc": 85, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 15, 
+    "cat": "physical", 
+    "type": "normal", 
+    "id": 31
+  }, 
+  "856": {
+    "name": "Error"
+  }, 
+  "magnetic-flux": {
+    "acc": 0, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "electric", 
+    "id": 602
+  }, 
+  "last-resort": {
+    "acc": 100, 
+    "pp": 5, 
+    "prio": 0, 
+    "dmg": 140, 
+    "cat": "physical", 
+    "type": "normal", 
+    "id": 387
+  }, 
+  "clear-smog": {
+    "acc": 0, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 50, 
+    "cat": "special", 
+    "type": "poison", 
+    "id": 499
+  }, 
+  "850": {
+    "name": "Error"
+  }, 
+  "sacred-fire": {
+    "acc": 95, 
+    "pp": 5, 
+    "prio": 0, 
+    "dmg": 100, 
+    "cat": "physical", 
+    "type": "fire", 
+    "id": 221
+  }, 
+  "851": {
+    "name": "Error"
+  }, 
+  "847": {
+    "name": "Error"
+  }, 
+  "846": {
+    "name": "Error"
+  }, 
+  "845": {
+    "name": "Error"
+  }, 
+  "844": {
+    "name": "Error"
+  }, 
+  "force-palm": {
+    "acc": 100, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 60, 
+    "cat": "physical", 
+    "type": "fighting", 
+    "id": 395
+  }, 
+  "bullet-seed": {
+    "acc": 100, 
+    "pp": 30, 
+    "prio": 0, 
+    "dmg": 25, 
+    "cat": "physical", 
+    "type": "grass", 
+    "id": 331
+  }, 
+  "841": {
+    "name": "Error"
+  }, 
+  "psystrike": {
+    "acc": 100, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 100, 
+    "cat": "special", 
+    "type": "psychic", 
+    "id": 540
+  }, 
+  "tail-whip": {
+    "acc": 100, 
+    "pp": 30, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "normal", 
+    "id": 39
+  }, 
+  "853": {
+    "name": "Error"
+  }, 
+  "autotomize": {
+    "acc": 0, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "steel", 
+    "id": 475
+  }, 
+  "849": {
+    "name": "Error"
+  }, 
+  "848": {
+    "name": "Error"
+  }, 
+  "block": {
+    "acc": 0, 
+    "pp": 5, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "normal", 
+    "id": 335
+  }, 
+  "frost-breath": {
+    "acc": 90, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 60, 
+    "cat": "special", 
+    "type": "ice", 
+    "id": 524
+  }, 
+  "852": {
+    "name": "Error"
+  }, 
+  "dragon-tail": {
+    "acc": 90, 
+    "pp": 10, 
+    "prio": -6, 
+    "dmg": 60, 
+    "cat": "physical", 
+    "type": "dragon", 
+    "id": 525
+  }, 
+  "mud-sport": {
+    "acc": 0, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "ground", 
+    "id": 300
+  }, 
+  "flame-wheel": {
+    "acc": 100, 
+    "pp": 25, 
+    "prio": 0, 
+    "dmg": 60, 
+    "cat": "physical", 
+    "type": "fire", 
+    "id": 172
+  }, 
+  "bonemerang": {
+    "acc": 90, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 50, 
+    "cat": "physical", 
+    "type": "ground", 
+    "id": 155
+  }, 
+  "defend-order": {
+    "acc": 0, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "bug", 
+    "id": 455
+  }, 
+  "horn-drill": {
+    "acc": 30, 
+    "pp": 5, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "physical", 
+    "type": "normal", 
+    "id": 32
+  }, 
+  "mirror-move": {
+    "acc": 0, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "flying", 
+    "id": 119
+  }, 
+  "wrap": {
+    "acc": 90, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 15, 
+    "cat": "physical", 
+    "type": "normal", 
+    "id": 35
+  }, 
+  "dark-pulse": {
+    "acc": 100, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 80, 
+    "cat": "special", 
+    "type": "dark", 
+    "id": 399
+  }, 
+  "natural-gift": {
+    "acc": 100, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "physical", 
+    "type": "normal", 
+    "id": 363
+  }, 
+  "metal-sound": {
+    "acc": 85, 
+    "pp": 40, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "steel", 
+    "id": 319
+  }, 
+  "fake-tears": {
+    "acc": 100, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "dark", 
+    "id": 313
+  }, 
+  "hex": {
+    "acc": 100, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 65, 
+    "cat": "special", 
+    "type": "ghost", 
+    "id": 506
+  }, 
+  "transform": {
+    "acc": 0, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "normal", 
+    "id": 144
+  }, 
+  "string-shot": {
+    "acc": 95, 
+    "pp": 40, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "bug", 
+    "id": 81
+  }, 
+  "rock-wrecker": {
+    "acc": 90, 
+    "pp": 5, 
+    "prio": 0, 
+    "dmg": 150, 
+    "cat": "physical", 
+    "type": "rock", 
+    "id": 439
+  }, 
+  "frustration": {
+    "acc": 100, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "physical", 
+    "type": "normal", 
+    "id": 218
+  }, 
+  "bubble": {
+    "acc": 100, 
+    "pp": 30, 
+    "prio": 0, 
+    "dmg": 40, 
+    "cat": "special", 
+    "type": "water", 
+    "id": 145
+  }, 
+  "synthesis": {
+    "acc": 0, 
+    "pp": 5, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "grass", 
+    "id": 235
+  }, 
+  "753": {
+    "name": "Error"
+  }, 
+  "752": {
+    "name": "Error"
+  }, 
+  "glaciate": {
+    "acc": 95, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 65, 
+    "cat": "special", 
+    "type": "ice", 
+    "id": 549
+  }, 
+  "happy-hour": {
+    "acc": 0, 
+    "pp": 30, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "normal", 
+    "id": 603
+  }, 
+  "757": {
+    "name": "Error"
+  }, 
+  "756": {
+    "name": "Error"
+  }, 
+  "755": {
+    "name": "Error"
+  }, 
+  "754": {
+    "name": "Error"
+  }, 
+  "needle-arm": {
+    "acc": 100, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 60, 
+    "cat": "physical", 
+    "type": "grass", 
+    "id": 302
+  }, 
+  "758": {
+    "name": "Error"
+  }, 
+  "rage-powder": {
+    "acc": 0, 
+    "pp": 20, 
+    "prio": 2, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "bug", 
+    "id": 476
+  }, 
+  "quick-attack": {
+    "acc": 100, 
+    "pp": 30, 
+    "prio": 1, 
+    "dmg": 40, 
+    "cat": "physical", 
+    "type": "normal", 
+    "id": 98
+  }, 
+  "chip-away": {
+    "acc": 100, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 70, 
+    "cat": "physical", 
+    "type": "normal", 
+    "id": 498
+  }, 
+  "739": {
+    "name": "Error"
+  }, 
+  "guard-swap": {
+    "acc": 0, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "psychic", 
+    "id": 385
+  }, 
+  "bounce": {
+    "acc": 85, 
+    "pp": 5, 
+    "prio": 0, 
+    "dmg": 85, 
+    "cat": "physical", 
+    "type": "flying", 
+    "id": 340
+  }, 
+  "defense-curl": {
+    "acc": 0, 
+    "pp": 40, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "normal", 
+    "id": 111
+  }, 
+  "safeguard": {
+    "acc": 0, 
+    "pp": 25, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "normal", 
+    "id": 219
+  }, 
+  "poison-tail": {
+    "acc": 100, 
+    "pp": 25, 
+    "prio": 0, 
+    "dmg": 50, 
+    "cat": "physical", 
+    "type": "poison", 
+    "id": 342
+  }, 
+  "sharpen": {
+    "acc": 0, 
+    "pp": 30, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "normal", 
+    "id": 159
+  }, 
+  "embargo": {
+    "acc": 100, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "dark", 
+    "id": 373
+  }, 
+  "metronome": {
+    "acc": 0, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "normal", 
+    "id": 118
+  }, 
+  "rage": {
+    "acc": 100, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 20, 
+    "cat": "physical", 
+    "type": "normal", 
+    "id": 99
+  }, 
+  "wish": {
+    "acc": 0, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "normal", 
+    "id": 273
+  }, 
+  "ember": {
+    "acc": 100, 
+    "pp": 25, 
+    "prio": 0, 
+    "dmg": 40, 
+    "cat": "special", 
+    "type": "fire", 
+    "id": 52
+  }, 
+  "weather-ball": {
+    "acc": 100, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 50, 
+    "cat": "special", 
+    "type": "normal", 
+    "id": 311
+  }, 
+  "head-smash": {
+    "acc": 80, 
+    "pp": 5, 
+    "prio": 0, 
+    "dmg": 150, 
+    "cat": "physical", 
+    "type": "rock", 
+    "id": 457
+  }, 
+  "foresight": {
+    "acc": 0, 
+    "pp": 40, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "normal", 
+    "id": 193
+  }, 
+  "727": {
+    "name": "Error"
+  }, 
+  "724": {
+    "name": "Error"
+  }, 
+  "725": {
+    "name": "Error"
+  }, 
+  "722": {
+    "name": "Error"
+  }, 
+  "723": {
+    "name": "Error"
+  }, 
+  "entrainment": {
+    "acc": 100, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "normal", 
+    "id": 494
+  }, 
+  "721": {
+    "name": "Error"
+  }, 
+  "bide": {
+    "acc": 0, 
+    "pp": 10, 
+    "prio": 1, 
+    "dmg": 0, 
+    "cat": "physical", 
+    "type": "normal", 
+    "id": 117
+  }, 
+  "728": {
+    "name": "Error"
+  }, 
+  "729": {
+    "name": "Error"
+  }, 
+  "rock-throw": {
+    "acc": 90, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 50, 
+    "cat": "physical", 
+    "type": "rock", 
+    "id": 88
+  }, 
+  "thunder-punch": {
+    "acc": 100, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 75, 
+    "cat": "physical", 
+    "type": "electric", 
+    "id": 9
+  }, 
+  "drain-punch": {
+    "acc": 100, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 75, 
+    "cat": "physical", 
+    "type": "fighting", 
+    "id": 409
+  }, 
+  "793": {
+    "name": "Error"
+  }, 
+  "smokescreen": {
+    "acc": 100, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "normal", 
+    "id": 108
+  }, 
+  "quick-guard": {
+    "acc": 0, 
+    "pp": 15, 
+    "prio": 3, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "fighting", 
+    "id": 501
+  }, 
+  "double-edge": {
+    "acc": 100, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 120, 
+    "cat": "physical", 
+    "type": "normal", 
+    "id": 38
+  }, 
+  "iron-defense": {
+    "acc": 0, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "steel", 
+    "id": 334
+  }, 
+  "horn-attack": {
+    "acc": 100, 
+    "pp": 25, 
+    "prio": 0, 
+    "dmg": 65, 
+    "cat": "physical", 
+    "type": "normal", 
+    "id": 30
+  }, 
+  "leer": {
+    "acc": 100, 
+    "pp": 30, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "normal", 
+    "id": 43
+  }, 
+  "zen-headbutt": {
+    "acc": 90, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 80, 
+    "cat": "physical", 
+    "type": "psychic", 
+    "id": 428
+  }, 
+  "volt-switch": {
+    "acc": 100, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 70, 
+    "cat": "special", 
+    "type": "electric", 
+    "id": 521
+  }, 
+  "psycho-cut": {
+    "acc": 100, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 70, 
+    "cat": "physical", 
+    "type": "psychic", 
+    "id": 427
+  }, 
+  "crafty-shield": {
+    "acc": 0, 
+    "pp": 10, 
+    "prio": 3, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "fairy", 
+    "id": 578
+  }, 
+  "triple-kick": {
+    "acc": 90, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 10, 
+    "cat": "physical", 
+    "type": "fighting", 
+    "id": 167
+  }, 
+  "stun-spore": {
+    "acc": 75, 
+    "pp": 30, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "grass", 
+    "id": 78
+  }, 
+  "power-split": {
+    "acc": 0, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "psychic", 
+    "id": 471
+  }, 
+  "u-turn": {
+    "acc": 100, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 70, 
+    "cat": "physical", 
+    "type": "bug", 
+    "id": 369
+  }, 
+  "leaf-storm": {
+    "acc": 90, 
+    "pp": 5, 
+    "prio": 0, 
+    "dmg": 130, 
+    "cat": "special", 
+    "type": "grass", 
+    "id": 437
+  }, 
+  "water-shuriken": {
+    "acc": 100, 
+    "pp": 20, 
+    "prio": 1, 
+    "dmg": 15, 
+    "cat": "physical", 
+    "type": "water", 
+    "id": 594
+  }, 
+  "dragon-claw": {
+    "acc": 100, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 80, 
+    "cat": "physical", 
+    "type": "dragon", 
+    "id": 337
+  }, 
+  "discharge": {
+    "acc": 100, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 80, 
+    "cat": "special", 
+    "type": "electric", 
+    "id": 435
+  }, 
+  "grudge": {
+    "acc": 0, 
+    "pp": 5, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "ghost", 
+    "id": 288
+  }, 
+  "defog": {
+    "acc": 0, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "flying", 
+    "id": 432
+  }, 
+  "cross-chop": {
+    "acc": 80, 
+    "pp": 5, 
+    "prio": 0, 
+    "dmg": 100, 
+    "cat": "physical", 
+    "type": "fighting", 
+    "id": 238
+  }, 
+  "iron-head": {
+    "acc": 100, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 80, 
+    "cat": "physical", 
+    "type": "steel", 
+    "id": 442
+  }, 
+  "air-slash": {
+    "acc": 95, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 75, 
+    "cat": "special", 
+    "type": "flying", 
+    "id": 403
+  }, 
+  "brick-break": {
+    "acc": 100, 
+    "pp": 15, 
+    "prio": 0, 
+    "dmg": 75, 
+    "cat": "physical", 
+    "type": "fighting", 
+    "id": 280
+  }, 
+  "moonlight": {
+    "acc": 0, 
+    "pp": 5, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "fairy", 
+    "id": 236
+  }, 
+  "aromatic-mist": {
+    "acc": 0, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "fairy", 
+    "id": 597
+  }, 
+  "mimic": {
+    "acc": 0, 
+    "pp": 10, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "normal", 
+    "id": 102
+  }, 
+  "stockpile": {
+    "acc": 0, 
+    "pp": 20, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "normal", 
+    "id": 254
+  }, 
+  "poison-powder": {
+    "acc": 75, 
+    "pp": 35, 
+    "prio": 0, 
+    "dmg": 0, 
+    "cat": "status", 
+    "type": "poison", 
+    "id": 77
+  }
+}

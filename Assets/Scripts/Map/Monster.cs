@@ -95,7 +95,6 @@ namespace map
                         fight.FightingManager.addTeam("attacker",bag.MonsterBag.getBag().getTeam());
                         bag.Monster encounter = new bag.Monster(id);
                         fight.FightingManager.defender = new fight.Monster(encounter);
-                        bag.MonsterBag.getBag().addMonster(encounter);
                         Destroy(gameObject);
                         UnityEngine.SceneManagement.SceneManager.LoadScene("FightingScene");
                     }

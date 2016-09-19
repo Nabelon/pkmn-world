@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 using SimpleJSON;
 public class MonsterInfo {
     private static MonsterInfo monsterInfo;
@@ -8,9 +9,36 @@ public class MonsterInfo {
     private JSONNode baseStats;
     private JSONNode spawnData;
     private JSONNode natures;
+    private JSONNode moveData;          //move info
+    private JSONNode monsterMoveData;   //what moves can a monster learn
     public JSONNode typeEffectiveness;
     private string[] naturesNames = new string[] {"Rash", "Jolly", "Calm", "Serious","Quirky","Lonely","Bold","Gentle","Naive","Bashful","Modest","Lax","Docile","Sassy","Adamant","Timid","Hasty","Quiet","Naughty","Careful","Brave","Impish","Hardy","Mild","Relaxed"};
-       
+    public static LinkedList<string> attacksToLearn(string id, int level)
+    {
+        return null;
+    }
+    public LinkedList<string> getMovesForLevel(string id, int level)
+    {
+        LinkedList<string> list = new LinkedList<string>();
+
+        if (monsterMoveData[id][level.ToString()] != null)
+        {
+            string name = monsterMoveData[id][level.ToString()].Value;
+            if (getMoveJson(name) != null)
+            {
+                list.AddFirst(monsterMoveData[id][level.ToString()].Value);
+            }
+        }
+        return list;
+    }
+    public JSONNode getMoveJson(string move)
+    {
+        if (moveData[move.ToLower()] != null && moveData[move.ToLower()]["name"] != "Error")
+        {
+            return moveData[move.ToLower()];
+        }
+        return null;
+    }
     public static MonsterInfo getMonsterInfo()
     {
         if (monsterInfo == null)
@@ -46,6 +74,11 @@ public class MonsterInfo {
         types[0] = info[id]["type"].ToString().Replace("\"", "");
         return types;
     }
+    //returns level and id of the evolved pokemon
+    public KeyValuePair<int, string> evolveOnTo(string id, int level) {
+        if(info[id]["evolveLevel"] == null) return new KeyValuePair<int,string>(101, "151"); //never evolve to Mew, sry
+        return new KeyValuePair<int, string>(int.Parse(info[id]["evolveLevel"].Value),info[id]["evolveTo"].Value);
+    }
     private MonsterInfo()
     {
         info = JSON.Parse(Resources.Load<TextAsset>("MonsterData/monster").ToString());
@@ -54,5 +87,12 @@ public class MonsterInfo {
         spawnData = JSON.Parse(Resources.Load<TextAsset>("MonsterData/monsterSpawnData").ToString());
         typeEffectiveness = JSON.Parse(Resources.Load<TextAsset>("MonsterData/typeEffectiveness").ToString());
         natures = JSON.Parse(Resources.Load<TextAsset>("MonsterData/natures").ToString());
+        moveData = JSON.Parse(Resources.Load<TextAsset>("MonsterData/movesData").ToString());
+        monsterMoveData = JSON.Parse(Resources.Load<TextAsset>("MonsterData/monsterMovesLearn").ToString());
+    }
+
+    public JSONNode getAttacks(string id)
+    {
+        return monsterMoveData[id];
     }
 }

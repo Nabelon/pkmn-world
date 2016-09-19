@@ -342,14 +342,30 @@ namespace LanduseManager
         private QuadtreeRoot createTree(float lat, float lng, int depth, int zoomSmall, int zoomBig)
         {
             Point tile = WorldToTilePos(lng, lat, zoomSmall);
-            if (landuseRequest == null || waterRequest == null)
+            string savedAsUrlData = "landuse," + tile.X + "," + tile.Y + "," + zoomSmall;
+            string savedAsUrlWaterData = "water," + tile.X + "," + tile.Y + "," + zoomSmall;
+            JSONNode data;
+            JSONNode waterData;
+            string savedData = saveload.SaveLoad.getMapData(savedAsUrlData);
+            string savedWaterData = saveload.SaveLoad.getMapData(savedAsUrlWaterData);
+            if (savedData == null || savedWaterData == null)
             {
-                landuseRequest = getTileData("landuse", tile.X, tile.Y, zoomSmall);  //get landuse data
-                waterRequest = getTileData("water", tile.X, tile.Y, zoomSmall);//get water data
+                if (landuseRequest == null || waterRequest == null)
+                {
+                    landuseRequest = getTileData("landuse", tile.X, tile.Y, zoomSmall);  //get landuse data
+                    waterRequest = getTileData("water", tile.X, tile.Y, zoomSmall);//get water data
+                }
+                if (!landuseRequest.isDone || !waterRequest.isDone) return null;
+                data = JSONNode.Parse(landuseRequest.text);
+                waterData = JSONNode.Parse(waterRequest.text);
+                saveload.SaveLoad.saveMapData(savedAsUrlData, landuseRequest.text);
+                saveload.SaveLoad.saveMapData(savedAsUrlWaterData, waterRequest.text);
             }
-            if (!landuseRequest.isDone || !waterRequest.isDone) return null;
-            JSONNode data = JSONNode.Parse(landuseRequest.text);
-            JSONNode waterData = JSONNode.Parse(waterRequest.text);
+            else
+            {
+                data = JSONNode.Parse(savedData);
+                waterData = JSONNode.Parse(savedWaterData);
+            }
             List<Item> items = getItemsFromJson(data);                          //get landuse items for tree
             PointF nwCorner = TileToWorldPos(tile.X, tile.Y, zoomSmall);        //find bounds for tree
             PointF seCorner = TileToWorldPos(tile.X + 1, tile.Y + 1, zoomSmall);
